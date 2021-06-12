@@ -194,6 +194,12 @@
 
 - id: pub_patent
   translation: Patent
+  
+- id: pub_data
+  translation: Data paper
+
+- id: pub_dataset
+  translation: Dataset
 
 # Project details
 
