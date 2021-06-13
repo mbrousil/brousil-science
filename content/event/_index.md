@@ -2,6 +2,7 @@
 header:
   caption: ""
   image: ""
-title: Recent & Upcoming Events
+title: Workshops Organized
 view: 2
+aliases: [/workshop/]
 ---
