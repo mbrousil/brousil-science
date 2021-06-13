@@ -10,9 +10,12 @@ main:
   - name: Workshops
     url: workshop
     weight: 30
+  - name: Talks
+    url: talk
+    weight: 40  
   - name: Portfolio
     url: portfolio
-    weight: 40
+    weight: 50
   - name: CV
     url: cv
     weight: 60
