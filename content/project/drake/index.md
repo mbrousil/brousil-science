@@ -17,7 +17,7 @@ image:
 links:
 icon: ""
 url_code: ""
-url_pdf: "drake_wkshp.html"
+url_pdf: ""
 url_slides: ""
 url_video: ""
 
