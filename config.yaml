@@ -4,7 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: Matthew Brousil # Website name
-baseurl: 'https://mbrousil.netlify.app' # Website URL
+baseurl: 'brousil.science' # Website URL
 copyright: '' # Footer text, e.g. '© {year} Me'
 
 ############################
