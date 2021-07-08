@@ -20,7 +20,7 @@ highlight_name: false
 organizations:
 - name: Washington State University
   url: ""
-role: Data Manager
+role: Research Coordinator
 social:
 - icon: envelope
   icon_pack: fas
@@ -43,6 +43,8 @@ user_groups:
 - Researchers
 ---
 
-I’m a data manager for the Center for Environmental Research, Education and Outreach (CEREO) and research assistant for the Hampton Lab at Washington State University. My work covers a variety of topics and applications, including performing analyses, consulting on data organization and analysis, performing code review, and designing publication-quality graphics. I work on projects spanning the fields of limnology, ecology, entomology, and agriculture.
+I'm a research coordinator for the [WSU Decision Aid System](https://decisionaid.systems/). I organize and synthesize pest and climate data and use R to translate Integrated Pest Management (IPM) research into useful tools for decision makers in Washington State agriculture. I also develop new decision aid models and expand our IPM programs through research.
 
-I received my BA/BS in ecology and agriculture at The Evergreen State College and my MS in forestry sciences at California Polytechnic State University. Previously, I worked on agriculture and entomology research projects covering topics such as insect pollinator health and pollination services in the Pacific Northwest.
+In addition to this work I also enjoy [running workshops]({{< relref "/event/" >}}) and giving [instructional talks]({{< relref "/talk/" >}}) about reproducible research and R. 
+
+Previously I was a data manager for the [Center for Environmental Research, Education and Outreach (CEREO)](cereo.wsu.edu/) and research assistant for the Hampton Lab at WSU. In those roles I worked on projects spanning the fields of limnology, ecology, entomology, and agriculture. I have a BA/BS in ecology and agriculture from The Evergreen State College and a MS in forestry sciences from California Polytechnic State University.

@@ -10,7 +10,7 @@ headless: true
 weight: 65
 
 title: Portfolio
-subtitle: Examples of projects that I've worked on and publicly available blog posts relating to R
+subtitle: Examples of publicly-available projects that I've worked on and blog posts relating to R
 
 content:
   # Page type to display. E.g. project.
