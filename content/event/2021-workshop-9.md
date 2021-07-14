@@ -1,22 +1,20 @@
 ---
-title: "REU Workshop: Data Wrangling"
+title: "Reproducible Research Techniques with R"
 collection: workshops
 type: "R workshop - Organizer, Moderator, Instructor"
-permalink: /workshops/2021-workshop-2
+permalink: /workshops/2021-workshop-1
 venue: "Washington State University"
-date: 2021-06-07
+date: 2021-03-15
 location: "Pullman, Washington"
 ---
 
-Organizer, moderator, and co-instructor of a three-day workshop covering data management techniques and an introduction to R. Audience was undergraduate students in the [CEREO FEW REU](https://cereo.wsu.edu/reu-stakeholder-few-innovations/). Sessions took place over Zoom from June 07-09, 2021. The syllabus was based on [Data Carpentry for Ecology](https://datacarpentry.org/ecology-workshop/), with modifications specific to the context of the REU.
+Organizer, moderator, and co-instructor of weeklong workshop series on techniques for reproducible research using R, targeted at graduate students. Sessions took place over Zoom for 3.5-4 hours per day from March 15-19, 2021.
 
 ##### Topics covered:
-+ Introduction to Data-Intensive Research and Public Data Resources
-+ Introduction to Spreadsheets
-+ Managing and Cleaning Data Reproducibly
-+ Introduction to R
-+ Data Organization with R
-+ Basic Data Analysis in R
-+ Data Visualization in R
-+ Documenting Research with R
++ Intro to Git/GitHub and tidyverse
++ Intro to R Markdown
++ Intro to modeling with R
++ Intro to workflow management with drake
++ Intro to making websites with GitHub Pages
 
+Link to workshop website [here](https://cereo.wsu.edu/reproducible-r-workshop/).

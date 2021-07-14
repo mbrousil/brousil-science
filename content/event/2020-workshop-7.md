@@ -1,20 +1,11 @@
 ---
-title: "Reproducible Research Techniques with R"
+title: "Intro to Manipulating and Visualizing Data in R [Cancelled due to COVID-19]"
 collection: workshops
-type: "R workshop - Organizer, Moderator, Instructor"
-permalink: /workshops/2020-workshop-1
-venue: "Washington State University"
-date: 2020-11-16
-location: "Pullman, Washington"
+type: "Conference workshop - Organizer and Instructor"
+permalink: /workshops/2020-workshop-6
+venue: "Northwest Scientific Association Annual Meeting"
+date: 2020-03-25
+location: "Eugene, Oregon"
 ---
 
-Organizer, moderator, and co-instructor of weeklong workshop series on techniques for reproducible research using R, targeted at graduate students. Sessions took place over Zoom for 2.5-4 hours per day from November 16-20, 2020.
-
-##### Topics covered:
-+ Intro to Git/GitHub and tidyverse
-+ Intro to R Markdown
-+ Intro to modeling with R
-+ Intro to workflow management with drake
-+ Intro to making websites with GitHub Pages
-
-Link to workshop website [here](https://cereo.wsu.edu/reproducible-r-workshop/).
+Organizer and planned co-instructor of a workshop on introductory data manipulation and visualization for the 2020 NWSA Annual Meeting. The workshop was cancelled due to COVID-19. Adapted from [Data Carpentry](https://datacarpentry.org/R-ecology-lesson/) materials. Link to meeting proceedings [here](https://www.northwestscience.org/resources/Documents/2020%20NWSA%2091st%20AnnualMeetingProgramAbstracts.pdf).
