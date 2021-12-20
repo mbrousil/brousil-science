@@ -1,8 +1,7 @@
 ---
 title: Documenting pollinators, floral hosts, and plant–pollinator interactions
   in U.S. Pacific Northwest agroecosystems
-publication_types:
-  - "2"
+publication_types: ["9"]
 authors:
   - Elias H. Bloom
   - Elisabeth C. Oeller
