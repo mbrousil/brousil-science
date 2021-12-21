@@ -2,6 +2,6 @@
 header:
   caption: ""
   image: ""
-title: Latest News
+title: Posts
 view: 2
 ---
