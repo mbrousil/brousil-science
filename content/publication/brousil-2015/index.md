@@ -11,6 +11,6 @@ url_pdf: "https://doi.org/10.3955%2F046.089.0310"
 doi: "10.3955/046.089.0310"
 ---
 
-This paper assesses plant-pollinator network structure during sampling periods in 2015-2016 for rural and urban environments in western Washington State, USA.
+This paper discusses plant-pollinator interactions on *Lysichiton americanus* in a western Washington (USA) riparian forest.
 
 
