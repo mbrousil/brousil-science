@@ -31,6 +31,7 @@ slides: example
 
 I've written several instructional blog posts corresponding to live-coding talks that I've given at the Washington State University R Working Group. Below are links to each blog post:
 
++ [Examples of using regular expressions in R](https://brousil.science/post/regex-examples/) (2021-10-27)
 + [Introduction to mapping in R](https://cougrstats.netlify.app/post/introduction-to-mapping-in-r/) (2021-02-10)
 + [Formatting data for use with R](https://cougrstats.netlify.app/post/formatting-data-for-use-with-r/) (2020-10-21)
 + [An introduction to working with lists using purrr](https://cougrstats.netlify.app/post/an-introduction-to-working-with-lists-using-purrr/) (2020-02-19)
