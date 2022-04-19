@@ -30,6 +30,7 @@
       <guid>brousil.science/project/blog/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve written several instructional blog posts corresponding to live-coding talks that I&amp;rsquo;ve given at the Washington State University R Working Group. Below are links to each blog post:&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://brousil.science/post/quick-caret/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;A quick-start guide to the caret R package&lt;/a&gt; (2022-04-13)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://brousil.science/post/regex-examples/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Examples of using regular expressions in R&lt;/a&gt; (2021-10-27)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://cougrstats.netlify.app/post/introduction-to-mapping-in-r/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Introduction to mapping in R&lt;/a&gt; (2021-02-10)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://cougrstats.netlify.app/post/formatting-data-for-use-with-r/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Formatting data for use with R&lt;/a&gt; (2020-10-21)&lt;/li&gt;
