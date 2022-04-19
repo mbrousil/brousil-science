@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Live coding | Matthew Brousil</title>
+    <link>brousil.science/tag/live-coding/</link>
+      <atom:link href="brousil.science/tag/live-coding/index.xml" rel="self" type="application/rss+xml" />
+    <description>Live coding</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 13 Apr 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/brousil.science/media/icon_hu3f944acd3d6616c2d13f4cde577e2e67_445931_512x512_fill_lanczos_center_2.png</url>
+      <title>Live coding</title>
+      <link>brousil.science/tag/live-coding/</link>
+    </image>
+    
+    <item>
+      <title>Blog posts</title>
+      <link>brousil.science/project/blog/</link>
+      <pubDate>Wed, 12 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>brousil.science/project/blog/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve written several instructional blog posts corresponding to live-coding talks that I&amp;rsquo;ve given at the Washington State University R Working Group. Below are links to each blog post:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://brousil.science/post/regex-examples/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Examples of using regular expressions in R&lt;/a&gt; (2021-10-27)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cougrstats.netlify.app/post/introduction-to-mapping-in-r/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Introduction to mapping in R&lt;/a&gt; (2021-02-10)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cougrstats.netlify.app/post/formatting-data-for-use-with-r/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Formatting data for use with R&lt;/a&gt; (2020-10-21)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cougrstats.netlify.app/post/an-introduction-to-working-with-lists-using-purrr/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;An introduction to working with lists using purrr&lt;/a&gt; (2020-02-19)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cougrstats.netlify.app/post/advanced-methods-with-ggplot2/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Advanced methods with ggplot2&lt;/a&gt; (2019-09-25)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cougrstats.netlify.app/post/a-tour-of-r-markdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;A tour of R Markdown&lt;/a&gt; (2019-09-12)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cougrstats.netlify.app/post/cleaning-messy-scripts-and-data/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cleaning messy scripts and data&lt;/a&gt; (2019-04-10)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cougrstats.netlify.app/post/how-to-shiny-2/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Intro to Shiny&lt;/a&gt; (2018-09-12)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A quick-start guide to the `caret` R package</title>
+      <link>brousil.science/post/quick-caret/</link>
+      <pubDate>Wed, 13 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>brousil.science/post/quick-caret/</guid>
+      <description>&lt;script src=&#34;brousil.science/post/quick-caret/index_files/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;brousil.science/post/quick-caret/index_files/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
+&lt;p&gt;The &lt;a href=&#34;https://cran.r-project.org/web/packages/caret/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;caret&lt;/code&gt;&lt;/a&gt; R package has been a staple of machine learning (ML) methods in R for a long time. The name &lt;code&gt;caret&lt;/code&gt; stands for &amp;ldquo;Classification and Regression Training&amp;rdquo; according to &lt;a href=&#34;https://cran.r-project.org/web/packages/caret/vignettes/caret.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;the authors&lt;/a&gt;. It provides methods for common ML steps, such as pre-processing, training, tuning, and evaluating predictive models.&lt;/p&gt;
+&lt;p&gt;In addition to &lt;code&gt;caret&lt;/code&gt;, there is also a group of packages referred to as &lt;code&gt;tidymodels&lt;/code&gt; that is currently in development and which is also available for use. Both &lt;code&gt;caret&lt;/code&gt; and &lt;code&gt;tidymodels&lt;/code&gt; have &lt;a href=&#34;https://github.com/topepo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Max Kuhn&lt;/a&gt; as a main author, but &lt;code&gt;tidymodels&lt;/code&gt; aims to streamline ML for use with &lt;a href=&#34;tidyverse.org&#34;&gt;&lt;code&gt;tidyverse&lt;/code&gt;&lt;/a&gt; packages.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll be focusing on &lt;code&gt;caret&lt;/code&gt; in this intro. We&amp;rsquo;ll be working with data from the &lt;code&gt;palmerpenguins&lt;/code&gt; package, and using the &lt;code&gt;caret&lt;/code&gt;, and &lt;code&gt;tidyverse&lt;/code&gt; packages.&lt;/p&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;working-with-data&#34;&gt;Working with data&lt;/h2&gt;
+&lt;p&gt;Start by loading the necessary packages:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;library(tidyverse)
+library(palmerpenguins)
+library(caret)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;p&gt;We&amp;rsquo;ll use the &lt;code&gt;penguins&lt;/code&gt; dataset from &lt;code&gt;palmerpenguins&lt;/code&gt;. It will be loaded automatically when you load the &lt;code&gt;palmerpenguins&lt;/code&gt; package:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;head(penguins)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;table class=&#34; lightable-paper&#34; style=&#39;font-family: &#34;Arial Narrow&#34;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto;&#39;&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style=&#34;text-align:left;&#34;&gt; species &lt;/th&gt;
+   &lt;th style=&#34;text-align:left;&#34;&gt; island &lt;/th&gt;
+   &lt;th style=&#34;text-align:right;&#34;&gt; bill_length_mm &lt;/th&gt;
+   &lt;th style=&#34;text-align:right;&#34;&gt; bill_depth_mm &lt;/th&gt;
+   &lt;th style=&#34;text-align:right;&#34;&gt; flipper_length_mm &lt;/th&gt;
+   &lt;th style=&#34;text-align:right;&#34;&gt; body_mass_g &lt;/th&gt;
+   &lt;th style=&#34;text-align:left;&#34;&gt; sex &lt;/th&gt;
+   &lt;th style=&#34;text-align:right;&#34;&gt; year &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Adelie &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Torgersen &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 39.1 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 18.7 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 181 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 3750 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; male &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 2007 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Adelie &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Torgersen &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 39.5 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 17.4 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 186 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 3800 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; female &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 2007 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Adelie &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Torgersen &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 40.3 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 18.0 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 195 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 3250 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; female &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 2007 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Adelie &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Torgersen &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; NA &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; NA &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; NA &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; NA &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; NA &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 2007 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Adelie &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Torgersen &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 36.7 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 19.3 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 193 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 3450 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; female &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 2007 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Adelie &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Torgersen &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 39.3 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 20.6 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 190 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 3650 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; male &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 2007 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;br&gt;
+&lt;p&gt;This package contains &lt;a href=&#34;https://pallter.marine.rutgers.edu/catalog/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LTER data&lt;/a&gt; for three penguin species on islands in Antarctica.&lt;/p&gt;
+&lt;br&gt;
+&lt;h3 id=&#34;reviewing-the-data&#34;&gt;Reviewing the data&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;caret&lt;/code&gt; provides a function called &lt;code&gt;featurePlot()&lt;/code&gt;, which is used to visualize datasets. It runs off of the &lt;code&gt;lattice&lt;/code&gt; package, so if you are familiar with this method of plotting you might find it familiar. As someone who primarily uses &lt;code&gt;ggplot2&lt;/code&gt; I found this function a bit difficult to use, but you may find it helpful still. Max Kuhn&amp;rsquo;s &lt;a href=&#34;https://topepo.github.io/caret/visualizations.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;The &lt;/code&gt;caret` Package&lt;/a&gt; Bookdown document provides some interesting examples of its functionality. Here&amp;rsquo;s a basic plot with a couple of our variables:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;featurePlot(x = penguins[, c(&amp;quot;bill_length_mm&amp;quot;, &amp;quot;bill_depth_mm&amp;quot;, &amp;quot;flipper_length_mm&amp;quot;)], 
+            y = penguins$body_mass_g, 
+            plot = &amp;quot;scatter&amp;quot;, 
+            layout = c(3, 1))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;brousil.science/post/quick-caret/index_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;In the plot above, the x-axis corresponds to each predictor (by panel) and the y-axis is &lt;code&gt;body_mass_g&lt;/code&gt;.&lt;/p&gt;
+&lt;br&gt;
+&lt;h3 id=&#34;pre-processing&#34;&gt;Pre-processing&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;caret&lt;/code&gt; has built-in functionality to help with pre-processing your data as well. There are some more sophisticated options, but here we&amp;rsquo;ll just take a look at one. For example, in some modeling situations you&amp;rsquo;ll want to check for correlated predictors (multicollinearity). The &lt;code&gt;caret&lt;/code&gt; function for this is &lt;code&gt;findCorrelation()&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;First we&amp;rsquo;ll want to make a correlation matrix, which will be fed into &lt;code&gt;findCorrelation()&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;penguin_cor &amp;lt;- penguins %&amp;gt;%
+  filter(!if_any(everything(), is.na)) %&amp;gt;%
+  # Numeric columns only
+  select(where(is.numeric)) %&amp;gt;%
+  cor()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then &lt;code&gt;findCorrelation()&lt;/code&gt; will check for correlations above a cutoff value that we provide:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;findCorrelation(x = penguin_cor,
+                # Use 0.7 correlation cutoff
+                cutoff = 0.7,
+                # Provide more details
+                verbose = TRUE,
+                # Return column names instead of indices
+                names = TRUE)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Compare row 3  and column  4 with corr  0.873 
+##   Means:  0.564 vs 0.334 so flagging column 3 
+## All correlations &amp;lt;= 0.7
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;flipper_length_mm&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It notes that row 3 and column 4 of our correlation object have a correlation of 0.87:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;##                   bill_length_mm bill_depth_mm flipper_length_mm body_mass_g
+## bill_length_mm         1.0000000    -0.2286256         0.6530956  0.58945111
+## bill_depth_mm         -0.2286256     1.0000000        -0.5777917 -0.47201566
+## flipper_length_mm      0.6530956    -0.5777917         1.0000000  0.87297890
+## body_mass_g            0.5894511    -0.4720157         0.8729789  1.00000000
+## year                   0.0326569    -0.0481816         0.1510679  0.02186213
+##                          year
+## bill_length_mm     0.03265690
+## bill_depth_mm     -0.04818160
+## flipper_length_mm  0.15106792
+## body_mass_g        0.02186213
+## year               1.00000000
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This means &lt;code&gt;flipper_length_mm&lt;/code&gt; (row 3) and &lt;code&gt;body_mass_g&lt;/code&gt; (column 4) are correlated. That&amp;rsquo;s fine since body mass is our response variable.&lt;/p&gt;
+&lt;br&gt;
+&lt;h3 id=&#34;splitting-the-data&#34;&gt;Splitting the data&lt;/h3&gt;
+&lt;p&gt;We&amp;rsquo;ll want to make a training dataset with which to build our model. &lt;code&gt;caret&lt;/code&gt; provides some methods for doing this, including some for balanced splits for classification datasets, splitting using maximum dissimilarity, splitting for time series, and more.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ll proceed by modeling &lt;code&gt;body_mass_g&lt;/code&gt;. First we&amp;rsquo;ll remove NAs, then do a basic split into a training dataset.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;model_data &amp;lt;- penguins %&amp;gt;%
+  filter(!if_any(everything(), is.na))
+
+# 80% of the data for training - these are row indices
+set.seed(500)
+
+training_indices &amp;lt;- createDataPartition(y = model_data$body_mass_g, 
+                                        p = .8,
+                                        # Do not return a list
+                                        list = FALSE)
+
+# Subset the rows selected above
+training_sample &amp;lt;- model_data[training_indices, ]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;modeling&#34;&gt;Modeling&lt;/h2&gt;
+&lt;p&gt;With our data in hand we now can progress to training a model. We&amp;rsquo;ll use a random forest for this example. Note that there is a lot to explore in &lt;code&gt;caret&lt;/code&gt; that I won&amp;rsquo;t go over here. I highly recommend reading &lt;a href=&#34;https://topepo.github.io/caret/visualizations.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;The &lt;/code&gt;caret` Package&lt;/a&gt;.&lt;/p&gt;
+&lt;br&gt; 
+&lt;p&gt;First we can use the &lt;code&gt;trainControl()&lt;/code&gt; function to customize the model training process:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;train_params &amp;lt;- trainControl(
+  # Repeated K-fold cross-validation
+  method = &amp;quot;repeatedcv&amp;quot;,
+  # 10 folds
+  number = 10,
+  # 3 repeats
+  repeats = 3
+)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;p&gt;Now we can train the random forest with the parameters above:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;set.seed(500)
+
+rf_model &amp;lt;- train(
+  # Modeling formula indicating to model body_mass_g using all other vars
+  form = body_mass_g ~ .,
+  # Our custom parameters
+  trControl = train_params,
+  # The dataset
+  data = training_sample,
+  # Use a random forest
+  method = &amp;quot;rf&amp;quot;
+)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;p&gt;Here are our results:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Note that mtry = the number of randomly selected predictors caret uses at each split
+rf_model
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Random Forest 
+## 
+## 268 samples
+##   7 predictor
+## 
+## No pre-processing
+## Resampling: Cross-Validated (10 fold, repeated 3 times) 
+## Summary of sample sizes: 242, 241, 242, 241, 241, 242, ... 
+## Resampling results across tuning parameters:
+## 
+##   mtry  RMSE      Rsquared   MAE     
+##   2     291.4107  0.8760304  233.9042
+##   5     291.0023  0.8739321  234.9932
+##   9     295.2779  0.8700284  240.0389
+## 
+## RMSE was used to select the optimal model using the smallest value.
+## The final value used for the model was mtry = 5.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;p&gt;The final model can be accessed from the trained object. But note that you probably &lt;a href=&#34;http://zevross.com/blog/2017/09/19/predictive-modeling-and-machine-learning-in-r-with-the-caret-package/#an-r-squared-from-a-model-based-on-the-full-dataset-is-unrealistic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;shouldn&amp;rsquo;t rely on this R^2^&lt;/a&gt; as your output.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;rf_model$finalModel
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## Call:
+##  randomForest(x = x, y = y, mtry = min(param$mtry, ncol(x))) 
+##                Type of random forest: regression
+##                      Number of trees: 500
+## No. of variables tried at each split: 5
+## 
+##           Mean of squared residuals: 86096.17
+##                     % Var explained: 86.69
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Its &lt;code&gt;mtry&lt;/code&gt; value was 5 based on RMSE, which we can view using &lt;code&gt;ggplot()&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;ggplot(rf_model)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;brousil.science/post/quick-caret/index_files/figure-html/unnamed-chunk-13-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;Now we want to know how the model performs on our testing data subset:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Pull out the rows for testing and add predictions from the RF
+test_sample &amp;lt;- model_data[-training_indices, ] %&amp;gt;%
+  mutate(predicted = predict(object = rf_model, newdata = .))
+
+# Get a new R2
+postResample(pred = test_sample$predicted,
+             obs = test_sample$body_mass_g)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##       RMSE   Rsquared        MAE 
+## 310.377285   0.864062 241.696781
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;p&gt;Plot the relationship&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;ggplot(data = test_sample) +
+  # A 1:1 line
+  geom_abline(slope = 1, intercept = 0, linetype = &amp;quot;dashed&amp;quot;, color = &amp;quot;gray65&amp;quot;) +
+  geom_point(aes(x = body_mass_g, y = predicted, color = species)) +
+  xlim(c(2500, 6500)) +
+  ylim(c(2500, 6500)) +
+  theme_bw()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;brousil.science/post/quick-caret/index_files/figure-html/unnamed-chunk-15-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;We can look at a scaled metric for variable importance using the &lt;code&gt;varImp()&lt;/code&gt; function:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;plot(varImp(rf_model))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;brousil.science/post/quick-caret/index_files/figure-html/unnamed-chunk-16-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://topepo.github.io/caret/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;caret&lt;/code&gt; manual&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/caret/vignettes/caret.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;A short introduction to &lt;code&gt;caret&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cran.r-project.org/package=caret&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;caret&lt;/code&gt; CRAN page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://zevross.com/blog/2017/09/19/predictive-modeling-and-machine-learning-in-r-with-the-caret-package/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Predictive modeling and machine learning in R with the caret package&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Examples of using regular expressions in R</title>
+      <link>brousil.science/post/regex-examples/</link>
+      <pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>brousil.science/post/regex-examples/</guid>
+      <description>&lt;p&gt;In this post I&amp;rsquo;ll be walking through some basic examples of &lt;a href=&#34;https://en.wikipedia.org/wiki/Regular_expression&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;regex&lt;/a&gt;, or regular expressions, and also providing a couple real-world examples.&lt;/p&gt;
+&lt;p&gt;To quote Hadley Wickham and Garrett Grolemund (&lt;a href=&#34;https://r4ds.had.co.nz/strings.html#matching-patterns-with-regular-expressions&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;2017&lt;/a&gt;), regex is a &lt;em&gt;&amp;ldquo;language that allow[s] you to describe patterns in strings.&amp;quot;&lt;/em&gt; When we have string/character data in R, we may want to extract information from it. And regex is a tool for doing this.&lt;/p&gt;
+&lt;p&gt;As a conceptual example, consider the sentence below:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;“The user’s phone number is (555) 555-5555.”&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This string of text could be something scraped from a PDF, or perhaps provided as input to a survey. Our end goal might be to extract and store the phone number in that sentence. One way to do this would be to write a &lt;strong&gt;regular expression&lt;/strong&gt; that describes the pattern of a phone number, which R can then use to extract the phone number from the string.&lt;/p&gt;
+&lt;p&gt;Another common example is pulling metadata from filenames. If you have a folder of rasters with names like &lt;code&gt;&amp;quot;farm_aerial_imagery_whitman_county_2021.tiff&amp;quot;&lt;/code&gt;, you might want to filter them based on their contents. Using regex we can give R instructions to separate out the county name and year from the filenames, which allows us to determine the spatial and temporal coverage of our files.&lt;/p&gt;
+&lt;p&gt;Now I&amp;rsquo;ll go through a few examples. If you want to follow along, you can download the &lt;code&gt;.zip&lt;/code&gt; folder from &lt;a href=&#34;https://drive.google.com/drive/folders/1jADPyF12N6dPzBQs-Kwn3OQyca96ZNI8?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;. Make sure to unzip the folder and open the script it contains. We&amp;rsquo;ll fill it in below:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;library(tidyverse)
+library(stringi)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note that tidyverse contains the &lt;code&gt;stringr&lt;/code&gt; package, which contains a variety of useful functions for working with strings. We&amp;rsquo;ll barely scratch the surface of its capabilities here.&lt;/p&gt;
+&lt;h2 id=&#34;1-a-simple-example-of-regex&#34;&gt;1. A simple example of regex&lt;/h2&gt;
+&lt;p&gt;A common application of regex is to extract numbers from text data. Let&amp;rsquo;s say we have this filename:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;filename &amp;lt;- &amp;quot;2021A.txt&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is how we could confirm the presence of just the year from it using base R: We could search for the year verbatim, returning a logical T/F with &lt;code&gt;grepl()&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;grepl(pattern = &amp;quot;2021&amp;quot;, x = filename)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] TRUE
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;p&gt;Or we could generalize it to just identifying where a number occurs. We use a pattern to identifying numbers 0 through 9:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;grepl(pattern = &amp;quot;[0-9]&amp;quot;, x = filename)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] TRUE
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;p&gt;More helpful would be to find four numbers in a row, as indicated with our bracketed 4:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;grepl(pattern = &amp;quot;[0-9]{4}&amp;quot;, x = filename)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] TRUE
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;p&gt;And then finally to actually return those numbers to us using &lt;code&gt;str_extract()&lt;/code&gt; so that we can use them:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;?str_extract
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;str_extract(string = filename, pattern = &amp;quot;[0-9]{4}&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;2021&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;p&gt;Now you might imagine that we could take this one step further and pull the dates from an entire vector of filenames. This will be especially useful if we want to extract these data from an entire column, for example.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;file_list &amp;lt;- c(&amp;quot;2021A.txt&amp;quot;, &amp;quot;1995A.txt&amp;quot;, &amp;quot;2021B.txt&amp;quot;, &amp;quot;1995B.txt&amp;quot;)
+
+
+str_extract(string = file_list, pattern = &amp;quot;[0-9]{4}&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;2021&amp;quot; &amp;quot;1995&amp;quot; &amp;quot;2021&amp;quot; &amp;quot;1995&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;2-separating-and-extracting&#34;&gt;2. Separating and extracting&lt;/h2&gt;
+&lt;p&gt;Pretend that we&amp;rsquo;re given a list of student names with grades. We want to use this for an analysis, but the names and grades are combined in a random order into a single string. We&amp;rsquo;ll need to separate them somehow. Luckily regex provides us the tools to do so.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;grade_data &amp;lt;- read.csv(file = &amp;quot;grades.csv&amp;quot;)
+
+head(grade_data)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##           grades
+## 1   COSTA.gradeB
+## 2    gradeD.LOWE
+## 3  gradeC.SEXTON
+## 4 ELLIOTT.gradeD
+## 5   MARIN.gradeD
+## 6  GUERRA.gradeC
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Let&amp;rsquo;s test out a potential regex pattern to find grades. We want a single capital letter, right?&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;str_extract(string = grade_data$grades,
+            pattern = &amp;quot;[A-Z]{1}&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   [1] &amp;quot;C&amp;quot; &amp;quot;D&amp;quot; &amp;quot;C&amp;quot; &amp;quot;E&amp;quot; &amp;quot;M&amp;quot; &amp;quot;G&amp;quot; &amp;quot;B&amp;quot; &amp;quot;D&amp;quot; &amp;quot;B&amp;quot; &amp;quot;F&amp;quot; &amp;quot;C&amp;quot; &amp;quot;B&amp;quot; &amp;quot;D&amp;quot; &amp;quot;C&amp;quot; &amp;quot;H&amp;quot; &amp;quot;S&amp;quot; &amp;quot;F&amp;quot; &amp;quot;B&amp;quot;
+##  [19] &amp;quot;D&amp;quot; &amp;quot;G&amp;quot; &amp;quot;H&amp;quot; &amp;quot;C&amp;quot; &amp;quot;H&amp;quot; &amp;quot;H&amp;quot; &amp;quot;B&amp;quot; &amp;quot;F&amp;quot; &amp;quot;R&amp;quot; &amp;quot;F&amp;quot; &amp;quot;G&amp;quot; &amp;quot;B&amp;quot; &amp;quot;W&amp;quot; &amp;quot;R&amp;quot; &amp;quot;A&amp;quot; &amp;quot;S&amp;quot; &amp;quot;W&amp;quot; &amp;quot;D&amp;quot;
+##  [37] &amp;quot;W&amp;quot; &amp;quot;D&amp;quot; &amp;quot;W&amp;quot; &amp;quot;R&amp;quot; &amp;quot;B&amp;quot; &amp;quot;M&amp;quot; &amp;quot;C&amp;quot; &amp;quot;C&amp;quot; &amp;quot;E&amp;quot; &amp;quot;M&amp;quot; &amp;quot;I&amp;quot; &amp;quot;B&amp;quot; &amp;quot;A&amp;quot; &amp;quot;Z&amp;quot; &amp;quot;K&amp;quot; &amp;quot;C&amp;quot; &amp;quot;B&amp;quot; &amp;quot;C&amp;quot;
+##  [55] &amp;quot;B&amp;quot; &amp;quot;R&amp;quot; &amp;quot;C&amp;quot; &amp;quot;D&amp;quot; &amp;quot;F&amp;quot; &amp;quot;C&amp;quot; &amp;quot;D&amp;quot; &amp;quot;D&amp;quot; &amp;quot;D&amp;quot; &amp;quot;T&amp;quot; &amp;quot;C&amp;quot; &amp;quot;M&amp;quot; &amp;quot;K&amp;quot; &amp;quot;C&amp;quot; &amp;quot;B&amp;quot; &amp;quot;C&amp;quot; &amp;quot;C&amp;quot; &amp;quot;B&amp;quot;
+##  [73] &amp;quot;B&amp;quot; &amp;quot;A&amp;quot; &amp;quot;A&amp;quot; &amp;quot;D&amp;quot; &amp;quot;F&amp;quot; &amp;quot;F&amp;quot; &amp;quot;A&amp;quot; &amp;quot;Q&amp;quot; &amp;quot;L&amp;quot; &amp;quot;A&amp;quot; &amp;quot;D&amp;quot; &amp;quot;F&amp;quot; &amp;quot;B&amp;quot; &amp;quot;D&amp;quot; &amp;quot;F&amp;quot; &amp;quot;R&amp;quot; &amp;quot;A&amp;quot; &amp;quot;A&amp;quot;
+##  [91] &amp;quot;B&amp;quot; &amp;quot;D&amp;quot; &amp;quot;T&amp;quot; &amp;quot;F&amp;quot; &amp;quot;F&amp;quot; &amp;quot;V&amp;quot; &amp;quot;A&amp;quot; &amp;quot;D&amp;quot; &amp;quot;B&amp;quot; &amp;quot;C&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Hmm, that&amp;rsquo;s the general idea, but it&amp;rsquo;s clearly just extracting the first capital letter in the text string, which isn&amp;rsquo;t always a grade.&lt;/p&gt;
+&lt;p&gt;Instead, look for &lt;code&gt;&amp;quot;grade&amp;quot;&lt;/code&gt; followed by a single capital letter.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;str_extract(string = grade_data$grades,
+            pattern = &amp;quot;grade[A-Z]{1}&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   [1] &amp;quot;gradeB&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeC&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeC&amp;quot; &amp;quot;gradeB&amp;quot; &amp;quot;gradeD&amp;quot;
+##   [9] &amp;quot;gradeB&amp;quot; &amp;quot;gradeF&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeB&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeF&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeA&amp;quot;
+##  [17] &amp;quot;gradeF&amp;quot; &amp;quot;gradeB&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeA&amp;quot; &amp;quot;gradeC&amp;quot; &amp;quot;gradeC&amp;quot; &amp;quot;gradeA&amp;quot; &amp;quot;gradeA&amp;quot;
+##  [25] &amp;quot;gradeB&amp;quot; &amp;quot;gradeF&amp;quot; &amp;quot;gradeC&amp;quot; &amp;quot;gradeF&amp;quot; &amp;quot;gradeF&amp;quot; &amp;quot;gradeB&amp;quot; &amp;quot;gradeB&amp;quot; &amp;quot;gradeB&amp;quot;
+##  [33] &amp;quot;gradeA&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeA&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeF&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeF&amp;quot; &amp;quot;gradeB&amp;quot;
+##  [41] &amp;quot;gradeB&amp;quot; &amp;quot;gradeF&amp;quot; &amp;quot;gradeB&amp;quot; &amp;quot;gradeC&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeC&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeA&amp;quot;
+##  [49] &amp;quot;gradeA&amp;quot; &amp;quot;gradeA&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeC&amp;quot; &amp;quot;gradeA&amp;quot; &amp;quot;gradeC&amp;quot; &amp;quot;gradeB&amp;quot; &amp;quot;gradeA&amp;quot;
+##  [57] &amp;quot;gradeC&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeF&amp;quot; &amp;quot;gradeC&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeC&amp;quot;
+##  [65] &amp;quot;gradeC&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeC&amp;quot; &amp;quot;gradeC&amp;quot; &amp;quot;gradeB&amp;quot; &amp;quot;gradeC&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeB&amp;quot;
+##  [73] &amp;quot;gradeB&amp;quot; &amp;quot;gradeA&amp;quot; &amp;quot;gradeA&amp;quot; &amp;quot;gradeB&amp;quot; &amp;quot;gradeF&amp;quot; &amp;quot;gradeF&amp;quot; &amp;quot;gradeA&amp;quot; &amp;quot;gradeC&amp;quot;
+##  [81] &amp;quot;gradeC&amp;quot; &amp;quot;gradeA&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeF&amp;quot; &amp;quot;gradeB&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeF&amp;quot; &amp;quot;gradeF&amp;quot;
+##  [89] &amp;quot;gradeC&amp;quot; &amp;quot;gradeB&amp;quot; &amp;quot;gradeB&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeB&amp;quot; &amp;quot;gradeF&amp;quot; &amp;quot;gradeF&amp;quot; &amp;quot;gradeA&amp;quot;
+##  [97] &amp;quot;gradeA&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeA&amp;quot; &amp;quot;gradeC&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;That works pretty much exactly as we intended&amp;hellip;Save it for later:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;grades &amp;lt;- str_extract(string = grade_data$grades,
+                      pattern = &amp;quot;grade[A-Z]{1}&amp;quot;)
+
+# And remove &amp;quot;grade&amp;quot; from it
+grades &amp;lt;- gsub(pattern = &amp;quot;grade&amp;quot;, replacement = &amp;quot;&amp;quot;, x = grades)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;p&gt;What about last names? Well, there are probably many ways to do this one. A &amp;ldquo;easy&amp;rdquo; way could be to first remove the grade info, then keep the rest:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;grade_remove &amp;lt;- gsub(pattern = &amp;quot;grade[A-Z]{1}&amp;quot;, replacement = &amp;quot;&amp;quot;, x = grade_data$grades)
+
+head(grade_remove)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;COSTA.&amp;quot;   &amp;quot;.LOWE&amp;quot;    &amp;quot;.SEXTON&amp;quot;  &amp;quot;ELLIOTT.&amp;quot; &amp;quot;MARIN.&amp;quot;   &amp;quot;GUERRA.&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Ok, so far so good. There&amp;rsquo;s also a pesky period in there&amp;hellip;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;gsub(pattern = &amp;quot;.&amp;quot;, replacement = &amp;quot;&amp;quot;, x = grade_remove)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   [1] &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot;
+##  [26] &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot;
+##  [51] &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot;
+##  [76] &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;That doesn&amp;rsquo;t look right! The period &lt;code&gt;.&lt;/code&gt; is a pattern that is used in regex as a wildcard, standing in for any character. We have to &amp;ldquo;escape&amp;rdquo; it in order to use it to signify a literal period.&lt;/p&gt;
+&lt;p&gt;We use the double backslash in R to &amp;ldquo;escape&amp;rdquo; these special characters. We use two instead of one because of the way that R uses strings. We&amp;rsquo;re not going to get into the detail here&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;head(gsub(pattern = &amp;quot;\\.&amp;quot;, replacement = &amp;quot;&amp;quot;, x = grade_remove))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;COSTA&amp;quot;   &amp;quot;LOWE&amp;quot;    &amp;quot;SEXTON&amp;quot;  &amp;quot;ELLIOTT&amp;quot; &amp;quot;MARIN&amp;quot;   &amp;quot;GUERRA&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;p&gt;Save it for later:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;student_names &amp;lt;- gsub(pattern = &amp;quot;\\.&amp;quot;, replacement = &amp;quot;&amp;quot;, x = grade_remove)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We can now combine these tricks to make a new data frame!&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;grade_records &amp;lt;- tibble(
+  student_names,
+  grades
+)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;3-kick-it-up-a-notch&#34;&gt;3. Kick it up a notch&lt;/h2&gt;
+&lt;p&gt;In this section I want to share some regex routines I&amp;rsquo;ve used in my real-world work to speed up or simplify data cleaning.&lt;/p&gt;
+&lt;p&gt;They&amp;rsquo;re going to be a little higher level, but hopefully useful to show how these things can be applied day-to-day.&lt;/p&gt;
+&lt;h3 id=&#34;3a-lookaheadlookbehind&#34;&gt;3a. Lookahead/Lookbehind&lt;/h3&gt;
+&lt;p&gt;We have a file with a column of coordinates that needs to be reformatted. I&amp;rsquo;ll show how lookahead/lookbehind methods can help here.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;coordinates &amp;lt;- read.csv(file = &amp;quot;coordinates.csv&amp;quot;)
+
+head(coordinates)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##                   coordinates count       date
+## 1 N 46° 43.9214 W 117° 9.6333    28 10/10/2020
+## 2    N 21° 20.04 W 158° 50.05    13 10/10/2020
+## 3 N 53° 31.0101 E 108° 6.0512    47  10/5/2020
+## 4 N 46° 43.9214 W 117° 9.6333    96 10/10/2020
+## 5    N 21° 20.04 W 158° 50.05    95  10/5/2020
+## 6    N 21° 20.04 W 158° 50.05    66 10/10/2020
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;p&gt;We want to identify pieces of text in the coordinates column that are latitudes or longitudes. Latitudes = pieces of text followed by &amp;quot; W&amp;rdquo; or &amp;quot; E&amp;quot;. Longitudes = pieces of text preceded by &amp;quot; W&amp;quot; or &amp;quot; E&amp;quot;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Extract Latitude&lt;/strong&gt;:
+We want to use a &lt;em&gt;positive lookahead&lt;/em&gt;. i.e., our piece of targeted text (latitude) exists BEFORE a specific textual pattern (&amp;ldquo;W&amp;rdquo; or &amp;ldquo;E&amp;rdquo;). The text pattern in the lookahead is NOT included in the matched text, so we won&amp;rsquo;t end up storing the W or E!&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;The regex syntax for this is: &lt;code&gt;&amp;quot;(?=...)&amp;quot;&lt;/code&gt;. We&amp;rsquo;ll include the leading space before the W/E as well. Note that the &lt;code&gt;&amp;quot;|&amp;quot;&lt;/code&gt; stands for &amp;ldquo;OR&amp;rdquo; and &lt;code&gt;&amp;quot;.*&amp;quot;&lt;/code&gt; signifies &amp;ldquo;any character zero or more times&amp;rdquo;. &lt;a href=&#34;https://www.keycdn.com/support/regex-cheatsheet&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Here&amp;rsquo;s&lt;/a&gt; a good reference for the syntax.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;coordinates %&amp;gt;%
+  mutate(latitude = str_extract(string = coordinates,
+                                pattern = &amp;quot;.*(?= E| W)&amp;quot;))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##                    coordinates count       date      latitude
+## 1  N 46° 43.9214 W 117° 9.6333    28 10/10/2020 N 46° 43.9214
+## 2     N 21° 20.04 W 158° 50.05    13 10/10/2020   N 21° 20.04
+## 3  N 53° 31.0101 E 108° 6.0512    47  10/5/2020 N 53° 31.0101
+## 4  N 46° 43.9214 W 117° 9.6333    96 10/10/2020 N 46° 43.9214
+## 5     N 21° 20.04 W 158° 50.05    95  10/5/2020   N 21° 20.04
+## 6     N 21° 20.04 W 158° 50.05    66 10/10/2020   N 21° 20.04
+## 7  N 53° 31.0101 E 108° 6.0512    74  10/5/2020 N 53° 31.0101
+## 8  N 53° 31.0101 E 108° 6.0512    62 10/10/2020 N 53° 31.0101
+## 9  N 53° 31.0101 E 108° 6.0512    66 10/20/2020 N 53° 31.0101
+## 10 N 46° 43.9214 W 117° 9.6333    58 10/20/2020 N 46° 43.9214
+## 11 N 53° 31.0101 E 108° 6.0512    36 10/20/2020 N 53° 31.0101
+## 12 N 46° 43.9214 W 117° 9.6333    49 10/20/2020 N 46° 43.9214
+## 13 N 53° 31.0101 E 108° 6.0512    39  9/25/2020 N 53° 31.0101
+## 14 N 53° 31.0101 E 108° 6.0512    15 10/20/2020 N 53° 31.0101
+## 15 N 46° 43.9214 W 117° 9.6333    75  9/25/2020 N 46° 43.9214
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here&amp;rsquo;s a quick summary of the other lookahead/behind options:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Negative lookahead&lt;/strong&gt;&lt;/em&gt;: Our piece of targeted text is NOT followed by a specific
+textual pattern. Lookahead not included in match.
+Syntax: &lt;code&gt;&amp;quot;(?!...)&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Positive lookbehind&lt;/strong&gt;&lt;/em&gt;: Our piece of targeted text exists AFTER a specific textual pattern. That pattern is NOT included in the matched text.
+Syntax: &lt;code&gt;&amp;quot;(?&amp;lt;=...)&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Negative Lookbehind&lt;/strong&gt;&lt;/em&gt;: Our piece of targeted text does NOT exist AFTER a specific textual pattern. That pattern is NOT included in the matched text.
+Negative Lookbehind: &lt;code&gt;&amp;quot;(?&amp;lt;!...)&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;&lt;strong&gt;Extract Longitude&lt;/strong&gt;:
+To get the longitude from our coordinate column we can find the pieces of text that begin with either an E or W. It&amp;rsquo;s a little simpler than what we did for latitude:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;coordinates %&amp;gt;%
+  mutate(longitude = str_extract(string = coordinates,
+                                 pattern = &amp;quot;E.*|W.*&amp;quot;))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##                    coordinates count       date     longitude
+## 1  N 46° 43.9214 W 117° 9.6333    28 10/10/2020 W 117° 9.6333
+## 2     N 21° 20.04 W 158° 50.05    13 10/10/2020  W 158° 50.05
+## 3  N 53° 31.0101 E 108° 6.0512    47  10/5/2020 E 108° 6.0512
+## 4  N 46° 43.9214 W 117° 9.6333    96 10/10/2020 W 117° 9.6333
+## 5     N 21° 20.04 W 158° 50.05    95  10/5/2020  W 158° 50.05
+## 6     N 21° 20.04 W 158° 50.05    66 10/10/2020  W 158° 50.05
+## 7  N 53° 31.0101 E 108° 6.0512    74  10/5/2020 E 108° 6.0512
+## 8  N 53° 31.0101 E 108° 6.0512    62 10/10/2020 E 108° 6.0512
+## 9  N 53° 31.0101 E 108° 6.0512    66 10/20/2020 E 108° 6.0512
+## 10 N 46° 43.9214 W 117° 9.6333    58 10/20/2020 W 117° 9.6333
+## 11 N 53° 31.0101 E 108° 6.0512    36 10/20/2020 E 108° 6.0512
+## 12 N 46° 43.9214 W 117° 9.6333    49 10/20/2020 W 117° 9.6333
+## 13 N 53° 31.0101 E 108° 6.0512    39  9/25/2020 E 108° 6.0512
+## 14 N 53° 31.0101 E 108° 6.0512    15 10/20/2020 E 108° 6.0512
+## 15 N 46° 43.9214 W 117° 9.6333    75  9/25/2020 W 117° 9.6333
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;p&gt;Now let&amp;rsquo;s combine these two approaches:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;coordinates %&amp;gt;%
+  mutate(latitude = str_extract(string = coordinates,
+                                pattern = &amp;quot;.*(?= E| W)&amp;quot;),
+         longitude = str_extract(string = coordinates,
+                                 pattern = &amp;quot;E.*|W.*&amp;quot;))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##                    coordinates count       date      latitude     longitude
+## 1  N 46° 43.9214 W 117° 9.6333    28 10/10/2020 N 46° 43.9214 W 117° 9.6333
+## 2     N 21° 20.04 W 158° 50.05    13 10/10/2020   N 21° 20.04  W 158° 50.05
+## 3  N 53° 31.0101 E 108° 6.0512    47  10/5/2020 N 53° 31.0101 E 108° 6.0512
+## 4  N 46° 43.9214 W 117° 9.6333    96 10/10/2020 N 46° 43.9214 W 117° 9.6333
+## 5     N 21° 20.04 W 158° 50.05    95  10/5/2020   N 21° 20.04  W 158° 50.05
+## 6     N 21° 20.04 W 158° 50.05    66 10/10/2020   N 21° 20.04  W 158° 50.05
+## 7  N 53° 31.0101 E 108° 6.0512    74  10/5/2020 N 53° 31.0101 E 108° 6.0512
+## 8  N 53° 31.0101 E 108° 6.0512    62 10/10/2020 N 53° 31.0101 E 108° 6.0512
+## 9  N 53° 31.0101 E 108° 6.0512    66 10/20/2020 N 53° 31.0101 E 108° 6.0512
+## 10 N 46° 43.9214 W 117° 9.6333    58 10/20/2020 N 46° 43.9214 W 117° 9.6333
+## 11 N 53° 31.0101 E 108° 6.0512    36 10/20/2020 N 53° 31.0101 E 108° 6.0512
+## 12 N 46° 43.9214 W 117° 9.6333    49 10/20/2020 N 46° 43.9214 W 117° 9.6333
+## 13 N 53° 31.0101 E 108° 6.0512    39  9/25/2020 N 53° 31.0101 E 108° 6.0512
+## 14 N 53° 31.0101 E 108° 6.0512    15 10/20/2020 N 53° 31.0101 E 108° 6.0512
+## 15 N 46° 43.9214 W 117° 9.6333    75  9/25/2020 N 46° 43.9214 W 117° 9.6333
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;p&gt;Alternatively, we could use the &lt;code&gt;separate()&lt;/code&gt; function along with regex for the column separator. Here I tell R to separate the two columns where there is a number followed by a space and then either W or E. The two parentheses enclose lookahead and lookbehind phrases that shouldn&amp;rsquo;t be included in the extracted text but which we &lt;em&gt;&lt;strong&gt;do&lt;/strong&gt;&lt;/em&gt; want to check for.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;coordinates %&amp;gt;%
+  separate(col = coordinates,
+           into = c(&amp;quot;latitude&amp;quot;, &amp;quot;longitude&amp;quot;),
+           sep = &amp;quot;(?&amp;lt;=[0-9]) (?=W|E)&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##         latitude     longitude count       date
+## 1  N 46° 43.9214 W 117° 9.6333    28 10/10/2020
+## 2    N 21° 20.04  W 158° 50.05    13 10/10/2020
+## 3  N 53° 31.0101 E 108° 6.0512    47  10/5/2020
+## 4  N 46° 43.9214 W 117° 9.6333    96 10/10/2020
+## 5    N 21° 20.04  W 158° 50.05    95  10/5/2020
+## 6    N 21° 20.04  W 158° 50.05    66 10/10/2020
+## 7  N 53° 31.0101 E 108° 6.0512    74  10/5/2020
+## 8  N 53° 31.0101 E 108° 6.0512    62 10/10/2020
+## 9  N 53° 31.0101 E 108° 6.0512    66 10/20/2020
+## 10 N 46° 43.9214 W 117° 9.6333    58 10/20/2020
+## 11 N 53° 31.0101 E 108° 6.0512    36 10/20/2020
+## 12 N 46° 43.9214 W 117° 9.6333    49 10/20/2020
+## 13 N 53° 31.0101 E 108° 6.0512    39  9/25/2020
+## 14 N 53° 31.0101 E 108° 6.0512    15 10/20/2020
+## 15 N 46° 43.9214 W 117° 9.6333    75  9/25/2020
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;h3 id=&#34;3b-group-capture&#34;&gt;3b. Group capture&lt;/h3&gt;
+&lt;p&gt;Looking at the date column in this dataset we might also want to reformat it for one reason or another. I actually wouldn&amp;rsquo;t typically do this with data, as there are functions to format date in the lubridate package. But where I have used this to reformat dates that are hard-coded into R scripts. In that situation I used the Find &amp;amp; Replace tool in RStudio along with the regex option.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;head(coordinates)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##                   coordinates count       date
+## 1 N 46° 43.9214 W 117° 9.6333    28 10/10/2020
+## 2    N 21° 20.04 W 158° 50.05    13 10/10/2020
+## 3 N 53° 31.0101 E 108° 6.0512    47  10/5/2020
+## 4 N 46° 43.9214 W 117° 9.6333    96 10/10/2020
+## 5    N 21° 20.04 W 158° 50.05    95  10/5/2020
+## 6    N 21° 20.04 W 158° 50.05    66 10/10/2020
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We have dates in this format:  &lt;code&gt;MM/DD/YYYY&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;coordinates$date
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  [1] &amp;quot;10/10/2020&amp;quot; &amp;quot;10/10/2020&amp;quot; &amp;quot;10/5/2020&amp;quot;  &amp;quot;10/10/2020&amp;quot; &amp;quot;10/5/2020&amp;quot; 
+##  [6] &amp;quot;10/10/2020&amp;quot; &amp;quot;10/5/2020&amp;quot;  &amp;quot;10/10/2020&amp;quot; &amp;quot;10/20/2020&amp;quot; &amp;quot;10/20/2020&amp;quot;
+## [11] &amp;quot;10/20/2020&amp;quot; &amp;quot;10/20/2020&amp;quot; &amp;quot;9/25/2020&amp;quot;  &amp;quot;10/20/2020&amp;quot; &amp;quot;9/25/2020&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;p&gt;Let&amp;rsquo;s manually convert the forward slashes to underscores, but do so using group captures. This syntax allows us to group parts of a text string, for example as a means of ensuring that the data we&amp;rsquo;re editing meets certain conditions (e.g., for quality control).&lt;/p&gt;
+&lt;p&gt;To do this we denote groups with parentheses: &lt;code&gt;( )&lt;/code&gt;. So, for example, we could use the following lines of code to &amp;ldquo;capture&amp;rdquo; the pieces of our dates:
+&lt;code&gt;&amp;quot;([0-9]{1,2})/([0-9]{1,2})/([0-9]{4})&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Then we can refer to the date pieces by numbers, in the order they are written. 
+Depending on the function we&amp;rsquo;re using, we refer to each group number with a dollar sign OR two backslashes ahead of its label:
+&lt;code&gt;&amp;quot;$1_$2_$3&amp;quot;&lt;/code&gt; 
+or
+&lt;code&gt;&amp;quot;\\1_\\2_\\3&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;So, if we put these two pieces together we can create a new date column like this:&lt;/p&gt;
+&lt;p&gt;With the &lt;code&gt;stringr&lt;/code&gt; package:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;coordinates %&amp;gt;%
+  mutate(new_date = str_replace(string = date,
+                                pattern = &amp;quot;([0-9]{1,2})/([0-9]{1,2})/([0-9]{4})&amp;quot;,
+                                replacement = &amp;quot;\\1_\\2_\\3&amp;quot;))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##                    coordinates count       date   new_date
+## 1  N 46° 43.9214 W 117° 9.6333    28 10/10/2020 10_10_2020
+## 2     N 21° 20.04 W 158° 50.05    13 10/10/2020 10_10_2020
+## 3  N 53° 31.0101 E 108° 6.0512    47  10/5/2020  10_5_2020
+## 4  N 46° 43.9214 W 117° 9.6333    96 10/10/2020 10_10_2020
+## 5     N 21° 20.04 W 158° 50.05    95  10/5/2020  10_5_2020
+## 6     N 21° 20.04 W 158° 50.05    66 10/10/2020 10_10_2020
+## 7  N 53° 31.0101 E 108° 6.0512    74  10/5/2020  10_5_2020
+## 8  N 53° 31.0101 E 108° 6.0512    62 10/10/2020 10_10_2020
+## 9  N 53° 31.0101 E 108° 6.0512    66 10/20/2020 10_20_2020
+## 10 N 46° 43.9214 W 117° 9.6333    58 10/20/2020 10_20_2020
+## 11 N 53° 31.0101 E 108° 6.0512    36 10/20/2020 10_20_2020
+## 12 N 46° 43.9214 W 117° 9.6333    49 10/20/2020 10_20_2020
+## 13 N 53° 31.0101 E 108° 6.0512    39  9/25/2020  9_25_2020
+## 14 N 53° 31.0101 E 108° 6.0512    15 10/20/2020 10_20_2020
+## 15 N 46° 43.9214 W 117° 9.6333    75  9/25/2020  9_25_2020
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;p&gt;Or with the &lt;code&gt;stringi&lt;/code&gt; package:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;coordinates %&amp;gt;%
+  mutate(new_date = stri_replace(str = date,
+                                 regex = &amp;quot;([0-9]{1,2})/([0-9]{1,2})/([0-9]{4})&amp;quot;,
+                                 replacement = &amp;quot;$1_$2_$3&amp;quot;))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##                    coordinates count       date   new_date
+## 1  N 46° 43.9214 W 117° 9.6333    28 10/10/2020 10_10_2020
+## 2     N 21° 20.04 W 158° 50.05    13 10/10/2020 10_10_2020
+## 3  N 53° 31.0101 E 108° 6.0512    47  10/5/2020  10_5_2020
+## 4  N 46° 43.9214 W 117° 9.6333    96 10/10/2020 10_10_2020
+## 5     N 21° 20.04 W 158° 50.05    95  10/5/2020  10_5_2020
+## 6     N 21° 20.04 W 158° 50.05    66 10/10/2020 10_10_2020
+## 7  N 53° 31.0101 E 108° 6.0512    74  10/5/2020  10_5_2020
+## 8  N 53° 31.0101 E 108° 6.0512    62 10/10/2020 10_10_2020
+## 9  N 53° 31.0101 E 108° 6.0512    66 10/20/2020 10_20_2020
+## 10 N 46° 43.9214 W 117° 9.6333    58 10/20/2020 10_20_2020
+## 11 N 53° 31.0101 E 108° 6.0512    36 10/20/2020 10_20_2020
+## 12 N 46° 43.9214 W 117° 9.6333    49 10/20/2020 10_20_2020
+## 13 N 53° 31.0101 E 108° 6.0512    39  9/25/2020  9_25_2020
+## 14 N 53° 31.0101 E 108° 6.0512    15 10/20/2020 10_20_2020
+## 15 N 46° 43.9214 W 117° 9.6333    75  9/25/2020  9_25_2020
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;references&#34;&gt;References:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Grolemund, G., &amp;amp; Wickham, H. (2017). R for Data Science. O’Reilly Media.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

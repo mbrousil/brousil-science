@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ted Ozersky | Matthew Brousil</title>
+    <link>brousil.science/author/ted-ozersky/</link>
+      <atom:link href="brousil.science/author/ted-ozersky/index.xml" rel="self" type="application/rss+xml" />
+    <description>Ted Ozersky</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 30 Sep 2021 20:57:07 +0000</lastBuildDate>
+    <image>
+      <url>/brousil.science/media/icon_hu3f944acd3d6616c2d13f4cde577e2e67_445931_512x512_fill_lanczos_center_2.png</url>
+      <title>Ted Ozersky</title>
+      <link>brousil.science/author/ted-ozersky/</link>
+    </image>
+    
+    <item>
+      <title>A unified dataset of co-located sewage pollution, periphyton, and benthic macroinvertebrate community and food web structure from Lake Baikal (Siberia)</title>
+      <link>brousil.science/publication/a-unified-dataset-of-co-located-sewage-pollution-periphyton-and-benthic-macroinvertebrate-community-and-food-web-structure-from-lake-baikal-siberia/</link>
+      <pubDate>Thu, 30 Sep 2021 20:57:07 +0000</pubDate>
+      <guid>brousil.science/publication/a-unified-dataset-of-co-located-sewage-pollution-periphyton-and-benthic-macroinvertebrate-community-and-food-web-structure-from-lake-baikal-siberia/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

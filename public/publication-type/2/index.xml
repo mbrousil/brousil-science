@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2 | Matthew Brousil</title>
+    <link>brousil.science/publication-type/2/</link>
+      <atom:link href="brousil.science/publication-type/2/index.xml" rel="self" type="application/rss+xml" />
+    <description>2</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 13 Jul 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/brousil.science/media/icon_hu3f944acd3d6616c2d13f4cde577e2e67_445931_512x512_fill_lanczos_center_2.png</url>
+      <title>2</title>
+      <link>brousil.science/publication-type/2/</link>
+    </image>
+    
+    <item>
+      <title>Orchard Management and Landscape Context Mediate the Pear Floral Microbiome</title>
+      <link>brousil.science/publication/schaeffer-2021/</link>
+      <pubDate>Tue, 13 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/schaeffer-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Interactions between plants and pollinators across urban and rural farming landscapes</title>
+      <link>brousil.science/publication/olsson-2021-e-00194/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/olsson-2021-e-00194/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Global Lake Area, Climate, and Population Dataset: A New Tool for Addressing Critical Limnological Questions</title>
+      <link>brousil.science/publication/meyer-2020/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/meyer-2020/</guid>
+      <description>&lt;p&gt;This bulletin piece describes potential applications for the Global Lake area, Climate, and Population (GLCP) dataset. We use three case studies to show different uses for the GLCP at local, regional, and national scales.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Integrating Perspectives to Understand Lake Ice Dynamics in a Changing World</title>
+      <link>brousil.science/publication/sharma-2020/</link>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/sharma-2020/</guid>
+      <description>&lt;p&gt;This study describes drivers of freshwater lake ice, methods for the study of lake ice, and avenues for multidisciplinary research to fill existing gaps in this body of research.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Plant-Pollinator Interactions in a Northwest Arum Related to Plant Traits but not Riparian Forest Management</title>
+      <link>brousil.science/publication/brousil-2015/</link>
+      <pubDate>Sat, 01 Aug 2015 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/brousil-2015/</guid>
+      <description>&lt;p&gt;This paper discusses plant-pollinator interactions on &lt;em&gt;Lysichiton americanus&lt;/em&gt; in a western Washington (USA) riparian forest.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

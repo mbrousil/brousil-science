@@ -1,0 +1,1181 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Matthew Brousil</title>
+    <link>brousil.science/</link>
+      <atom:link href="brousil.science/index.xml" rel="self" type="application/rss+xml" />
+    <description>Matthew Brousil</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 13 Apr 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/brousil.science/media/icon_hu3f944acd3d6616c2d13f4cde577e2e67_445931_512x512_fill_lanczos_center_2.png</url>
+      <title>Matthew Brousil</title>
+      <link>brousil.science/</link>
+    </image>
+    
+    <item>
+      <title>Global lake area, climate, and population dataset</title>
+      <link>brousil.science/project/glcp/</link>
+      <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>brousil.science/project/glcp/</guid>
+      <description>&lt;p&gt;The global lake area, climate, and population dataset (GLCP) is a dataset containing lake surface area for 1.42+ million lakes and reservoirs from 1995 to 2015 with basin-level temperature, precipitation, and population data.&lt;/p&gt;
+&lt;p&gt;I joined the team working on this dataset in 2018 to support quality control, data management, and streamlining the workflow for the project. Over the course of our time putting the dataset together, I performed several main tasks:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;I reviewed the R scripts used in the workflow for accuracy and formatting; applied a consistent format and style to the scripts and their in-line documentation; and assisted with some parts of the R workflow such as data visualization, data subsetting, and mapping.&lt;/li&gt;
+&lt;li&gt;I advised on how to improve the file structure and documentation (e.g. READMEs) for the project to ensure reproducibility.&lt;/li&gt;
+&lt;li&gt;I helped build the QA &amp;amp; QC processes for the dataset.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The scripts for this dataset are publicly available at the Environmental Data Initiative, &lt;a href=&#34;https://portal.edirepository.org/nis/mapbrowse?packageid=edi.394.4&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; as &lt;code&gt;glcp_scripts.tar.gz&lt;/code&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Workflow management with drake</title>
+      <link>brousil.science/project/drake/</link>
+      <pubDate>Fri, 20 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>brousil.science/project/drake/</guid>
+      <description>&lt;p&gt;In fall 2020 the &lt;a href=&#34;https://cereo.wsu.edu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Center for Environmental Research, Education and Outreach&lt;/a&gt; at Washington State University hosted &lt;a href=&#34;https://mbrousil.github.io/workshops/2020-workshop-1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;a workshop&lt;/a&gt; covering reproducible research techniques in R for graduate students. We wanted to cover &lt;code&gt;drake&lt;/code&gt; workflows as one day of the workshop to show students what R-specific options there are for managing workflows. We expected that workflow management and to some extent R functions would be unfamiliar topics to many students, so the workshop day included discussion of why one would use workflow management software and some basic examples of building realistic functions. At the time that we ran the workshop I wasn&amp;rsquo;t aware of &lt;a href=&#34;https://github.com/ropensci/targets&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;targets&lt;/code&gt;&lt;/a&gt;, so in the future we may repurpose this example and replace &lt;code&gt;drake&lt;/code&gt; with that package.&lt;/p&gt;
+&lt;p&gt;I put together an R Markdown document &lt;a href=&#34;brousil.science/brousil.science/uploads/drake_wkshp.html&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; where I&amp;rsquo;ve combined the contents from the intro presentation I used along with the lesson material in a single document. The (mostly) empty folder structure I provided for the walkthrough is &lt;a href=&#34;https://github.com/mbrousil/drake_template&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; and an example of the finished product is in a repo &lt;a href=&#34;https://github.com/mbrousil/example_drake_project&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;. We used Fanaee-T and Gama&amp;rsquo;s (2013) dataset on bike sharing in DC. More info &lt;a href=&#34;https://archive.ics.uci.edu/ml/datasets/Bike&amp;#43;Sharing&amp;#43;Dataset&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Link to &lt;a href=&#34;https://cereo.wsu.edu/reproducible-r-workshop-2021s/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;workshop website&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Blog posts</title>
+      <link>brousil.science/project/blog/</link>
+      <pubDate>Wed, 12 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>brousil.science/project/blog/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve written several instructional blog posts corresponding to live-coding talks that I&amp;rsquo;ve given at the Washington State University R Working Group. Below are links to each blog post:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://brousil.science/post/regex-examples/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Examples of using regular expressions in R&lt;/a&gt; (2021-10-27)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cougrstats.netlify.app/post/introduction-to-mapping-in-r/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Introduction to mapping in R&lt;/a&gt; (2021-02-10)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cougrstats.netlify.app/post/formatting-data-for-use-with-r/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Formatting data for use with R&lt;/a&gt; (2020-10-21)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cougrstats.netlify.app/post/an-introduction-to-working-with-lists-using-purrr/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;An introduction to working with lists using purrr&lt;/a&gt; (2020-02-19)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cougrstats.netlify.app/post/advanced-methods-with-ggplot2/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Advanced methods with ggplot2&lt;/a&gt; (2019-09-25)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cougrstats.netlify.app/post/a-tour-of-r-markdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;A tour of R Markdown&lt;/a&gt; (2019-09-12)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cougrstats.netlify.app/post/cleaning-messy-scripts-and-data/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cleaning messy scripts and data&lt;/a&gt; (2019-04-10)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cougrstats.netlify.app/post/how-to-shiny-2/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Intro to Shiny&lt;/a&gt; (2018-09-12)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Dungeons and Dragons Simulation with Shiny</title>
+      <link>brousil.science/project/5e_sim/</link>
+      <pubDate>Thu, 02 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>brousil.science/project/5e_sim/</guid>
+      <description>&lt;p&gt;During grad school I was playing in a &lt;a href=&#34;https://en.wikipedia.org/wiki/Pathfinder_Roleplaying_Game&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Pathfinder&lt;/a&gt; game with some friends and found myself wondering whether a new item my character had received was something I should use or &lt;em&gt;sell&lt;/em&gt;. The new sword&amp;rsquo;s stats were similar enough to the one my character was currently using that it wasn&amp;rsquo;t clear to me which one was better. I was still fairly new to R at the time, so I used this as an opportunity to test out &lt;code&gt;for&lt;/code&gt; loops, &lt;code&gt;if&lt;/code&gt; statements, and functions in more depth.&lt;/p&gt;
+&lt;p&gt;I ended up writing a script that accepted inputs that a typical Pathfinder or Dungeons and Dragons (D&amp;amp;D) player would be actively using: Statistics about their character, the opposing character (or monster!), the number of dice they roll when they attack, and so on.&lt;/p&gt;
+&lt;p&gt;In the short term I found out that the new weapon was better, but this example has served as an ongoing learning experience for me outside of gameplay. I eventually updated the script when I started playing with the new rules of Dungeons and Dragons 5th edition (5e), and then again when I wanted to dig into building Shiny apps with R.&lt;/p&gt;
+&lt;p&gt;I now have two versions of this as a Shiny app on shinyapps.io:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;My standard version built for a character of the barbarian class in D&amp;amp;D 5th Edition. Test it &lt;a href=&#34;http://cactusoxbird.shinyapps.io/dd-shiny-sim&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;A rewrite of the standard version using the &lt;code&gt;purrr&lt;/code&gt; package to change how simulation runs are handled. This is slower than the original version of the app, but I found it to be a useful case for understanding how the &lt;code&gt;map()&lt;/code&gt; family can be put to use for simulation. Test it &lt;a href=&#34;https://cactusoxbird.shinyapps.io/dd-shiny-sim-purrr/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Both versions of the app provide a couple of pieces of output for the inquisitive D&amp;amp;D player:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A histogram of the total damage done by the character for each of the simulation runs&lt;/li&gt;
+&lt;li&gt;Lines on the histogram and printed text showing the mean and median damage done over the course of the simulated runs&lt;/li&gt;
+&lt;li&gt;A tab containing a table of hit statistics: All of the amounts of damage their character did over the simulation runs, the raw number of times each amount of damage was done, and the percentage of the time that amount of damage was done&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These outputs were helpful as a Pathfinder/D&amp;amp;D player, and as I reviewed them I ended up learning more than that my character&amp;rsquo;s new sword was an improvement. For example, what I had not realized while throwing dice down on the table was &lt;em&gt;just how frequently&lt;/em&gt; a character misses. Using the current base settings for the D&amp;amp;D 5e barbarian simulation shows that a character should expect to miss ~30% of the time they take a swing. This might be dismaying, but also could be a bit of a confidence boost for anyone who feels like they have bad luck a lot.&lt;/p&gt;
+&lt;p&gt;You can find the scripts for this app on GitHub &lt;a href=&#34;https://github.com/mbrousil/5e-shiny-sim&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A quick-start guide to the `caret` R package</title>
+      <link>brousil.science/post/quick-caret/</link>
+      <pubDate>Wed, 13 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>brousil.science/post/quick-caret/</guid>
+      <description>&lt;script src=&#34;brousil.science/post/quick-caret/index_files/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;brousil.science/post/quick-caret/index_files/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
+&lt;p&gt;The &lt;a href=&#34;https://cran.r-project.org/web/packages/caret/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;caret&lt;/code&gt;&lt;/a&gt; R package has been a staple of machine learning (ML) methods in R for a long time. The name &lt;code&gt;caret&lt;/code&gt; stands for &amp;ldquo;Classification and Regression Training&amp;rdquo; according to &lt;a href=&#34;https://cran.r-project.org/web/packages/caret/vignettes/caret.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;the authors&lt;/a&gt;. It provides methods for common ML steps, such as pre-processing, training, tuning, and evaluating predictive models.&lt;/p&gt;
+&lt;p&gt;In addition to &lt;code&gt;caret&lt;/code&gt;, there is also a group of packages referred to as &lt;code&gt;tidymodels&lt;/code&gt; that is currently in development and which is also available for use. Both &lt;code&gt;caret&lt;/code&gt; and &lt;code&gt;tidymodels&lt;/code&gt; have &lt;a href=&#34;https://github.com/topepo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Max Kuhn&lt;/a&gt; as a main author, but &lt;code&gt;tidymodels&lt;/code&gt; aims to streamline ML for use with &lt;a href=&#34;tidyverse.org&#34;&gt;&lt;code&gt;tidyverse&lt;/code&gt;&lt;/a&gt; packages.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll be focusing on &lt;code&gt;caret&lt;/code&gt; in this intro. We&amp;rsquo;ll be working with data from the &lt;code&gt;palmerpenguins&lt;/code&gt; package, and using the &lt;code&gt;caret&lt;/code&gt;, and &lt;code&gt;tidyverse&lt;/code&gt; packages.&lt;/p&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;working-with-data&#34;&gt;Working with data&lt;/h2&gt;
+&lt;p&gt;Start by loading the necessary packages:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;library(tidyverse)
+library(palmerpenguins)
+library(caret)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;p&gt;We&amp;rsquo;ll use the &lt;code&gt;penguins&lt;/code&gt; dataset from &lt;code&gt;palmerpenguins&lt;/code&gt;. It will be loaded automatically when you load the &lt;code&gt;palmerpenguins&lt;/code&gt; package:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;head(penguins)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;table class=&#34; lightable-paper&#34; style=&#39;font-family: &#34;Arial Narrow&#34;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto;&#39;&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style=&#34;text-align:left;&#34;&gt; species &lt;/th&gt;
+   &lt;th style=&#34;text-align:left;&#34;&gt; island &lt;/th&gt;
+   &lt;th style=&#34;text-align:right;&#34;&gt; bill_length_mm &lt;/th&gt;
+   &lt;th style=&#34;text-align:right;&#34;&gt; bill_depth_mm &lt;/th&gt;
+   &lt;th style=&#34;text-align:right;&#34;&gt; flipper_length_mm &lt;/th&gt;
+   &lt;th style=&#34;text-align:right;&#34;&gt; body_mass_g &lt;/th&gt;
+   &lt;th style=&#34;text-align:left;&#34;&gt; sex &lt;/th&gt;
+   &lt;th style=&#34;text-align:right;&#34;&gt; year &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Adelie &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Torgersen &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 39.1 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 18.7 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 181 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 3750 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; male &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 2007 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Adelie &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Torgersen &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 39.5 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 17.4 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 186 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 3800 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; female &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 2007 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Adelie &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Torgersen &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 40.3 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 18.0 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 195 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 3250 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; female &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 2007 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Adelie &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Torgersen &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; NA &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; NA &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; NA &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; NA &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; NA &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 2007 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Adelie &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Torgersen &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 36.7 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 19.3 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 193 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 3450 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; female &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 2007 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Adelie &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Torgersen &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 39.3 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 20.6 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 190 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 3650 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; male &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 2007 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;br&gt;
+&lt;p&gt;This package contains &lt;a href=&#34;https://pallter.marine.rutgers.edu/catalog/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LTER data&lt;/a&gt; for three penguin species on islands in Antarctica.&lt;/p&gt;
+&lt;br&gt;
+&lt;h3 id=&#34;reviewing-the-data&#34;&gt;Reviewing the data&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;caret&lt;/code&gt; provides a function called &lt;code&gt;featurePlot()&lt;/code&gt;, which is used to visualize datasets. It runs off of the &lt;code&gt;lattice&lt;/code&gt; package, so if you are familiar with this method of plotting you might find it familiar. As someone who primarily uses &lt;code&gt;ggplot2&lt;/code&gt; I found this function a bit difficult to use, but you may find it helpful still. Max Kuhn&amp;rsquo;s &lt;a href=&#34;https://topepo.github.io/caret/visualizations.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;The &lt;/code&gt;caret` Package&lt;/a&gt; Bookdown document provides some interesting examples of its functionality. Here&amp;rsquo;s a basic plot with a couple of our variables:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;featurePlot(x = penguins[, c(&amp;quot;bill_length_mm&amp;quot;, &amp;quot;bill_depth_mm&amp;quot;, &amp;quot;flipper_length_mm&amp;quot;)], 
+            y = penguins$body_mass_g, 
+            plot = &amp;quot;scatter&amp;quot;, 
+            layout = c(3, 1))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;brousil.science/post/quick-caret/index_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;In the plot above, the x-axis corresponds to each predictor (by panel) and the y-axis is &lt;code&gt;body_mass_g&lt;/code&gt;.&lt;/p&gt;
+&lt;br&gt;
+&lt;h3 id=&#34;pre-processing&#34;&gt;Pre-processing&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;caret&lt;/code&gt; has built-in functionality to help with pre-processing your data as well. There are some more sophisticated options, but here we&amp;rsquo;ll just take a look at one. For example, in some modeling situations you&amp;rsquo;ll want to check for correlated predictors (multicollinearity). The &lt;code&gt;caret&lt;/code&gt; function for this is &lt;code&gt;findCorrelation()&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;First we&amp;rsquo;ll want to make a correlation matrix, which will be fed into &lt;code&gt;findCorrelation()&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;penguin_cor &amp;lt;- penguins %&amp;gt;%
+  filter(!if_any(everything(), is.na)) %&amp;gt;%
+  # Numeric columns only
+  select(where(is.numeric)) %&amp;gt;%
+  cor()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then &lt;code&gt;findCorrelation()&lt;/code&gt; will check for correlations above a cutoff value that we provide:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;findCorrelation(x = penguin_cor,
+                # Use 0.7 correlation cutoff
+                cutoff = 0.7,
+                # Provide more details
+                verbose = TRUE,
+                # Return column names instead of indices
+                names = TRUE)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Compare row 3  and column  4 with corr  0.873 
+##   Means:  0.564 vs 0.334 so flagging column 3 
+## All correlations &amp;lt;= 0.7
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;flipper_length_mm&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It notes that row 3 and column 4 of our correlation object have a correlation of 0.87:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;##                   bill_length_mm bill_depth_mm flipper_length_mm body_mass_g
+## bill_length_mm         1.0000000    -0.2286256         0.6530956  0.58945111
+## bill_depth_mm         -0.2286256     1.0000000        -0.5777917 -0.47201566
+## flipper_length_mm      0.6530956    -0.5777917         1.0000000  0.87297890
+## body_mass_g            0.5894511    -0.4720157         0.8729789  1.00000000
+## year                   0.0326569    -0.0481816         0.1510679  0.02186213
+##                          year
+## bill_length_mm     0.03265690
+## bill_depth_mm     -0.04818160
+## flipper_length_mm  0.15106792
+## body_mass_g        0.02186213
+## year               1.00000000
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This means &lt;code&gt;flipper_length_mm&lt;/code&gt; (row 3) and &lt;code&gt;body_mass_g&lt;/code&gt; (column 4) are correlated. That&amp;rsquo;s fine since body mass is our response variable.&lt;/p&gt;
+&lt;br&gt;
+&lt;h3 id=&#34;splitting-the-data&#34;&gt;Splitting the data&lt;/h3&gt;
+&lt;p&gt;We&amp;rsquo;ll want to make a training dataset with which to build our model. &lt;code&gt;caret&lt;/code&gt; provides some methods for doing this, including some for balanced splits for classification datasets, splitting using maximum dissimilarity, splitting for time series, and more.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ll proceed by modeling &lt;code&gt;body_mass_g&lt;/code&gt;. First we&amp;rsquo;ll remove NAs, then do a basic split into a training dataset.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;model_data &amp;lt;- penguins %&amp;gt;%
+  filter(!if_any(everything(), is.na))
+
+# 80% of the data for training - these are row indices
+set.seed(500)
+
+training_indices &amp;lt;- createDataPartition(y = model_data$body_mass_g, 
+                                        p = .8,
+                                        # Do not return a list
+                                        list = FALSE)
+
+# Subset the rows selected above
+training_sample &amp;lt;- model_data[training_indices, ]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;modeling&#34;&gt;Modeling&lt;/h2&gt;
+&lt;p&gt;With our data in hand we now can progress to training a model. We&amp;rsquo;ll use a random forest for this example. Note that there is a lot to explore in &lt;code&gt;caret&lt;/code&gt; that I won&amp;rsquo;t go over here. I highly recommend reading &lt;a href=&#34;https://topepo.github.io/caret/visualizations.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;The &lt;/code&gt;caret` Package&lt;/a&gt;.&lt;/p&gt;
+&lt;br&gt; 
+&lt;p&gt;First we can use the &lt;code&gt;trainControl()&lt;/code&gt; function to customize the model training process:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;train_params &amp;lt;- trainControl(
+  # Repeated K-fold cross-validation
+  method = &amp;quot;repeatedcv&amp;quot;,
+  # 10 folds
+  number = 10,
+  # 3 repeats
+  repeats = 3
+)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;p&gt;Now we can train the random forest with the parameters above:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;set.seed(500)
+
+rf_model &amp;lt;- train(
+  # Modeling formula indicating to model body_mass_g using all other vars
+  form = body_mass_g ~ .,
+  # Our custom parameters
+  trControl = train_params,
+  # The dataset
+  data = training_sample,
+  # Use a random forest
+  method = &amp;quot;rf&amp;quot;
+)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;p&gt;Here are our results:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Note that mtry = the number of randomly selected predictors caret uses at each split
+rf_model
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Random Forest 
+## 
+## 268 samples
+##   7 predictor
+## 
+## No pre-processing
+## Resampling: Cross-Validated (10 fold, repeated 3 times) 
+## Summary of sample sizes: 242, 241, 242, 241, 241, 242, ... 
+## Resampling results across tuning parameters:
+## 
+##   mtry  RMSE      Rsquared   MAE     
+##   2     291.4107  0.8760304  233.9042
+##   5     291.0023  0.8739321  234.9932
+##   9     295.2779  0.8700284  240.0389
+## 
+## RMSE was used to select the optimal model using the smallest value.
+## The final value used for the model was mtry = 5.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;p&gt;The final model can be accessed from the trained object. But note that you probably &lt;a href=&#34;http://zevross.com/blog/2017/09/19/predictive-modeling-and-machine-learning-in-r-with-the-caret-package/#an-r-squared-from-a-model-based-on-the-full-dataset-is-unrealistic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;shouldn&amp;rsquo;t rely on this R^2^&lt;/a&gt; as your output.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;rf_model$finalModel
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## Call:
+##  randomForest(x = x, y = y, mtry = min(param$mtry, ncol(x))) 
+##                Type of random forest: regression
+##                      Number of trees: 500
+## No. of variables tried at each split: 5
+## 
+##           Mean of squared residuals: 86096.17
+##                     % Var explained: 86.69
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Its &lt;code&gt;mtry&lt;/code&gt; value was 5 based on RMSE, which we can view using &lt;code&gt;ggplot()&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;ggplot(rf_model)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;brousil.science/post/quick-caret/index_files/figure-html/unnamed-chunk-13-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;Now we want to know how the model performs on our testing data subset:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Pull out the rows for testing and add predictions from the RF
+test_sample &amp;lt;- model_data[-training_indices, ] %&amp;gt;%
+  mutate(predicted = predict(object = rf_model, newdata = .))
+
+# Get a new R2
+postResample(pred = test_sample$predicted,
+             obs = test_sample$body_mass_g)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##       RMSE   Rsquared        MAE 
+## 310.377285   0.864062 241.696781
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;p&gt;Plot the relationship&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;ggplot(data = test_sample) +
+  # A 1:1 line
+  geom_abline(slope = 1, intercept = 0, linetype = &amp;quot;dashed&amp;quot;, color = &amp;quot;gray65&amp;quot;) +
+  geom_point(aes(x = body_mass_g, y = predicted, color = species)) +
+  xlim(c(2500, 6500)) +
+  ylim(c(2500, 6500)) +
+  theme_bw()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;brousil.science/post/quick-caret/index_files/figure-html/unnamed-chunk-15-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;We can look at a scaled metric for variable importance using the &lt;code&gt;varImp()&lt;/code&gt; function:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;plot(varImp(rf_model))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;brousil.science/post/quick-caret/index_files/figure-html/unnamed-chunk-16-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://topepo.github.io/caret/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;caret&lt;/code&gt; manual&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/caret/vignettes/caret.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;A short introduction to &lt;code&gt;caret&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cran.r-project.org/package=caret&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;caret&lt;/code&gt; CRAN page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://zevross.com/blog/2017/09/19/predictive-modeling-and-machine-learning-in-r-with-the-caret-package/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Predictive modeling and machine learning in R with the caret package&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A quick-start guide to the caret R package</title>
+      <link>brousil.science/talk/2022-04-13-talk-17/</link>
+      <pubDate>Wed, 13 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>brousil.science/talk/2022-04-13-talk-17/</guid>
+      <description>&lt;p&gt;A talk introducing the &lt;code&gt;caret&lt;/code&gt; package, its basic uses, and a simple machine learning example using the &lt;code&gt;palmerpenguins&lt;/code&gt; dataset. Given at the WSU R Working Group, Pullman, WA in 2022. Link to blog post &lt;a href=&#34;https://brousil.science/post/quick-caret/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Documenting pollinators, floral hosts, and plant–pollinator interactions in U.S. Pacific Northwest agroecosystems</title>
+      <link>brousil.science/publication/documenting-pollinators-floral-hosts-and-plantpollinator-interactions-in-u-s-pacific-northwest-agroecosystems/</link>
+      <pubDate>Mon, 20 Dec 2021 16:48:25 +0000</pubDate>
+      <guid>brousil.science/publication/documenting-pollinators-floral-hosts-and-plantpollinator-interactions-in-u-s-pacific-northwest-agroecosystems/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Examples of using regular expressions in R</title>
+      <link>brousil.science/post/regex-examples/</link>
+      <pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>brousil.science/post/regex-examples/</guid>
+      <description>&lt;p&gt;In this post I&amp;rsquo;ll be walking through some basic examples of &lt;a href=&#34;https://en.wikipedia.org/wiki/Regular_expression&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;regex&lt;/a&gt;, or regular expressions, and also providing a couple real-world examples.&lt;/p&gt;
+&lt;p&gt;To quote Hadley Wickham and Garrett Grolemund (&lt;a href=&#34;https://r4ds.had.co.nz/strings.html#matching-patterns-with-regular-expressions&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;2017&lt;/a&gt;), regex is a &lt;em&gt;&amp;ldquo;language that allow[s] you to describe patterns in strings.&amp;quot;&lt;/em&gt; When we have string/character data in R, we may want to extract information from it. And regex is a tool for doing this.&lt;/p&gt;
+&lt;p&gt;As a conceptual example, consider the sentence below:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;“The user’s phone number is (555) 555-5555.”&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This string of text could be something scraped from a PDF, or perhaps provided as input to a survey. Our end goal might be to extract and store the phone number in that sentence. One way to do this would be to write a &lt;strong&gt;regular expression&lt;/strong&gt; that describes the pattern of a phone number, which R can then use to extract the phone number from the string.&lt;/p&gt;
+&lt;p&gt;Another common example is pulling metadata from filenames. If you have a folder of rasters with names like &lt;code&gt;&amp;quot;farm_aerial_imagery_whitman_county_2021.tiff&amp;quot;&lt;/code&gt;, you might want to filter them based on their contents. Using regex we can give R instructions to separate out the county name and year from the filenames, which allows us to determine the spatial and temporal coverage of our files.&lt;/p&gt;
+&lt;p&gt;Now I&amp;rsquo;ll go through a few examples. If you want to follow along, you can download the &lt;code&gt;.zip&lt;/code&gt; folder from &lt;a href=&#34;https://drive.google.com/drive/folders/1jADPyF12N6dPzBQs-Kwn3OQyca96ZNI8?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;. Make sure to unzip the folder and open the script it contains. We&amp;rsquo;ll fill it in below:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;library(tidyverse)
+library(stringi)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note that tidyverse contains the &lt;code&gt;stringr&lt;/code&gt; package, which contains a variety of useful functions for working with strings. We&amp;rsquo;ll barely scratch the surface of its capabilities here.&lt;/p&gt;
+&lt;h2 id=&#34;1-a-simple-example-of-regex&#34;&gt;1. A simple example of regex&lt;/h2&gt;
+&lt;p&gt;A common application of regex is to extract numbers from text data. Let&amp;rsquo;s say we have this filename:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;filename &amp;lt;- &amp;quot;2021A.txt&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is how we could confirm the presence of just the year from it using base R: We could search for the year verbatim, returning a logical T/F with &lt;code&gt;grepl()&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;grepl(pattern = &amp;quot;2021&amp;quot;, x = filename)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] TRUE
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;p&gt;Or we could generalize it to just identifying where a number occurs. We use a pattern to identifying numbers 0 through 9:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;grepl(pattern = &amp;quot;[0-9]&amp;quot;, x = filename)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] TRUE
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;p&gt;More helpful would be to find four numbers in a row, as indicated with our bracketed 4:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;grepl(pattern = &amp;quot;[0-9]{4}&amp;quot;, x = filename)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] TRUE
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;p&gt;And then finally to actually return those numbers to us using &lt;code&gt;str_extract()&lt;/code&gt; so that we can use them:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;?str_extract
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;str_extract(string = filename, pattern = &amp;quot;[0-9]{4}&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;2021&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;p&gt;Now you might imagine that we could take this one step further and pull the dates from an entire vector of filenames. This will be especially useful if we want to extract these data from an entire column, for example.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;file_list &amp;lt;- c(&amp;quot;2021A.txt&amp;quot;, &amp;quot;1995A.txt&amp;quot;, &amp;quot;2021B.txt&amp;quot;, &amp;quot;1995B.txt&amp;quot;)
+
+
+str_extract(string = file_list, pattern = &amp;quot;[0-9]{4}&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;2021&amp;quot; &amp;quot;1995&amp;quot; &amp;quot;2021&amp;quot; &amp;quot;1995&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;2-separating-and-extracting&#34;&gt;2. Separating and extracting&lt;/h2&gt;
+&lt;p&gt;Pretend that we&amp;rsquo;re given a list of student names with grades. We want to use this for an analysis, but the names and grades are combined in a random order into a single string. We&amp;rsquo;ll need to separate them somehow. Luckily regex provides us the tools to do so.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;grade_data &amp;lt;- read.csv(file = &amp;quot;grades.csv&amp;quot;)
+
+head(grade_data)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##           grades
+## 1   COSTA.gradeB
+## 2    gradeD.LOWE
+## 3  gradeC.SEXTON
+## 4 ELLIOTT.gradeD
+## 5   MARIN.gradeD
+## 6  GUERRA.gradeC
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Let&amp;rsquo;s test out a potential regex pattern to find grades. We want a single capital letter, right?&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;str_extract(string = grade_data$grades,
+            pattern = &amp;quot;[A-Z]{1}&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   [1] &amp;quot;C&amp;quot; &amp;quot;D&amp;quot; &amp;quot;C&amp;quot; &amp;quot;E&amp;quot; &amp;quot;M&amp;quot; &amp;quot;G&amp;quot; &amp;quot;B&amp;quot; &amp;quot;D&amp;quot; &amp;quot;B&amp;quot; &amp;quot;F&amp;quot; &amp;quot;C&amp;quot; &amp;quot;B&amp;quot; &amp;quot;D&amp;quot; &amp;quot;C&amp;quot; &amp;quot;H&amp;quot; &amp;quot;S&amp;quot; &amp;quot;F&amp;quot; &amp;quot;B&amp;quot;
+##  [19] &amp;quot;D&amp;quot; &amp;quot;G&amp;quot; &amp;quot;H&amp;quot; &amp;quot;C&amp;quot; &amp;quot;H&amp;quot; &amp;quot;H&amp;quot; &amp;quot;B&amp;quot; &amp;quot;F&amp;quot; &amp;quot;R&amp;quot; &amp;quot;F&amp;quot; &amp;quot;G&amp;quot; &amp;quot;B&amp;quot; &amp;quot;W&amp;quot; &amp;quot;R&amp;quot; &amp;quot;A&amp;quot; &amp;quot;S&amp;quot; &amp;quot;W&amp;quot; &amp;quot;D&amp;quot;
+##  [37] &amp;quot;W&amp;quot; &amp;quot;D&amp;quot; &amp;quot;W&amp;quot; &amp;quot;R&amp;quot; &amp;quot;B&amp;quot; &amp;quot;M&amp;quot; &amp;quot;C&amp;quot; &amp;quot;C&amp;quot; &amp;quot;E&amp;quot; &amp;quot;M&amp;quot; &amp;quot;I&amp;quot; &amp;quot;B&amp;quot; &amp;quot;A&amp;quot; &amp;quot;Z&amp;quot; &amp;quot;K&amp;quot; &amp;quot;C&amp;quot; &amp;quot;B&amp;quot; &amp;quot;C&amp;quot;
+##  [55] &amp;quot;B&amp;quot; &amp;quot;R&amp;quot; &amp;quot;C&amp;quot; &amp;quot;D&amp;quot; &amp;quot;F&amp;quot; &amp;quot;C&amp;quot; &amp;quot;D&amp;quot; &amp;quot;D&amp;quot; &amp;quot;D&amp;quot; &amp;quot;T&amp;quot; &amp;quot;C&amp;quot; &amp;quot;M&amp;quot; &amp;quot;K&amp;quot; &amp;quot;C&amp;quot; &amp;quot;B&amp;quot; &amp;quot;C&amp;quot; &amp;quot;C&amp;quot; &amp;quot;B&amp;quot;
+##  [73] &amp;quot;B&amp;quot; &amp;quot;A&amp;quot; &amp;quot;A&amp;quot; &amp;quot;D&amp;quot; &amp;quot;F&amp;quot; &amp;quot;F&amp;quot; &amp;quot;A&amp;quot; &amp;quot;Q&amp;quot; &amp;quot;L&amp;quot; &amp;quot;A&amp;quot; &amp;quot;D&amp;quot; &amp;quot;F&amp;quot; &amp;quot;B&amp;quot; &amp;quot;D&amp;quot; &amp;quot;F&amp;quot; &amp;quot;R&amp;quot; &amp;quot;A&amp;quot; &amp;quot;A&amp;quot;
+##  [91] &amp;quot;B&amp;quot; &amp;quot;D&amp;quot; &amp;quot;T&amp;quot; &amp;quot;F&amp;quot; &amp;quot;F&amp;quot; &amp;quot;V&amp;quot; &amp;quot;A&amp;quot; &amp;quot;D&amp;quot; &amp;quot;B&amp;quot; &amp;quot;C&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Hmm, that&amp;rsquo;s the general idea, but it&amp;rsquo;s clearly just extracting the first capital letter in the text string, which isn&amp;rsquo;t always a grade.&lt;/p&gt;
+&lt;p&gt;Instead, look for &lt;code&gt;&amp;quot;grade&amp;quot;&lt;/code&gt; followed by a single capital letter.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;str_extract(string = grade_data$grades,
+            pattern = &amp;quot;grade[A-Z]{1}&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   [1] &amp;quot;gradeB&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeC&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeC&amp;quot; &amp;quot;gradeB&amp;quot; &amp;quot;gradeD&amp;quot;
+##   [9] &amp;quot;gradeB&amp;quot; &amp;quot;gradeF&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeB&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeF&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeA&amp;quot;
+##  [17] &amp;quot;gradeF&amp;quot; &amp;quot;gradeB&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeA&amp;quot; &amp;quot;gradeC&amp;quot; &amp;quot;gradeC&amp;quot; &amp;quot;gradeA&amp;quot; &amp;quot;gradeA&amp;quot;
+##  [25] &amp;quot;gradeB&amp;quot; &amp;quot;gradeF&amp;quot; &amp;quot;gradeC&amp;quot; &amp;quot;gradeF&amp;quot; &amp;quot;gradeF&amp;quot; &amp;quot;gradeB&amp;quot; &amp;quot;gradeB&amp;quot; &amp;quot;gradeB&amp;quot;
+##  [33] &amp;quot;gradeA&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeA&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeF&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeF&amp;quot; &amp;quot;gradeB&amp;quot;
+##  [41] &amp;quot;gradeB&amp;quot; &amp;quot;gradeF&amp;quot; &amp;quot;gradeB&amp;quot; &amp;quot;gradeC&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeC&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeA&amp;quot;
+##  [49] &amp;quot;gradeA&amp;quot; &amp;quot;gradeA&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeC&amp;quot; &amp;quot;gradeA&amp;quot; &amp;quot;gradeC&amp;quot; &amp;quot;gradeB&amp;quot; &amp;quot;gradeA&amp;quot;
+##  [57] &amp;quot;gradeC&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeF&amp;quot; &amp;quot;gradeC&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeC&amp;quot;
+##  [65] &amp;quot;gradeC&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeC&amp;quot; &amp;quot;gradeC&amp;quot; &amp;quot;gradeB&amp;quot; &amp;quot;gradeC&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeB&amp;quot;
+##  [73] &amp;quot;gradeB&amp;quot; &amp;quot;gradeA&amp;quot; &amp;quot;gradeA&amp;quot; &amp;quot;gradeB&amp;quot; &amp;quot;gradeF&amp;quot; &amp;quot;gradeF&amp;quot; &amp;quot;gradeA&amp;quot; &amp;quot;gradeC&amp;quot;
+##  [81] &amp;quot;gradeC&amp;quot; &amp;quot;gradeA&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeF&amp;quot; &amp;quot;gradeB&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeF&amp;quot; &amp;quot;gradeF&amp;quot;
+##  [89] &amp;quot;gradeC&amp;quot; &amp;quot;gradeB&amp;quot; &amp;quot;gradeB&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeB&amp;quot; &amp;quot;gradeF&amp;quot; &amp;quot;gradeF&amp;quot; &amp;quot;gradeA&amp;quot;
+##  [97] &amp;quot;gradeA&amp;quot; &amp;quot;gradeD&amp;quot; &amp;quot;gradeA&amp;quot; &amp;quot;gradeC&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;That works pretty much exactly as we intended&amp;hellip;Save it for later:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;grades &amp;lt;- str_extract(string = grade_data$grades,
+                      pattern = &amp;quot;grade[A-Z]{1}&amp;quot;)
+
+# And remove &amp;quot;grade&amp;quot; from it
+grades &amp;lt;- gsub(pattern = &amp;quot;grade&amp;quot;, replacement = &amp;quot;&amp;quot;, x = grades)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;p&gt;What about last names? Well, there are probably many ways to do this one. A &amp;ldquo;easy&amp;rdquo; way could be to first remove the grade info, then keep the rest:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;grade_remove &amp;lt;- gsub(pattern = &amp;quot;grade[A-Z]{1}&amp;quot;, replacement = &amp;quot;&amp;quot;, x = grade_data$grades)
+
+head(grade_remove)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;COSTA.&amp;quot;   &amp;quot;.LOWE&amp;quot;    &amp;quot;.SEXTON&amp;quot;  &amp;quot;ELLIOTT.&amp;quot; &amp;quot;MARIN.&amp;quot;   &amp;quot;GUERRA.&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Ok, so far so good. There&amp;rsquo;s also a pesky period in there&amp;hellip;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;gsub(pattern = &amp;quot;.&amp;quot;, replacement = &amp;quot;&amp;quot;, x = grade_remove)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   [1] &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot;
+##  [26] &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot;
+##  [51] &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot;
+##  [76] &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;That doesn&amp;rsquo;t look right! The period &lt;code&gt;.&lt;/code&gt; is a pattern that is used in regex as a wildcard, standing in for any character. We have to &amp;ldquo;escape&amp;rdquo; it in order to use it to signify a literal period.&lt;/p&gt;
+&lt;p&gt;We use the double backslash in R to &amp;ldquo;escape&amp;rdquo; these special characters. We use two instead of one because of the way that R uses strings. We&amp;rsquo;re not going to get into the detail here&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;head(gsub(pattern = &amp;quot;\\.&amp;quot;, replacement = &amp;quot;&amp;quot;, x = grade_remove))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;COSTA&amp;quot;   &amp;quot;LOWE&amp;quot;    &amp;quot;SEXTON&amp;quot;  &amp;quot;ELLIOTT&amp;quot; &amp;quot;MARIN&amp;quot;   &amp;quot;GUERRA&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;p&gt;Save it for later:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;student_names &amp;lt;- gsub(pattern = &amp;quot;\\.&amp;quot;, replacement = &amp;quot;&amp;quot;, x = grade_remove)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We can now combine these tricks to make a new data frame!&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;grade_records &amp;lt;- tibble(
+  student_names,
+  grades
+)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;3-kick-it-up-a-notch&#34;&gt;3. Kick it up a notch&lt;/h2&gt;
+&lt;p&gt;In this section I want to share some regex routines I&amp;rsquo;ve used in my real-world work to speed up or simplify data cleaning.&lt;/p&gt;
+&lt;p&gt;They&amp;rsquo;re going to be a little higher level, but hopefully useful to show how these things can be applied day-to-day.&lt;/p&gt;
+&lt;h3 id=&#34;3a-lookaheadlookbehind&#34;&gt;3a. Lookahead/Lookbehind&lt;/h3&gt;
+&lt;p&gt;We have a file with a column of coordinates that needs to be reformatted. I&amp;rsquo;ll show how lookahead/lookbehind methods can help here.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;coordinates &amp;lt;- read.csv(file = &amp;quot;coordinates.csv&amp;quot;)
+
+head(coordinates)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##                   coordinates count       date
+## 1 N 46° 43.9214 W 117° 9.6333    28 10/10/2020
+## 2    N 21° 20.04 W 158° 50.05    13 10/10/2020
+## 3 N 53° 31.0101 E 108° 6.0512    47  10/5/2020
+## 4 N 46° 43.9214 W 117° 9.6333    96 10/10/2020
+## 5    N 21° 20.04 W 158° 50.05    95  10/5/2020
+## 6    N 21° 20.04 W 158° 50.05    66 10/10/2020
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;p&gt;We want to identify pieces of text in the coordinates column that are latitudes or longitudes. Latitudes = pieces of text followed by &amp;quot; W&amp;rdquo; or &amp;quot; E&amp;quot;. Longitudes = pieces of text preceded by &amp;quot; W&amp;quot; or &amp;quot; E&amp;quot;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Extract Latitude&lt;/strong&gt;:
+We want to use a &lt;em&gt;positive lookahead&lt;/em&gt;. i.e., our piece of targeted text (latitude) exists BEFORE a specific textual pattern (&amp;ldquo;W&amp;rdquo; or &amp;ldquo;E&amp;rdquo;). The text pattern in the lookahead is NOT included in the matched text, so we won&amp;rsquo;t end up storing the W or E!&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;The regex syntax for this is: &lt;code&gt;&amp;quot;(?=...)&amp;quot;&lt;/code&gt;. We&amp;rsquo;ll include the leading space before the W/E as well. Note that the &lt;code&gt;&amp;quot;|&amp;quot;&lt;/code&gt; stands for &amp;ldquo;OR&amp;rdquo; and &lt;code&gt;&amp;quot;.*&amp;quot;&lt;/code&gt; signifies &amp;ldquo;any character zero or more times&amp;rdquo;. &lt;a href=&#34;https://www.keycdn.com/support/regex-cheatsheet&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Here&amp;rsquo;s&lt;/a&gt; a good reference for the syntax.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;coordinates %&amp;gt;%
+  mutate(latitude = str_extract(string = coordinates,
+                                pattern = &amp;quot;.*(?= E| W)&amp;quot;))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##                    coordinates count       date      latitude
+## 1  N 46° 43.9214 W 117° 9.6333    28 10/10/2020 N 46° 43.9214
+## 2     N 21° 20.04 W 158° 50.05    13 10/10/2020   N 21° 20.04
+## 3  N 53° 31.0101 E 108° 6.0512    47  10/5/2020 N 53° 31.0101
+## 4  N 46° 43.9214 W 117° 9.6333    96 10/10/2020 N 46° 43.9214
+## 5     N 21° 20.04 W 158° 50.05    95  10/5/2020   N 21° 20.04
+## 6     N 21° 20.04 W 158° 50.05    66 10/10/2020   N 21° 20.04
+## 7  N 53° 31.0101 E 108° 6.0512    74  10/5/2020 N 53° 31.0101
+## 8  N 53° 31.0101 E 108° 6.0512    62 10/10/2020 N 53° 31.0101
+## 9  N 53° 31.0101 E 108° 6.0512    66 10/20/2020 N 53° 31.0101
+## 10 N 46° 43.9214 W 117° 9.6333    58 10/20/2020 N 46° 43.9214
+## 11 N 53° 31.0101 E 108° 6.0512    36 10/20/2020 N 53° 31.0101
+## 12 N 46° 43.9214 W 117° 9.6333    49 10/20/2020 N 46° 43.9214
+## 13 N 53° 31.0101 E 108° 6.0512    39  9/25/2020 N 53° 31.0101
+## 14 N 53° 31.0101 E 108° 6.0512    15 10/20/2020 N 53° 31.0101
+## 15 N 46° 43.9214 W 117° 9.6333    75  9/25/2020 N 46° 43.9214
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here&amp;rsquo;s a quick summary of the other lookahead/behind options:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Negative lookahead&lt;/strong&gt;&lt;/em&gt;: Our piece of targeted text is NOT followed by a specific
+textual pattern. Lookahead not included in match.
+Syntax: &lt;code&gt;&amp;quot;(?!...)&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Positive lookbehind&lt;/strong&gt;&lt;/em&gt;: Our piece of targeted text exists AFTER a specific textual pattern. That pattern is NOT included in the matched text.
+Syntax: &lt;code&gt;&amp;quot;(?&amp;lt;=...)&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Negative Lookbehind&lt;/strong&gt;&lt;/em&gt;: Our piece of targeted text does NOT exist AFTER a specific textual pattern. That pattern is NOT included in the matched text.
+Negative Lookbehind: &lt;code&gt;&amp;quot;(?&amp;lt;!...)&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;&lt;strong&gt;Extract Longitude&lt;/strong&gt;:
+To get the longitude from our coordinate column we can find the pieces of text that begin with either an E or W. It&amp;rsquo;s a little simpler than what we did for latitude:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;coordinates %&amp;gt;%
+  mutate(longitude = str_extract(string = coordinates,
+                                 pattern = &amp;quot;E.*|W.*&amp;quot;))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##                    coordinates count       date     longitude
+## 1  N 46° 43.9214 W 117° 9.6333    28 10/10/2020 W 117° 9.6333
+## 2     N 21° 20.04 W 158° 50.05    13 10/10/2020  W 158° 50.05
+## 3  N 53° 31.0101 E 108° 6.0512    47  10/5/2020 E 108° 6.0512
+## 4  N 46° 43.9214 W 117° 9.6333    96 10/10/2020 W 117° 9.6333
+## 5     N 21° 20.04 W 158° 50.05    95  10/5/2020  W 158° 50.05
+## 6     N 21° 20.04 W 158° 50.05    66 10/10/2020  W 158° 50.05
+## 7  N 53° 31.0101 E 108° 6.0512    74  10/5/2020 E 108° 6.0512
+## 8  N 53° 31.0101 E 108° 6.0512    62 10/10/2020 E 108° 6.0512
+## 9  N 53° 31.0101 E 108° 6.0512    66 10/20/2020 E 108° 6.0512
+## 10 N 46° 43.9214 W 117° 9.6333    58 10/20/2020 W 117° 9.6333
+## 11 N 53° 31.0101 E 108° 6.0512    36 10/20/2020 E 108° 6.0512
+## 12 N 46° 43.9214 W 117° 9.6333    49 10/20/2020 W 117° 9.6333
+## 13 N 53° 31.0101 E 108° 6.0512    39  9/25/2020 E 108° 6.0512
+## 14 N 53° 31.0101 E 108° 6.0512    15 10/20/2020 E 108° 6.0512
+## 15 N 46° 43.9214 W 117° 9.6333    75  9/25/2020 W 117° 9.6333
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;p&gt;Now let&amp;rsquo;s combine these two approaches:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;coordinates %&amp;gt;%
+  mutate(latitude = str_extract(string = coordinates,
+                                pattern = &amp;quot;.*(?= E| W)&amp;quot;),
+         longitude = str_extract(string = coordinates,
+                                 pattern = &amp;quot;E.*|W.*&amp;quot;))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##                    coordinates count       date      latitude     longitude
+## 1  N 46° 43.9214 W 117° 9.6333    28 10/10/2020 N 46° 43.9214 W 117° 9.6333
+## 2     N 21° 20.04 W 158° 50.05    13 10/10/2020   N 21° 20.04  W 158° 50.05
+## 3  N 53° 31.0101 E 108° 6.0512    47  10/5/2020 N 53° 31.0101 E 108° 6.0512
+## 4  N 46° 43.9214 W 117° 9.6333    96 10/10/2020 N 46° 43.9214 W 117° 9.6333
+## 5     N 21° 20.04 W 158° 50.05    95  10/5/2020   N 21° 20.04  W 158° 50.05
+## 6     N 21° 20.04 W 158° 50.05    66 10/10/2020   N 21° 20.04  W 158° 50.05
+## 7  N 53° 31.0101 E 108° 6.0512    74  10/5/2020 N 53° 31.0101 E 108° 6.0512
+## 8  N 53° 31.0101 E 108° 6.0512    62 10/10/2020 N 53° 31.0101 E 108° 6.0512
+## 9  N 53° 31.0101 E 108° 6.0512    66 10/20/2020 N 53° 31.0101 E 108° 6.0512
+## 10 N 46° 43.9214 W 117° 9.6333    58 10/20/2020 N 46° 43.9214 W 117° 9.6333
+## 11 N 53° 31.0101 E 108° 6.0512    36 10/20/2020 N 53° 31.0101 E 108° 6.0512
+## 12 N 46° 43.9214 W 117° 9.6333    49 10/20/2020 N 46° 43.9214 W 117° 9.6333
+## 13 N 53° 31.0101 E 108° 6.0512    39  9/25/2020 N 53° 31.0101 E 108° 6.0512
+## 14 N 53° 31.0101 E 108° 6.0512    15 10/20/2020 N 53° 31.0101 E 108° 6.0512
+## 15 N 46° 43.9214 W 117° 9.6333    75  9/25/2020 N 46° 43.9214 W 117° 9.6333
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;p&gt;Alternatively, we could use the &lt;code&gt;separate()&lt;/code&gt; function along with regex for the column separator. Here I tell R to separate the two columns where there is a number followed by a space and then either W or E. The two parentheses enclose lookahead and lookbehind phrases that shouldn&amp;rsquo;t be included in the extracted text but which we &lt;em&gt;&lt;strong&gt;do&lt;/strong&gt;&lt;/em&gt; want to check for.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;coordinates %&amp;gt;%
+  separate(col = coordinates,
+           into = c(&amp;quot;latitude&amp;quot;, &amp;quot;longitude&amp;quot;),
+           sep = &amp;quot;(?&amp;lt;=[0-9]) (?=W|E)&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##         latitude     longitude count       date
+## 1  N 46° 43.9214 W 117° 9.6333    28 10/10/2020
+## 2    N 21° 20.04  W 158° 50.05    13 10/10/2020
+## 3  N 53° 31.0101 E 108° 6.0512    47  10/5/2020
+## 4  N 46° 43.9214 W 117° 9.6333    96 10/10/2020
+## 5    N 21° 20.04  W 158° 50.05    95  10/5/2020
+## 6    N 21° 20.04  W 158° 50.05    66 10/10/2020
+## 7  N 53° 31.0101 E 108° 6.0512    74  10/5/2020
+## 8  N 53° 31.0101 E 108° 6.0512    62 10/10/2020
+## 9  N 53° 31.0101 E 108° 6.0512    66 10/20/2020
+## 10 N 46° 43.9214 W 117° 9.6333    58 10/20/2020
+## 11 N 53° 31.0101 E 108° 6.0512    36 10/20/2020
+## 12 N 46° 43.9214 W 117° 9.6333    49 10/20/2020
+## 13 N 53° 31.0101 E 108° 6.0512    39  9/25/2020
+## 14 N 53° 31.0101 E 108° 6.0512    15 10/20/2020
+## 15 N 46° 43.9214 W 117° 9.6333    75  9/25/2020
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;h3 id=&#34;3b-group-capture&#34;&gt;3b. Group capture&lt;/h3&gt;
+&lt;p&gt;Looking at the date column in this dataset we might also want to reformat it for one reason or another. I actually wouldn&amp;rsquo;t typically do this with data, as there are functions to format date in the lubridate package. But where I have used this to reformat dates that are hard-coded into R scripts. In that situation I used the Find &amp;amp; Replace tool in RStudio along with the regex option.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;head(coordinates)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##                   coordinates count       date
+## 1 N 46° 43.9214 W 117° 9.6333    28 10/10/2020
+## 2    N 21° 20.04 W 158° 50.05    13 10/10/2020
+## 3 N 53° 31.0101 E 108° 6.0512    47  10/5/2020
+## 4 N 46° 43.9214 W 117° 9.6333    96 10/10/2020
+## 5    N 21° 20.04 W 158° 50.05    95  10/5/2020
+## 6    N 21° 20.04 W 158° 50.05    66 10/10/2020
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We have dates in this format:  &lt;code&gt;MM/DD/YYYY&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;coordinates$date
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  [1] &amp;quot;10/10/2020&amp;quot; &amp;quot;10/10/2020&amp;quot; &amp;quot;10/5/2020&amp;quot;  &amp;quot;10/10/2020&amp;quot; &amp;quot;10/5/2020&amp;quot; 
+##  [6] &amp;quot;10/10/2020&amp;quot; &amp;quot;10/5/2020&amp;quot;  &amp;quot;10/10/2020&amp;quot; &amp;quot;10/20/2020&amp;quot; &amp;quot;10/20/2020&amp;quot;
+## [11] &amp;quot;10/20/2020&amp;quot; &amp;quot;10/20/2020&amp;quot; &amp;quot;9/25/2020&amp;quot;  &amp;quot;10/20/2020&amp;quot; &amp;quot;9/25/2020&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;p&gt;Let&amp;rsquo;s manually convert the forward slashes to underscores, but do so using group captures. This syntax allows us to group parts of a text string, for example as a means of ensuring that the data we&amp;rsquo;re editing meets certain conditions (e.g., for quality control).&lt;/p&gt;
+&lt;p&gt;To do this we denote groups with parentheses: &lt;code&gt;( )&lt;/code&gt;. So, for example, we could use the following lines of code to &amp;ldquo;capture&amp;rdquo; the pieces of our dates:
+&lt;code&gt;&amp;quot;([0-9]{1,2})/([0-9]{1,2})/([0-9]{4})&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Then we can refer to the date pieces by numbers, in the order they are written. 
+Depending on the function we&amp;rsquo;re using, we refer to each group number with a dollar sign OR two backslashes ahead of its label:
+&lt;code&gt;&amp;quot;$1_$2_$3&amp;quot;&lt;/code&gt; 
+or
+&lt;code&gt;&amp;quot;\\1_\\2_\\3&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;So, if we put these two pieces together we can create a new date column like this:&lt;/p&gt;
+&lt;p&gt;With the &lt;code&gt;stringr&lt;/code&gt; package:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;coordinates %&amp;gt;%
+  mutate(new_date = str_replace(string = date,
+                                pattern = &amp;quot;([0-9]{1,2})/([0-9]{1,2})/([0-9]{4})&amp;quot;,
+                                replacement = &amp;quot;\\1_\\2_\\3&amp;quot;))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##                    coordinates count       date   new_date
+## 1  N 46° 43.9214 W 117° 9.6333    28 10/10/2020 10_10_2020
+## 2     N 21° 20.04 W 158° 50.05    13 10/10/2020 10_10_2020
+## 3  N 53° 31.0101 E 108° 6.0512    47  10/5/2020  10_5_2020
+## 4  N 46° 43.9214 W 117° 9.6333    96 10/10/2020 10_10_2020
+## 5     N 21° 20.04 W 158° 50.05    95  10/5/2020  10_5_2020
+## 6     N 21° 20.04 W 158° 50.05    66 10/10/2020 10_10_2020
+## 7  N 53° 31.0101 E 108° 6.0512    74  10/5/2020  10_5_2020
+## 8  N 53° 31.0101 E 108° 6.0512    62 10/10/2020 10_10_2020
+## 9  N 53° 31.0101 E 108° 6.0512    66 10/20/2020 10_20_2020
+## 10 N 46° 43.9214 W 117° 9.6333    58 10/20/2020 10_20_2020
+## 11 N 53° 31.0101 E 108° 6.0512    36 10/20/2020 10_20_2020
+## 12 N 46° 43.9214 W 117° 9.6333    49 10/20/2020 10_20_2020
+## 13 N 53° 31.0101 E 108° 6.0512    39  9/25/2020  9_25_2020
+## 14 N 53° 31.0101 E 108° 6.0512    15 10/20/2020 10_20_2020
+## 15 N 46° 43.9214 W 117° 9.6333    75  9/25/2020  9_25_2020
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;p&gt;Or with the &lt;code&gt;stringi&lt;/code&gt; package:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;coordinates %&amp;gt;%
+  mutate(new_date = stri_replace(str = date,
+                                 regex = &amp;quot;([0-9]{1,2})/([0-9]{1,2})/([0-9]{4})&amp;quot;,
+                                 replacement = &amp;quot;$1_$2_$3&amp;quot;))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##                    coordinates count       date   new_date
+## 1  N 46° 43.9214 W 117° 9.6333    28 10/10/2020 10_10_2020
+## 2     N 21° 20.04 W 158° 50.05    13 10/10/2020 10_10_2020
+## 3  N 53° 31.0101 E 108° 6.0512    47  10/5/2020  10_5_2020
+## 4  N 46° 43.9214 W 117° 9.6333    96 10/10/2020 10_10_2020
+## 5     N 21° 20.04 W 158° 50.05    95  10/5/2020  10_5_2020
+## 6     N 21° 20.04 W 158° 50.05    66 10/10/2020 10_10_2020
+## 7  N 53° 31.0101 E 108° 6.0512    74  10/5/2020  10_5_2020
+## 8  N 53° 31.0101 E 108° 6.0512    62 10/10/2020 10_10_2020
+## 9  N 53° 31.0101 E 108° 6.0512    66 10/20/2020 10_20_2020
+## 10 N 46° 43.9214 W 117° 9.6333    58 10/20/2020 10_20_2020
+## 11 N 53° 31.0101 E 108° 6.0512    36 10/20/2020 10_20_2020
+## 12 N 46° 43.9214 W 117° 9.6333    49 10/20/2020 10_20_2020
+## 13 N 53° 31.0101 E 108° 6.0512    39  9/25/2020  9_25_2020
+## 14 N 53° 31.0101 E 108° 6.0512    15 10/20/2020 10_20_2020
+## 15 N 46° 43.9214 W 117° 9.6333    75  9/25/2020  9_25_2020
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;references&#34;&gt;References:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Grolemund, G., &amp;amp; Wickham, H. (2017). R for Data Science. O’Reilly Media.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Regex with R</title>
+      <link>brousil.science/talk/2021-10-27-talk-16/</link>
+      <pubDate>Wed, 27 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>brousil.science/talk/2021-10-27-talk-16/</guid>
+      <description>&lt;p&gt;Instructional talk covering basic examples of using regular expressions in R to improve the efficiency of data cleaning and metadata extraction tasks. Given at the WSU R Working Group, Pullman, WA in 2021. Link to blog post &lt;a href=&#34;https://brousil.science/post/regex-examples/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A unified dataset of co-located sewage pollution, periphyton, and benthic macroinvertebrate community and food web structure from Lake Baikal (Siberia)</title>
+      <link>brousil.science/publication/a-unified-dataset-of-co-located-sewage-pollution-periphyton-and-benthic-macroinvertebrate-community-and-food-web-structure-from-lake-baikal-siberia/</link>
+      <pubDate>Thu, 30 Sep 2021 20:57:07 +0000</pubDate>
+      <guid>brousil.science/publication/a-unified-dataset-of-co-located-sewage-pollution-periphyton-and-benthic-macroinvertebrate-community-and-food-web-structure-from-lake-baikal-siberia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Orchard Management and Landscape Context Mediate the Pear Floral Microbiome</title>
+      <link>brousil.science/publication/schaeffer-2021/</link>
+      <pubDate>Tue, 13 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/schaeffer-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Landing Page</title>
+      <link>brousil.science/portfolio/</link>
+      <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>brousil.science/portfolio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>REU Workshop: Data Wrangling</title>
+      <link>brousil.science/workshop/reu-workshop-data-wrangling/</link>
+      <pubDate>Mon, 07 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>brousil.science/workshop/reu-workshop-data-wrangling/</guid>
+      <description>&lt;p&gt;Organizer, moderator, and co-instructor of a three-day workshop covering data management techniques and an introduction to R. Audience was undergraduate students in the &lt;a href=&#34;https://cereo.wsu.edu/reu-stakeholder-few-innovations/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CEREO FEW REU&lt;/a&gt;. Sessions took place over Zoom from June 07-09, 2021. The syllabus was based on &lt;a href=&#34;https://datacarpentry.org/ecology-workshop/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Data Carpentry for Ecology&lt;/a&gt;, with modifications specific to the context of the REU.&lt;/p&gt;
+&lt;h5 id=&#34;topics-covered&#34;&gt;Topics covered:&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Introduction to Data-Intensive Research and Public Data Resources&lt;/li&gt;
+&lt;li&gt;Introduction to Spreadsheets&lt;/li&gt;
+&lt;li&gt;Managing and Cleaning Data Reproducibly&lt;/li&gt;
+&lt;li&gt;Introduction to R&lt;/li&gt;
+&lt;li&gt;Data Organization with R&lt;/li&gt;
+&lt;li&gt;Basic Data Analysis in R&lt;/li&gt;
+&lt;li&gt;Data Visualization in R&lt;/li&gt;
+&lt;li&gt;Documenting Research with R&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Workflow Management with drake</title>
+      <link>brousil.science/talk/2021-03-18-talk-15/</link>
+      <pubDate>Thu, 18 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>brousil.science/talk/2021-03-18-talk-15/</guid>
+      <description>&lt;p&gt;Instructional talk covering the basics of writing functions in R and creating &lt;a href=&#34;https://github.com/ropensci/drake&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;drake&lt;/a&gt; projects for documenting data analysis workflows. Attendees worked with an example dataset and participated in live coding activities to build a drake project from scratch. This was a half-day session over Zoom as part of WSU CEREO&amp;rsquo;s &lt;a href=&#34;https://cereo.wsu.edu/reproducible-r-workshop/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Reproducible Research Techniques with R workshop series&lt;/a&gt;. Syllabus available &lt;a href=&#34;https://mbrousil.github.io/drake_wkshp&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Reproducible Research Techniques with R</title>
+      <link>brousil.science/workshop/reproducible-research-techniques-with-r/</link>
+      <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>brousil.science/workshop/reproducible-research-techniques-with-r/</guid>
+      <description>&lt;p&gt;Organizer, moderator, and co-instructor of weeklong workshop series on techniques for reproducible research using R, targeted at graduate students. Sessions took place over Zoom for 3.5-4 hours per day from March 15-19, 2021.&lt;/p&gt;
+&lt;h5 id=&#34;topics-covered&#34;&gt;Topics covered:&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Intro to Git/GitHub and tidyverse&lt;/li&gt;
+&lt;li&gt;Intro to R Markdown&lt;/li&gt;
+&lt;li&gt;Intro to modeling with R&lt;/li&gt;
+&lt;li&gt;Intro to workflow management with drake&lt;/li&gt;
+&lt;li&gt;Intro to making websites with GitHub Pages&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Link to workshop website &lt;a href=&#34;https://cereo.wsu.edu/reproducible-r-workshop/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Mapping in R</title>
+      <link>brousil.science/talk/2021-02-10-talk-14/</link>
+      <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>brousil.science/talk/2021-02-10-talk-14/</guid>
+      <description>&lt;p&gt;Instructional talk on basics of manipulating and plotting spatial data in R using &lt;code&gt;sf&lt;/code&gt; and &lt;code&gt;ggplot2&lt;/code&gt;. Given at the WSU R Working Group, Pullman, WA in 2021. Link to blog post &lt;a href=&#34;https://cougrstats.wordpress.com/2021/02/10/introduction-to-mapping-in-r/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Interactions between plants and pollinators across urban and rural farming landscapes</title>
+      <link>brousil.science/publication/olsson-2021-e-00194/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/olsson-2021-e-00194/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Orchard Management and Landscape Context Mediate the Floral Microbiome of Pear</title>
+      <link>brousil.science/publication/schaeffer-2020/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/schaeffer-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Introduction to Workflow Management with drake</title>
+      <link>brousil.science/talk/2020-11-19-talk-13/</link>
+      <pubDate>Thu, 19 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>brousil.science/talk/2020-11-19-talk-13/</guid>
+      <description>&lt;p&gt;Instructional talk covering the basics of writing functions in R and creating &lt;a href=&#34;https://github.com/ropensci/drake&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;drake&lt;/a&gt; projects for documenting data analysis workflows. Attendees worked with an example dataset and participated in live coding activities to build a drake project from scratch. This was a half-day session over Zoom as part of WSU CEREO&amp;rsquo;s &lt;a href=&#34;https://cereo.wsu.edu/reproducible-r-workshop/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Reproducible Research Techniques with R workshop series&lt;/a&gt;. Syllabus available &lt;a href=&#34;https://mbrousil.github.io/drake_wkshp&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Reproducible Research Techniques with R</title>
+      <link>brousil.science/workshop/reproducible-research-techniques-with-r/</link>
+      <pubDate>Mon, 16 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>brousil.science/workshop/reproducible-research-techniques-with-r/</guid>
+      <description>&lt;p&gt;Organizer, moderator, and co-instructor of weeklong workshop series on techniques for reproducible research using R, targeted at graduate students. Sessions took place over Zoom for 2.5-4 hours per day from November 16-20, 2020.&lt;/p&gt;
+&lt;h5 id=&#34;topics-covered&#34;&gt;Topics covered:&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Intro to Git/GitHub and tidyverse&lt;/li&gt;
+&lt;li&gt;Intro to R Markdown&lt;/li&gt;
+&lt;li&gt;Intro to modeling with R&lt;/li&gt;
+&lt;li&gt;Intro to workflow management with drake&lt;/li&gt;
+&lt;li&gt;Intro to making websites with GitHub Pages&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Link to workshop website &lt;a href=&#34;https://cereo.wsu.edu/reproducible-r-workshop/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Global Lake Area, Climate, and Population Dataset: A New Tool for Addressing Critical Limnological Questions</title>
+      <link>brousil.science/publication/meyer-2020/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/meyer-2020/</guid>
+      <description>&lt;p&gt;This bulletin piece describes potential applications for the Global Lake area, Climate, and Population (GLCP) dataset. We use three case studies to show different uses for the GLCP at local, regional, and national scales.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Formatting Data for Use with R</title>
+      <link>brousil.science/talk/2020-10-21-talk-12/</link>
+      <pubDate>Wed, 21 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>brousil.science/talk/2020-10-21-talk-12/</guid>
+      <description>&lt;p&gt;Instructional talk covering strategies for formatting data for effective use with R given at the WSU R Working Group, Pullman, WA in 2020. Link to blog post &lt;a href=&#34;https://cougrstats.wordpress.com/2020/10/21/formatting-data-for-use-with-r/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>R Markdown Introduction</title>
+      <link>brousil.science/talk/2020-09-16-talk-11/</link>
+      <pubDate>Wed, 16 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>brousil.science/talk/2020-09-16-talk-11/</guid>
+      <description>&lt;p&gt;Instructional talk on R Markdown given at the WSU R Working Group, Pullman, WA in 2020. Link to previous blog post on the topic &lt;a href=&#34;https://cougrstats.wordpress.com/2019/09/12/a-tour-of-r-markdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Integrating Perspectives to Understand Lake Ice Dynamics in a Changing World</title>
+      <link>brousil.science/publication/sharma-2020/</link>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/sharma-2020/</guid>
+      <description>&lt;p&gt;This study describes drivers of freshwater lake ice, methods for the study of lake ice, and avenues for multidisciplinary research to fill existing gaps in this body of research.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Intro to Manipulating and Visualizing Data in R [Cancelled due to COVID-19]</title>
+      <link>brousil.science/workshop/intro-to-manipulating-and-visualizing-data-in-r-cancelled-due-to-covid-19/</link>
+      <pubDate>Wed, 25 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>brousil.science/workshop/intro-to-manipulating-and-visualizing-data-in-r-cancelled-due-to-covid-19/</guid>
+      <description>&lt;p&gt;Organizer and planned co-instructor of a workshop on introductory data manipulation and visualization for the 2020 NWSA Annual Meeting. The workshop was cancelled due to COVID-19. Adapted from &lt;a href=&#34;https://datacarpentry.org/R-ecology-lesson/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Data Carpentry&lt;/a&gt; materials. Link to meeting proceedings &lt;a href=&#34;https://www.northwestscience.org/resources/Documents/2020%20NWSA%2091st%20AnnualMeetingProgramAbstracts.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Software Carpentry in R [Cancelled due to COVID-19]</title>
+      <link>brousil.science/workshop/software-carpentry-in-r-cancelled-due-to-covid-19/</link>
+      <pubDate>Fri, 13 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>brousil.science/workshop/software-carpentry-in-r-cancelled-due-to-covid-19/</guid>
+      <description>&lt;p&gt;Organizer and planned co-instructor of a Software Carpentry workshop covering R, Unix automation, and version control. The workshop was cancelled due to COVID-19. Link to workshop website &lt;a href=&#34;https://mbrousil.github.io/2020-04-13-wsu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>R Shiny Introduction</title>
+      <link>brousil.science/talk/2020-03-11-talk-10/</link>
+      <pubDate>Wed, 11 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>brousil.science/talk/2020-03-11-talk-10/</guid>
+      <description>&lt;p&gt;Instructional talk on the &lt;code&gt;Shiny&lt;/code&gt; R package given at the WSU R Working Group, Pullman, WA in 2020. Link to blog post &lt;a href=&#34;https://cougrstats.wordpress.com/2020/03/11/intro-to-shiny/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An Introduction to Working with Lists Using purrr</title>
+      <link>brousil.science/talk/2020-02-19-talk-9/</link>
+      <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>brousil.science/talk/2020-02-19-talk-9/</guid>
+      <description>&lt;p&gt;Instructional talk on the basics of &lt;code&gt;map()&lt;/code&gt; and related functions from the &lt;code&gt;purrr&lt;/code&gt;package in R and how to effectively do analysis using data in lists. Given at the WSU R Working Group, Pullman, WA in 2020. Link to blog post &lt;a href=&#34;https://cougrstats.wordpress.com/2020/02/19/an-introduction-to-working-with-lists-using-purrr/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The global lake area, climate, and population dataset</title>
+      <link>brousil.science/publication/matthew-brousil-75490938/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/matthew-brousil-75490938/</guid>
+      <description>&lt;p&gt;This is a paper describing a dataset we compiled of lake surface area for &amp;gt; 1.42 million lakes and reservoirs &amp;gt;= 10 hectares in area, matched with basin-level temperature, precipitation, and population data. Data are a time series covering 1995 to 2015 (although resolution differs by variable). The dataset is intended to be fully reproducible: all scripts and a standardized file structure are available with the full dataset at &lt;a href=&#34;https://doi.org/10.6073/pasta/834e2d4e8ee7eb2fa9a5a5b32d759683&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;EDI&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The global lake area, climate, and population (GLCP) dataset</title>
+      <link>brousil.science/publication/meyer-2019/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/meyer-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Carpentry for Ecology in R</title>
+      <link>brousil.science/workshop/data-carpentry-for-ecology-in-r/</link>
+      <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>brousil.science/workshop/data-carpentry-for-ecology-in-r/</guid>
+      <description>&lt;p&gt;Organizer and moderator of a Data Carpentry for Ecologists workshop in R. Link to workshop website &lt;a href=&#34;https://mbrousil.github.io/2019-10-10-wsu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Advanced Methods with ggplot2</title>
+      <link>brousil.science/talk/2019-09-25-talk-8/</link>
+      <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>brousil.science/talk/2019-09-25-talk-8/</guid>
+      <description>&lt;p&gt;Instructional talk on advanced applications of &lt;code&gt;ggplot2&lt;/code&gt; given at the WSU R Working Group, Pullman, WA in 2019. Link to blog post &lt;a href=&#34;https://cougrstats.wordpress.com/2019/09/25/advanced-methods-with-ggplot2/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>R Markdown Introduction</title>
+      <link>brousil.science/talk/2019-09-12-talk-7/</link>
+      <pubDate>Thu, 12 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>brousil.science/talk/2019-09-12-talk-7/</guid>
+      <description>&lt;p&gt;Instructional talk on R Markdown given at the WSU R Working Group, Pullman, WA in 2019. Link to blog post &lt;a href=&#34;https://cougrstats.wordpress.com/2019/09/12/a-tour-of-r-markdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tips on Cleaning Scripts and Data in R</title>
+      <link>brousil.science/talk/2019-04-10-talk-6/</link>
+      <pubDate>Wed, 10 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>brousil.science/talk/2019-04-10-talk-6/</guid>
+      <description>&lt;p&gt;Instructional talk on script and data cleaning in R given at the WSU R Working Group, Pullman, WA in 2019. Link to blog post &lt;a href=&#34;https://cougrstats.wordpress.com/2019/04/10/cleaning-messy-scripts-and-data/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Software Carpentry in R and Python</title>
+      <link>brousil.science/workshop/software-carpentry-in-r-and-python/</link>
+      <pubDate>Mon, 08 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>brousil.science/workshop/software-carpentry-in-r-and-python/</guid>
+      <description>&lt;p&gt;Organizer and co-instructor of a Software Carpentry workshop offering both R and Python lessons. Link to workshop website &lt;a href=&#34;https://mbrousil.github.io/2019-04-08-wsu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Intro to Manipulating and Visualizing Data in R</title>
+      <link>brousil.science/workshop/intro-to-manipulating-and-visualizing-data-in-r/</link>
+      <pubDate>Thu, 28 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>brousil.science/workshop/intro-to-manipulating-and-visualizing-data-in-r/</guid>
+      <description>&lt;p&gt;Organizer and co-instructor of a workshop on introductory data manipulation and visualization for the 2019 NWSA Annual Meeting. Workshop adapted from &lt;a href=&#34;https://datacarpentry.org/R-ecology-lesson/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Data Carpentry&lt;/a&gt; materials. Link to meeting proceedings &lt;a href=&#34;https://www.northwestscience.org/resources/Documents-Membership-Journal/2019-NWSA-90th-AnnualMeetingProceedings_FINAL_032019_V3.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Global lake area, climate, and population dataset</title>
+      <link>brousil.science/publication/matthew-brousil-69097655/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/matthew-brousil-69097655/</guid>
+      <description>&lt;p&gt;This is a dataset containing lake surface area for &amp;gt; 1.42 million lakes and reservoirs &amp;gt;= 10 hectares in area, matched with basin-level temperature, precipitation, and population data. Data are a time series covering 1995 to 2015 (although resolution differs by variable). The dataset is intended to be fully reproducible: all scripts and a standardized file structure are available with the full dataset.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Data Carpentry for Ecology in R and Python</title>
+      <link>brousil.science/workshop/data-carpentry-for-ecology-in-r-and-python/</link>
+      <pubDate>Thu, 25 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>brousil.science/workshop/data-carpentry-for-ecology-in-r-and-python/</guid>
+      <description>&lt;p&gt;Organizer and moderator of a Data Carpentry for Ecologists workshop offering both R and Python lessons. Link to workshop website &lt;a href=&#34;https://mbrousil.github.io/2018-10-25-wsu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>R Shiny Introduction</title>
+      <link>brousil.science/talk/2018-09-12-talk-5/</link>
+      <pubDate>Wed, 12 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>brousil.science/talk/2018-09-12-talk-5/</guid>
+      <description>&lt;p&gt;Instructional talk on the &lt;code&gt;Shiny&lt;/code&gt; R package given at the WSU R Working Group, Pullman, WA in 2018. Link to blog post &lt;a href=&#34;https://cougrstats.wordpress.com/2018/09/12/how-to-shiny-2/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Applications in R programming for Ecology and Natural Resources</title>
+      <link>brousil.science/workshop/applications-in-r-programming-for-ecology-and-natural-resources/</link>
+      <pubDate>Thu, 29 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>brousil.science/workshop/applications-in-r-programming-for-ecology-and-natural-resources/</guid>
+      <description>&lt;p&gt;Organizer of a workshop on applications of R in ecology and natural resources applications for the 2018 NWSA Annual Meeting. Link to meeting proceedings &lt;a href=&#34;https://www.northwestscience.org/resources/Documents/2018%20Conference/Proceedings_2018-NWSA_Olympia-WA_032618.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Influence of Compounding Fires on Coast Redwood Regeneration and Stand Structure</title>
+      <link>brousil.science/publication/brousil-2017/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/brousil-2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Influence of fire history and soil legacies on coast redwood stand structure and composition</title>
+      <link>brousil.science/talk/2016-09-13-talk-4/</link>
+      <pubDate>Tue, 13 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>brousil.science/talk/2016-09-13-talk-4/</guid>
+      <description>&lt;p&gt;Talk given at the Coast Redwood Science Symposium, Eureka, CA in 2016.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Influence of fire history and soil legacies on coast redwood regeneration and stand structure</title>
+      <link>brousil.science/talk/2016-08-10-talk-3/</link>
+      <pubDate>Wed, 10 Aug 2016 00:00:00 +0000</pubDate>
+      <guid>brousil.science/talk/2016-08-10-talk-3/</guid>
+      <description>&lt;p&gt;Talk given at the Ecological Society of America Annual Meeting in Fort Lauderdale, FL in 2016.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Compounding Fire Disturbance History Encourages Coast Redwood (Sequoia sempervirens) Regeneration and Community Dominance</title>
+      <link>brousil.science/publication/matthew-brousil-69098107/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/matthew-brousil-69098107/</guid>
+      <description>&lt;p&gt;Master&amp;rsquo;s thesis describing the effects of compounding fire disturbance history on coast redwood regeneration and community dominance in Big Sur, CA.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Plant-Pollinator Interactions in a Northwest Arum Related to Plant Traits but not Riparian Forest Management</title>
+      <link>brousil.science/publication/brousil-2015/</link>
+      <pubDate>Sat, 01 Aug 2015 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/brousil-2015/</guid>
+      <description>&lt;p&gt;This paper discusses plant-pollinator interactions on &lt;em&gt;Lysichiton americanus&lt;/em&gt; in a western Washington (USA) riparian forest.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Plant-pollinator interactions in a Northwest arum are influenced by plant traits, not riparian forest management</title>
+      <link>brousil.science/talk/2014-03-27-talk-2/</link>
+      <pubDate>Thu, 27 Mar 2014 00:00:00 +0000</pubDate>
+      <guid>brousil.science/talk/2014-03-27-talk-2/</guid>
+      <description>&lt;p&gt;Talk given at Northwest Scientific Association Annual Meeting in 2014.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Split Between Two Worlds: The Land and Sea Archaeological Sites of Chuuk Lagoon and Implications for Cultural Change in Micronesia</title>
+      <link>brousil.science/talk/2014-01-04-talk-1/</link>
+      <pubDate>Thu, 27 Mar 2014 00:00:00 +0000</pubDate>
+      <guid>brousil.science/talk/2014-01-04-talk-1/</guid>
+      <description>&lt;p&gt;Talk given at Archaeological Institute of America/American Philological Association Annual Meeting in 2014.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>brousil.science/admin/config.yml</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>brousil.science/admin/config.yml</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>brousil.science/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>brousil.science/contact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>brousil.science/people/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>brousil.science/people/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CV</title>
+      <link>brousil.science/cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>brousil.science/cv/</guid>
+      <description>&lt;p&gt;Please contact me at &lt;strong&gt;&lt;a href=&#34;mailto:matthew.brousil@gmail.com&#34;&gt;matthew.brousil@gmail.com&lt;/a&gt;&lt;/strong&gt; to request a full copy of my cv or resume.&lt;/p&gt;
+&lt;h1 id=&#34;education&#34;&gt;Education&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;MS&lt;/strong&gt; California Polytechnic State University, 2016&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;BA/BS&lt;/strong&gt; The Evergreen State College, 2014&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AA/AS&lt;/strong&gt; College of DuPage, 2011&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;recent-work-experience&#34;&gt;Recent work experience&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;2021 - Present&lt;/strong&gt;: Research and Outreach Coordinator&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Decision Aid Systems, Washington State University&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;2018 - 2021&lt;/strong&gt;: Data Manager and Research Assistant&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CEREO &amp;amp; Hampton Lab, Washington State University&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;2017 - 2018&lt;/strong&gt;: Entomology Lab Technician&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Crowder Lab, Washington State University&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;2015 - 2016&lt;/strong&gt;: Graduate Research Assistant&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bisbing Lab, California Polytechnic State University&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;2015&lt;/strong&gt;: Instructor&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Natural Resource Ecology and Habitat Management lab section, California Polytechnic State University&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;2014&lt;/strong&gt;: Agricultural Technologist&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Entomology Lab, Washington State Department of Agriculture.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

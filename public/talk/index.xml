@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Talks and Presentations | Matthew Brousil</title>
+    <link>brousil.science/talk/</link>
+      <atom:link href="brousil.science/talk/index.xml" rel="self" type="application/rss+xml" />
+    <description>Talks and Presentations</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 13 Apr 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/brousil.science/media/icon_hu3f944acd3d6616c2d13f4cde577e2e67_445931_512x512_fill_lanczos_center_2.png</url>
+      <title>Talks and Presentations</title>
+      <link>brousil.science/talk/</link>
+    </image>
+    
+    <item>
+      <title>A quick-start guide to the caret R package</title>
+      <link>brousil.science/talk/2022-04-13-talk-17/</link>
+      <pubDate>Wed, 13 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>brousil.science/talk/2022-04-13-talk-17/</guid>
+      <description>&lt;p&gt;A talk introducing the &lt;code&gt;caret&lt;/code&gt; package, its basic uses, and a simple machine learning example using the &lt;code&gt;palmerpenguins&lt;/code&gt; dataset. Given at the WSU R Working Group, Pullman, WA in 2022. Link to blog post &lt;a href=&#34;https://brousil.science/post/quick-caret/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Regex with R</title>
+      <link>brousil.science/talk/2021-10-27-talk-16/</link>
+      <pubDate>Wed, 27 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>brousil.science/talk/2021-10-27-talk-16/</guid>
+      <description>&lt;p&gt;Instructional talk covering basic examples of using regular expressions in R to improve the efficiency of data cleaning and metadata extraction tasks. Given at the WSU R Working Group, Pullman, WA in 2021. Link to blog post &lt;a href=&#34;https://brousil.science/post/regex-examples/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Workflow Management with drake</title>
+      <link>brousil.science/talk/2021-03-18-talk-15/</link>
+      <pubDate>Thu, 18 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>brousil.science/talk/2021-03-18-talk-15/</guid>
+      <description>&lt;p&gt;Instructional talk covering the basics of writing functions in R and creating &lt;a href=&#34;https://github.com/ropensci/drake&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;drake&lt;/a&gt; projects for documenting data analysis workflows. Attendees worked with an example dataset and participated in live coding activities to build a drake project from scratch. This was a half-day session over Zoom as part of WSU CEREO&amp;rsquo;s &lt;a href=&#34;https://cereo.wsu.edu/reproducible-r-workshop/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Reproducible Research Techniques with R workshop series&lt;/a&gt;. Syllabus available &lt;a href=&#34;https://mbrousil.github.io/drake_wkshp&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Mapping in R</title>
+      <link>brousil.science/talk/2021-02-10-talk-14/</link>
+      <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>brousil.science/talk/2021-02-10-talk-14/</guid>
+      <description>&lt;p&gt;Instructional talk on basics of manipulating and plotting spatial data in R using &lt;code&gt;sf&lt;/code&gt; and &lt;code&gt;ggplot2&lt;/code&gt;. Given at the WSU R Working Group, Pullman, WA in 2021. Link to blog post &lt;a href=&#34;https://cougrstats.wordpress.com/2021/02/10/introduction-to-mapping-in-r/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Workflow Management with drake</title>
+      <link>brousil.science/talk/2020-11-19-talk-13/</link>
+      <pubDate>Thu, 19 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>brousil.science/talk/2020-11-19-talk-13/</guid>
+      <description>&lt;p&gt;Instructional talk covering the basics of writing functions in R and creating &lt;a href=&#34;https://github.com/ropensci/drake&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;drake&lt;/a&gt; projects for documenting data analysis workflows. Attendees worked with an example dataset and participated in live coding activities to build a drake project from scratch. This was a half-day session over Zoom as part of WSU CEREO&amp;rsquo;s &lt;a href=&#34;https://cereo.wsu.edu/reproducible-r-workshop/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Reproducible Research Techniques with R workshop series&lt;/a&gt;. Syllabus available &lt;a href=&#34;https://mbrousil.github.io/drake_wkshp&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Formatting Data for Use with R</title>
+      <link>brousil.science/talk/2020-10-21-talk-12/</link>
+      <pubDate>Wed, 21 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>brousil.science/talk/2020-10-21-talk-12/</guid>
+      <description>&lt;p&gt;Instructional talk covering strategies for formatting data for effective use with R given at the WSU R Working Group, Pullman, WA in 2020. Link to blog post &lt;a href=&#34;https://cougrstats.wordpress.com/2020/10/21/formatting-data-for-use-with-r/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>R Markdown Introduction</title>
+      <link>brousil.science/talk/2020-09-16-talk-11/</link>
+      <pubDate>Wed, 16 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>brousil.science/talk/2020-09-16-talk-11/</guid>
+      <description>&lt;p&gt;Instructional talk on R Markdown given at the WSU R Working Group, Pullman, WA in 2020. Link to previous blog post on the topic &lt;a href=&#34;https://cougrstats.wordpress.com/2019/09/12/a-tour-of-r-markdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>R Shiny Introduction</title>
+      <link>brousil.science/talk/2020-03-11-talk-10/</link>
+      <pubDate>Wed, 11 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>brousil.science/talk/2020-03-11-talk-10/</guid>
+      <description>&lt;p&gt;Instructional talk on the &lt;code&gt;Shiny&lt;/code&gt; R package given at the WSU R Working Group, Pullman, WA in 2020. Link to blog post &lt;a href=&#34;https://cougrstats.wordpress.com/2020/03/11/intro-to-shiny/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An Introduction to Working with Lists Using purrr</title>
+      <link>brousil.science/talk/2020-02-19-talk-9/</link>
+      <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>brousil.science/talk/2020-02-19-talk-9/</guid>
+      <description>&lt;p&gt;Instructional talk on the basics of &lt;code&gt;map()&lt;/code&gt; and related functions from the &lt;code&gt;purrr&lt;/code&gt;package in R and how to effectively do analysis using data in lists. Given at the WSU R Working Group, Pullman, WA in 2020. Link to blog post &lt;a href=&#34;https://cougrstats.wordpress.com/2020/02/19/an-introduction-to-working-with-lists-using-purrr/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Advanced Methods with ggplot2</title>
+      <link>brousil.science/talk/2019-09-25-talk-8/</link>
+      <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>brousil.science/talk/2019-09-25-talk-8/</guid>
+      <description>&lt;p&gt;Instructional talk on advanced applications of &lt;code&gt;ggplot2&lt;/code&gt; given at the WSU R Working Group, Pullman, WA in 2019. Link to blog post &lt;a href=&#34;https://cougrstats.wordpress.com/2019/09/25/advanced-methods-with-ggplot2/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>R Markdown Introduction</title>
+      <link>brousil.science/talk/2019-09-12-talk-7/</link>
+      <pubDate>Thu, 12 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>brousil.science/talk/2019-09-12-talk-7/</guid>
+      <description>&lt;p&gt;Instructional talk on R Markdown given at the WSU R Working Group, Pullman, WA in 2019. Link to blog post &lt;a href=&#34;https://cougrstats.wordpress.com/2019/09/12/a-tour-of-r-markdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tips on Cleaning Scripts and Data in R</title>
+      <link>brousil.science/talk/2019-04-10-talk-6/</link>
+      <pubDate>Wed, 10 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>brousil.science/talk/2019-04-10-talk-6/</guid>
+      <description>&lt;p&gt;Instructional talk on script and data cleaning in R given at the WSU R Working Group, Pullman, WA in 2019. Link to blog post &lt;a href=&#34;https://cougrstats.wordpress.com/2019/04/10/cleaning-messy-scripts-and-data/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>R Shiny Introduction</title>
+      <link>brousil.science/talk/2018-09-12-talk-5/</link>
+      <pubDate>Wed, 12 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>brousil.science/talk/2018-09-12-talk-5/</guid>
+      <description>&lt;p&gt;Instructional talk on the &lt;code&gt;Shiny&lt;/code&gt; R package given at the WSU R Working Group, Pullman, WA in 2018. Link to blog post &lt;a href=&#34;https://cougrstats.wordpress.com/2018/09/12/how-to-shiny-2/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Influence of fire history and soil legacies on coast redwood stand structure and composition</title>
+      <link>brousil.science/talk/2016-09-13-talk-4/</link>
+      <pubDate>Tue, 13 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>brousil.science/talk/2016-09-13-talk-4/</guid>
+      <description>&lt;p&gt;Talk given at the Coast Redwood Science Symposium, Eureka, CA in 2016.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Influence of fire history and soil legacies on coast redwood regeneration and stand structure</title>
+      <link>brousil.science/talk/2016-08-10-talk-3/</link>
+      <pubDate>Wed, 10 Aug 2016 00:00:00 +0000</pubDate>
+      <guid>brousil.science/talk/2016-08-10-talk-3/</guid>
+      <description>&lt;p&gt;Talk given at the Ecological Society of America Annual Meeting in Fort Lauderdale, FL in 2016.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Plant-pollinator interactions in a Northwest arum are influenced by plant traits, not riparian forest management</title>
+      <link>brousil.science/talk/2014-03-27-talk-2/</link>
+      <pubDate>Thu, 27 Mar 2014 00:00:00 +0000</pubDate>
+      <guid>brousil.science/talk/2014-03-27-talk-2/</guid>
+      <description>&lt;p&gt;Talk given at Northwest Scientific Association Annual Meeting in 2014.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Split Between Two Worlds: The Land and Sea Archaeological Sites of Chuuk Lagoon and Implications for Cultural Change in Micronesia</title>
+      <link>brousil.science/talk/2014-01-04-talk-1/</link>
+      <pubDate>Thu, 27 Mar 2014 00:00:00 +0000</pubDate>
+      <guid>brousil.science/talk/2014-01-04-talk-1/</guid>
+      <description>&lt;p&gt;Talk given at Archaeological Institute of America/American Philological Association Annual Meeting in 2014.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Workshops | Matthew Brousil</title>
+    <link>brousil.science/tag/workshops/</link>
+      <atom:link href="brousil.science/tag/workshops/index.xml" rel="self" type="application/rss+xml" />
+    <description>Workshops</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 20 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/brousil.science/media/icon_hu3f944acd3d6616c2d13f4cde577e2e67_445931_512x512_fill_lanczos_center_2.png</url>
+      <title>Workshops</title>
+      <link>brousil.science/tag/workshops/</link>
+    </image>
+    
+    <item>
+      <title>Workflow management with drake</title>
+      <link>brousil.science/project/drake/</link>
+      <pubDate>Fri, 20 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>brousil.science/project/drake/</guid>
+      <description>&lt;p&gt;In fall 2020 the &lt;a href=&#34;https://cereo.wsu.edu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Center for Environmental Research, Education and Outreach&lt;/a&gt; at Washington State University hosted &lt;a href=&#34;https://mbrousil.github.io/workshops/2020-workshop-1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;a workshop&lt;/a&gt; covering reproducible research techniques in R for graduate students. We wanted to cover &lt;code&gt;drake&lt;/code&gt; workflows as one day of the workshop to show students what R-specific options there are for managing workflows. We expected that workflow management and to some extent R functions would be unfamiliar topics to many students, so the workshop day included discussion of why one would use workflow management software and some basic examples of building realistic functions. At the time that we ran the workshop I wasn&amp;rsquo;t aware of &lt;a href=&#34;https://github.com/ropensci/targets&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;targets&lt;/code&gt;&lt;/a&gt;, so in the future we may repurpose this example and replace &lt;code&gt;drake&lt;/code&gt; with that package.&lt;/p&gt;
+&lt;p&gt;I put together an R Markdown document &lt;a href=&#34;brousil.science/brousil.science/uploads/drake_wkshp.html&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; where I&amp;rsquo;ve combined the contents from the intro presentation I used along with the lesson material in a single document. The (mostly) empty folder structure I provided for the walkthrough is &lt;a href=&#34;https://github.com/mbrousil/drake_template&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; and an example of the finished product is in a repo &lt;a href=&#34;https://github.com/mbrousil/example_drake_project&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;. We used Fanaee-T and Gama&amp;rsquo;s (2013) dataset on bike sharing in DC. More info &lt;a href=&#34;https://archive.ics.uci.edu/ml/datasets/Bike&amp;#43;Sharing&amp;#43;Dataset&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Link to &lt;a href=&#34;https://cereo.wsu.edu/reproducible-r-workshop-2021s/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;workshop website&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

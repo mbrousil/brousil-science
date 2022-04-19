@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rachel L. Vannette | Matthew Brousil</title>
+    <link>brousil.science/author/rachel-l.-vannette/</link>
+      <atom:link href="brousil.science/author/rachel-l.-vannette/index.xml" rel="self" type="application/rss+xml" />
+    <description>Rachel L. Vannette</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 13 Jul 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/brousil.science/media/icon_hu3f944acd3d6616c2d13f4cde577e2e67_445931_512x512_fill_lanczos_center_2.png</url>
+      <title>Rachel L. Vannette</title>
+      <link>brousil.science/author/rachel-l.-vannette/</link>
+    </image>
+    
+    <item>
+      <title>Orchard Management and Landscape Context Mediate the Pear Floral Microbiome</title>
+      <link>brousil.science/publication/schaeffer-2021/</link>
+      <pubDate>Tue, 13 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/schaeffer-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Orchard Management and Landscape Context Mediate the Floral Microbiome of Pear</title>
+      <link>brousil.science/publication/schaeffer-2020/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/schaeffer-2020/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

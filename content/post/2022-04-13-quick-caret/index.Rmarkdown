@@ -1,0 +1,236 @@
+---
+title: A quick-start guide to the `caret` R package
+author: mbrousil
+date: '2022-04-13'
+slug: quick-caret
+categories: []
+tags:
+  - Teaching
+  - Live coding
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2022-04-19T12:01:05-07:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+## Background
+
+The [`caret`](https://cran.r-project.org/web/packages/caret/index.html) R package has been a staple of machine learning (ML) methods in R for a long time. The name `caret` stands for "Classification and Regression Training" according to [the authors](https://cran.r-project.org/web/packages/caret/vignettes/caret.html). It provides methods for common ML steps, such as pre-processing, training, tuning, and evaluating predictive models.
+
+In addition to `caret`, there is also a group of packages referred to as `tidymodels` that is currently in development and which is also available for use. Both `caret` and `tidymodels` have [Max Kuhn](https://github.com/topepo) as a main author, but `tidymodels` aims to streamline ML for use with [`tidyverse`](tidyverse.org) packages.
+
+I'll be focusing on `caret` in this intro. We'll be working with data from the `palmerpenguins` package, and using the `caret`, and `tidyverse` packages.
+
+<br>
+
+## Working with data
+
+Start by loading the necessary packages:
+```{r warning=FALSE, message=FALSE}
+library(tidyverse)
+library(palmerpenguins)
+library(caret)
+```
+
+<br>
+
+We'll use the `penguins` dataset from `palmerpenguins`. It will be loaded automatically when you load the `palmerpenguins` package:
+```{r eval=FALSE}
+head(penguins)
+```
+
+```{r message=FALSE, echo=FALSE}
+library(kableExtra)
+
+penguins %>%
+  head() %>%
+  kable() %>%
+  kable_paper()
+
+```
+
+<br>
+
+This package contains [LTER data](https://pallter.marine.rutgers.edu/catalog/) for three penguin species on islands in Antarctica.
+
+<br>
+
+### Reviewing the data
+
+`caret` provides a function called `featurePlot()`, which is used to visualize datasets. It runs off of the `lattice` package, so if you are familiar with this method of plotting you might find it familiar. As someone who primarily uses `ggplot2` I found this function a bit difficult to use, but you may find it helpful still. Max Kuhn's [`The `caret` Package](https://topepo.github.io/caret/visualizations.html) Bookdown document provides some interesting examples of its functionality. Here's a basic plot with a couple of our variables:
+```{r}
+featurePlot(x = penguins[, c("bill_length_mm", "bill_depth_mm", "flipper_length_mm")], 
+            y = penguins$body_mass_g, 
+            plot = "scatter", 
+            layout = c(3, 1))
+```
+
+In the plot above, the x-axis corresponds to each predictor (by panel) and the y-axis is `body_mass_g`.
+
+<br>
+
+### Pre-processing
+
+`caret` has built-in functionality to help with pre-processing your data as well. There are some more sophisticated options, but here we'll just take a look at one. For example, in some modeling situations you'll want to check for correlated predictors (multicollinearity). The `caret` function for this is `findCorrelation()`. 
+
+First we'll want to make a correlation matrix, which will be fed into `findCorrelation()`.
+```{r}
+penguin_cor <- penguins %>%
+  filter(!if_any(everything(), is.na)) %>%
+  # Numeric columns only
+  select(where(is.numeric)) %>%
+  cor()
+```
+
+Then `findCorrelation()` will check for correlations above a cutoff value that we provide:
+```{r}
+findCorrelation(x = penguin_cor,
+                # Use 0.7 correlation cutoff
+                cutoff = 0.7,
+                # Provide more details
+                verbose = TRUE,
+                # Return column names instead of indices
+                names = TRUE)
+```
+
+It notes that row 3 and column 4 of our correlation object have a correlation of 0.87:
+```{r, echo = FALSE}
+penguin_cor
+```
+
+This means `flipper_length_mm` (row 3) and `body_mass_g` (column 4) are correlated. That's fine since body mass is our response variable.
+
+<br>
+
+### Splitting the data
+
+We'll want to make a training dataset with which to build our model. `caret` provides some methods for doing this, including some for balanced splits for classification datasets, splitting using maximum dissimilarity, splitting for time series, and more. 
+
+We'll proceed by modeling `body_mass_g`. First we'll remove NAs, then do a basic split into a training dataset.
+
+```{r}
+model_data <- penguins %>%
+  filter(!if_any(everything(), is.na))
+
+# 80% of the data for training - these are row indices
+set.seed(500)
+
+training_indices <- createDataPartition(y = model_data$body_mass_g, 
+                                        p = .8,
+                                        # Do not return a list
+                                        list = FALSE)
+
+# Subset the rows selected above
+training_sample <- model_data[training_indices, ]
+```
+
+<br>
+
+## Modeling
+
+With our data in hand we now can progress to training a model. We'll use a random forest for this example. Note that there is a lot to explore in `caret` that I won't go over here. I highly recommend reading [`The `caret` Package](https://topepo.github.io/caret/visualizations.html). 
+
+<br> 
+
+First we can use the `trainControl()` function to customize the model training process:
+```{r}
+train_params <- trainControl(
+  # Repeated K-fold cross-validation
+  method = "repeatedcv",
+  # 10 folds
+  number = 10,
+  # 3 repeats
+  repeats = 3
+)
+```
+
+<br>
+
+
+Now we can train the random forest with the parameters above:
+```{r}
+set.seed(500)
+
+rf_model <- train(
+  # Modeling formula indicating to model body_mass_g using all other vars
+  form = body_mass_g ~ .,
+  # Our custom parameters
+  trControl = train_params,
+  # The dataset
+  data = training_sample,
+  # Use a random forest
+  method = "rf"
+)
+```
+
+<br>
+
+Here are our results:
+```{r}
+# Note that mtry = the number of randomly selected predictors caret uses at each split
+rf_model
+```
+
+
+<br>
+
+The final model can be accessed from the trained object. But note that you probably [shouldn't rely on this R^2^](http://zevross.com/blog/2017/09/19/predictive-modeling-and-machine-learning-in-r-with-the-caret-package/#an-r-squared-from-a-model-based-on-the-full-dataset-is-unrealistic) as your output.
+```{r}
+rf_model$finalModel
+```
+
+Its `mtry` value was 5 based on RMSE, which we can view using `ggplot()`:
+```{r}
+ggplot(rf_model)
+```
+
+
+<br>
+
+Now we want to know how the model performs on our testing data subset:
+```{r}
+# Pull out the rows for testing and add predictions from the RF
+test_sample <- model_data[-training_indices, ] %>%
+  mutate(predicted = predict(object = rf_model, newdata = .))
+
+# Get a new R2
+postResample(pred = test_sample$predicted,
+             obs = test_sample$body_mass_g)
+```
+
+<br>
+
+Plot the relationship
+```{r}
+ggplot(data = test_sample) +
+  # A 1:1 line
+  geom_abline(slope = 1, intercept = 0, linetype = "dashed", color = "gray65") +
+  geom_point(aes(x = body_mass_g, y = predicted, color = species)) +
+  xlim(c(2500, 6500)) +
+  ylim(c(2500, 6500)) +
+  theme_bw()
+```
+
+
+<br>
+
+We can look at a scaled metric for variable importance using the `varImp()` function:
+```{r}
+plot(varImp(rf_model))
+```
+
+<br>
+
+
+## References
++ [`caret` manual](https://topepo.github.io/caret/)
++ [A short introduction to `caret`](https://cran.r-project.org/web/packages/caret/vignettes/caret.html)
++ [`caret` CRAN page](https://cran.r-project.org/package=caret)
++ [Predictive modeling and machine learning in R with the caret package](http://zevross.com/blog/2017/09/19/predictive-modeling-and-machine-learning-in-r-with-the-caret-package/)

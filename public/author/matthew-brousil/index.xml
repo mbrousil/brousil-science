@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Matthew Brousil</title>
+    <link>brousil.science/author/matthew-brousil/</link>
+      <atom:link href="brousil.science/author/matthew-brousil/index.xml" rel="self" type="application/rss+xml" />
+    <description>Matthew Brousil</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 13 Jul 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/brousil.science/media/icon_hu3f944acd3d6616c2d13f4cde577e2e67_445931_512x512_fill_lanczos_center_2.png</url>
+      <title>Matthew Brousil</title>
+      <link>brousil.science/author/matthew-brousil/</link>
+    </image>
+    
+    <item>
+      <title>Orchard Management and Landscape Context Mediate the Pear Floral Microbiome</title>
+      <link>brousil.science/publication/schaeffer-2021/</link>
+      <pubDate>Tue, 13 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/schaeffer-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Orchard Management and Landscape Context Mediate the Floral Microbiome of Pear</title>
+      <link>brousil.science/publication/schaeffer-2020/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/schaeffer-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Compounding Fire Disturbance History Encourages Coast Redwood (Sequoia sempervirens) Regeneration and Community Dominance</title>
+      <link>brousil.science/publication/matthew-brousil-69098107/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/matthew-brousil-69098107/</guid>
+      <description>&lt;p&gt;Master&amp;rsquo;s thesis describing the effects of compounding fire disturbance history on coast redwood regeneration and community dominance in Big Sur, CA.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Plant-Pollinator Interactions in a Northwest Arum Related to Plant Traits but not Riparian Forest Management</title>
+      <link>brousil.science/publication/brousil-2015/</link>
+      <pubDate>Sat, 01 Aug 2015 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/brousil-2015/</guid>
+      <description>&lt;p&gt;This paper discusses plant-pollinator interactions on &lt;em&gt;Lysichiton americanus&lt;/em&gt; in a western Washington (USA) riparian forest.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

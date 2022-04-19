@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Brian P. Lanouette | Matthew Brousil</title>
+    <link>brousil.science/author/brian-p.-lanouette/</link>
+      <atom:link href="brousil.science/author/brian-p.-lanouette/index.xml" rel="self" type="application/rss+xml" />
+    <description>Brian P. Lanouette</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/brousil.science/media/icon_hu3f944acd3d6616c2d13f4cde577e2e67_445931_512x512_fill_lanczos_center_2.png</url>
+      <title>Brian P. Lanouette</title>
+      <link>brousil.science/author/brian-p.-lanouette/</link>
+    </image>
+    
+    <item>
+      <title>The Global Lake Area, Climate, and Population Dataset: A New Tool for Addressing Critical Limnological Questions</title>
+      <link>brousil.science/publication/meyer-2020/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/meyer-2020/</guid>
+      <description>&lt;p&gt;This bulletin piece describes potential applications for the Global Lake area, Climate, and Population (GLCP) dataset. We use three case studies to show different uses for the GLCP at local, regional, and national scales.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1 | Matthew Brousil</title>
+    <link>brousil.science/publication-type/1/</link>
+      <atom:link href="brousil.science/publication-type/1/index.xml" rel="self" type="application/rss+xml" />
+    <description>1</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/brousil.science/media/icon_hu3f944acd3d6616c2d13f4cde577e2e67_445931_512x512_fill_lanczos_center_2.png</url>
+      <title>1</title>
+      <link>brousil.science/publication-type/1/</link>
+    </image>
+    
+    <item>
+      <title>Influence of Compounding Fires on Coast Redwood Regeneration and Stand Structure</title>
+      <link>brousil.science/publication/brousil-2017/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/brousil-2017/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications | Matthew Brousil</title>
+    <link>brousil.science/publication/</link>
+      <atom:link href="brousil.science/publication/index.xml" rel="self" type="application/rss+xml" />
+    <description>Publications</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 20 Dec 2021 16:48:25 +0000</lastBuildDate>
+    <image>
+      <url>/brousil.science/media/icon_hu3f944acd3d6616c2d13f4cde577e2e67_445931_512x512_fill_lanczos_center_2.png</url>
+      <title>Publications</title>
+      <link>brousil.science/publication/</link>
+    </image>
+    
+    <item>
+      <title>Documenting pollinators, floral hosts, and plant–pollinator interactions in U.S. Pacific Northwest agroecosystems</title>
+      <link>brousil.science/publication/documenting-pollinators-floral-hosts-and-plantpollinator-interactions-in-u-s-pacific-northwest-agroecosystems/</link>
+      <pubDate>Mon, 20 Dec 2021 16:48:25 +0000</pubDate>
+      <guid>brousil.science/publication/documenting-pollinators-floral-hosts-and-plantpollinator-interactions-in-u-s-pacific-northwest-agroecosystems/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A unified dataset of co-located sewage pollution, periphyton, and benthic macroinvertebrate community and food web structure from Lake Baikal (Siberia)</title>
+      <link>brousil.science/publication/a-unified-dataset-of-co-located-sewage-pollution-periphyton-and-benthic-macroinvertebrate-community-and-food-web-structure-from-lake-baikal-siberia/</link>
+      <pubDate>Thu, 30 Sep 2021 20:57:07 +0000</pubDate>
+      <guid>brousil.science/publication/a-unified-dataset-of-co-located-sewage-pollution-periphyton-and-benthic-macroinvertebrate-community-and-food-web-structure-from-lake-baikal-siberia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Orchard Management and Landscape Context Mediate the Pear Floral Microbiome</title>
+      <link>brousil.science/publication/schaeffer-2021/</link>
+      <pubDate>Tue, 13 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/schaeffer-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Interactions between plants and pollinators across urban and rural farming landscapes</title>
+      <link>brousil.science/publication/olsson-2021-e-00194/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/olsson-2021-e-00194/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Orchard Management and Landscape Context Mediate the Floral Microbiome of Pear</title>
+      <link>brousil.science/publication/schaeffer-2020/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/schaeffer-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Global Lake Area, Climate, and Population Dataset: A New Tool for Addressing Critical Limnological Questions</title>
+      <link>brousil.science/publication/meyer-2020/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/meyer-2020/</guid>
+      <description>&lt;p&gt;This bulletin piece describes potential applications for the Global Lake area, Climate, and Population (GLCP) dataset. We use three case studies to show different uses for the GLCP at local, regional, and national scales.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Integrating Perspectives to Understand Lake Ice Dynamics in a Changing World</title>
+      <link>brousil.science/publication/sharma-2020/</link>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/sharma-2020/</guid>
+      <description>&lt;p&gt;This study describes drivers of freshwater lake ice, methods for the study of lake ice, and avenues for multidisciplinary research to fill existing gaps in this body of research.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The global lake area, climate, and population dataset</title>
+      <link>brousil.science/publication/matthew-brousil-75490938/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/matthew-brousil-75490938/</guid>
+      <description>&lt;p&gt;This is a paper describing a dataset we compiled of lake surface area for &amp;gt; 1.42 million lakes and reservoirs &amp;gt;= 10 hectares in area, matched with basin-level temperature, precipitation, and population data. Data are a time series covering 1995 to 2015 (although resolution differs by variable). The dataset is intended to be fully reproducible: all scripts and a standardized file structure are available with the full dataset at &lt;a href=&#34;https://doi.org/10.6073/pasta/834e2d4e8ee7eb2fa9a5a5b32d759683&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;EDI&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The global lake area, climate, and population (GLCP) dataset</title>
+      <link>brousil.science/publication/meyer-2019/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/meyer-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Global lake area, climate, and population dataset</title>
+      <link>brousil.science/publication/matthew-brousil-69097655/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/matthew-brousil-69097655/</guid>
+      <description>&lt;p&gt;This is a dataset containing lake surface area for &amp;gt; 1.42 million lakes and reservoirs &amp;gt;= 10 hectares in area, matched with basin-level temperature, precipitation, and population data. Data are a time series covering 1995 to 2015 (although resolution differs by variable). The dataset is intended to be fully reproducible: all scripts and a standardized file structure are available with the full dataset.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Influence of Compounding Fires on Coast Redwood Regeneration and Stand Structure</title>
+      <link>brousil.science/publication/brousil-2017/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/brousil-2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Compounding Fire Disturbance History Encourages Coast Redwood (Sequoia sempervirens) Regeneration and Community Dominance</title>
+      <link>brousil.science/publication/matthew-brousil-69098107/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/matthew-brousil-69098107/</guid>
+      <description>&lt;p&gt;Master&amp;rsquo;s thesis describing the effects of compounding fire disturbance history on coast redwood regeneration and community dominance in Big Sur, CA.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Plant-Pollinator Interactions in a Northwest Arum Related to Plant Traits but not Riparian Forest Management</title>
+      <link>brousil.science/publication/brousil-2015/</link>
+      <pubDate>Sat, 01 Aug 2015 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/brousil-2015/</guid>
+      <description>&lt;p&gt;This paper discusses plant-pollinator interactions on &lt;em&gt;Lysichiton americanus&lt;/em&gt; in a western Washington (USA) riparian forest.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

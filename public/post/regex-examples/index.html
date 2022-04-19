@@ -1,0 +1,1459 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.2.0 for Hugo" />
+  
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Matthew Brousil" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="In this post I&rsquo;ll be walking through some basic examples of regex, or regular expressions, and also providing a couple real-world examples.
+To quote Hadley Wickham and Garrett Grolemund (2017), regex is a &ldquo;language that allow[s] you to describe patterns in strings." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="brousil.science/post/regex-examples/" />
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+
+    
+    
+
+    
+    
+    
+      
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/brousil.science/css/wowchemy.9f8da5b22512cb7f1a8507beefc69112.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/brousil.science/index.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/brousil.science/media/icon_hu3f944acd3d6616c2d13f4cde577e2e67_445931_32x32_fill_lanczos_center_2.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/brousil.science/media/icon_hu3f944acd3d6616c2d13f4cde577e2e67_445931_180x180_fill_lanczos_center_2.png" />
+
+  <link rel="canonical" href="brousil.science/post/regex-examples/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="Matthew Brousil" />
+  <meta property="og:url" content="brousil.science/post/regex-examples/" />
+  <meta property="og:title" content="Examples of using regular expressions in R | Matthew Brousil" />
+  <meta property="og:description" content="In this post I&rsquo;ll be walking through some basic examples of regex, or regular expressions, and also providing a couple real-world examples.
+To quote Hadley Wickham and Garrett Grolemund (2017), regex is a &ldquo;language that allow[s] you to describe patterns in strings." /><meta property="og:image" content="/brousil.science/media/icon_hu3f944acd3d6616c2d13f4cde577e2e67_445931_512x512_fill_lanczos_center_2.png" />
+    <meta property="twitter:image" content="/brousil.science/media/icon_hu3f944acd3d6616c2d13f4cde577e2e67_445931_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2021-12-20T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2021-12-20T21:53:48-08:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "brousil.science/post/regex-examples/"
+  },
+  "headline": "Examples of using regular expressions in R",
+  
+  "datePublished": "2021-12-20T00:00:00Z",
+  "dateModified": "2021-12-20T21:53:48-08:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Matthew Brousil"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Matthew Brousil",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/brousil.science/media/icon_hu3f944acd3d6616c2d13f4cde577e2e67_445931_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "In this post I\u0026rsquo;ll be walking through some basic examples of regex, or regular expressions, and also providing a couple real-world examples.\nTo quote Hadley Wickham and Garrett Grolemund (2017), regex is a \u0026ldquo;language that allow[s] you to describe patterns in strings."
+}
+</script>
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>Examples of using regular expressions in R | Matthew Brousil</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="75b23489bb7a0e183b5e015311ab62c3" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/brousil.science/js/wowchemy-init.min.c2ae95842e5b33a787c7b8c567e989a4.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/brousil.science/">Matthew Brousil</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/brousil.science/">Matthew Brousil</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/brousil.science/publication"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/brousil.science/workshop"><span>Workshops</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/brousil.science/talk"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/brousil.science/portfolio"><span>Portfolio</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/brousil.science/cv"><span>CV</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Examples of using regular expressions in R</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Dec 20, 2021
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>In this post I&rsquo;ll be walking through some basic examples of <a href="https://en.wikipedia.org/wiki/Regular_expression" target="_blank" rel="noopener">regex</a>, or regular expressions, and also providing a couple real-world examples.</p>
+<p>To quote Hadley Wickham and Garrett Grolemund (<a href="https://r4ds.had.co.nz/strings.html#matching-patterns-with-regular-expressions" target="_blank" rel="noopener">2017</a>), regex is a <em>&ldquo;language that allow[s] you to describe patterns in strings.&quot;</em> When we have string/character data in R, we may want to extract information from it. And regex is a tool for doing this.</p>
+<p>As a conceptual example, consider the sentence below:</p>
+<p><code>“The user’s phone number is (555) 555-5555.”</code></p>
+<p>This string of text could be something scraped from a PDF, or perhaps provided as input to a survey. Our end goal might be to extract and store the phone number in that sentence. One way to do this would be to write a <strong>regular expression</strong> that describes the pattern of a phone number, which R can then use to extract the phone number from the string.</p>
+<p>Another common example is pulling metadata from filenames. If you have a folder of rasters with names like <code>&quot;farm_aerial_imagery_whitman_county_2021.tiff&quot;</code>, you might want to filter them based on their contents. Using regex we can give R instructions to separate out the county name and year from the filenames, which allows us to determine the spatial and temporal coverage of our files.</p>
+<p>Now I&rsquo;ll go through a few examples. If you want to follow along, you can download the <code>.zip</code> folder from <a href="https://drive.google.com/drive/folders/1jADPyF12N6dPzBQs-Kwn3OQyca96ZNI8?usp=sharing" target="_blank" rel="noopener">here</a>. Make sure to unzip the folder and open the script it contains. We&rsquo;ll fill it in below:</p>
+<pre><code class="language-r">library(tidyverse)
+library(stringi)
+</code></pre>
+<p>Note that tidyverse contains the <code>stringr</code> package, which contains a variety of useful functions for working with strings. We&rsquo;ll barely scratch the surface of its capabilities here.</p>
+<h2 id="1-a-simple-example-of-regex">1. A simple example of regex</h2>
+<p>A common application of regex is to extract numbers from text data. Let&rsquo;s say we have this filename:</p>
+<pre><code class="language-r">filename &lt;- &quot;2021A.txt&quot;
+</code></pre>
+<p>This is how we could confirm the presence of just the year from it using base R: We could search for the year verbatim, returning a logical T/F with <code>grepl()</code>.</p>
+<pre><code class="language-r">grepl(pattern = &quot;2021&quot;, x = filename)
+</code></pre>
+<pre><code>## [1] TRUE
+</code></pre>
+<br>
+<p>Or we could generalize it to just identifying where a number occurs. We use a pattern to identifying numbers 0 through 9:</p>
+<pre><code class="language-r">grepl(pattern = &quot;[0-9]&quot;, x = filename)
+</code></pre>
+<pre><code>## [1] TRUE
+</code></pre>
+<br>
+<p>More helpful would be to find four numbers in a row, as indicated with our bracketed 4:</p>
+<pre><code class="language-r">grepl(pattern = &quot;[0-9]{4}&quot;, x = filename)
+</code></pre>
+<pre><code>## [1] TRUE
+</code></pre>
+<br>
+<p>And then finally to actually return those numbers to us using <code>str_extract()</code> so that we can use them:</p>
+<pre><code class="language-r">?str_extract
+</code></pre>
+<pre><code class="language-r">str_extract(string = filename, pattern = &quot;[0-9]{4}&quot;)
+</code></pre>
+<pre><code>## [1] &quot;2021&quot;
+</code></pre>
+<br>
+<p>Now you might imagine that we could take this one step further and pull the dates from an entire vector of filenames. This will be especially useful if we want to extract these data from an entire column, for example.</p>
+<pre><code class="language-r">file_list &lt;- c(&quot;2021A.txt&quot;, &quot;1995A.txt&quot;, &quot;2021B.txt&quot;, &quot;1995B.txt&quot;)
+
+
+str_extract(string = file_list, pattern = &quot;[0-9]{4}&quot;)
+</code></pre>
+<pre><code>## [1] &quot;2021&quot; &quot;1995&quot; &quot;2021&quot; &quot;1995&quot;
+</code></pre>
+<br>
+<h2 id="2-separating-and-extracting">2. Separating and extracting</h2>
+<p>Pretend that we&rsquo;re given a list of student names with grades. We want to use this for an analysis, but the names and grades are combined in a random order into a single string. We&rsquo;ll need to separate them somehow. Luckily regex provides us the tools to do so.</p>
+<pre><code class="language-r">grade_data &lt;- read.csv(file = &quot;grades.csv&quot;)
+
+head(grade_data)
+</code></pre>
+<pre><code>##           grades
+## 1   COSTA.gradeB
+## 2    gradeD.LOWE
+## 3  gradeC.SEXTON
+## 4 ELLIOTT.gradeD
+## 5   MARIN.gradeD
+## 6  GUERRA.gradeC
+</code></pre>
+<p>Let&rsquo;s test out a potential regex pattern to find grades. We want a single capital letter, right?</p>
+<pre><code class="language-r">str_extract(string = grade_data$grades,
+            pattern = &quot;[A-Z]{1}&quot;)
+</code></pre>
+<pre><code>##   [1] &quot;C&quot; &quot;D&quot; &quot;C&quot; &quot;E&quot; &quot;M&quot; &quot;G&quot; &quot;B&quot; &quot;D&quot; &quot;B&quot; &quot;F&quot; &quot;C&quot; &quot;B&quot; &quot;D&quot; &quot;C&quot; &quot;H&quot; &quot;S&quot; &quot;F&quot; &quot;B&quot;
+##  [19] &quot;D&quot; &quot;G&quot; &quot;H&quot; &quot;C&quot; &quot;H&quot; &quot;H&quot; &quot;B&quot; &quot;F&quot; &quot;R&quot; &quot;F&quot; &quot;G&quot; &quot;B&quot; &quot;W&quot; &quot;R&quot; &quot;A&quot; &quot;S&quot; &quot;W&quot; &quot;D&quot;
+##  [37] &quot;W&quot; &quot;D&quot; &quot;W&quot; &quot;R&quot; &quot;B&quot; &quot;M&quot; &quot;C&quot; &quot;C&quot; &quot;E&quot; &quot;M&quot; &quot;I&quot; &quot;B&quot; &quot;A&quot; &quot;Z&quot; &quot;K&quot; &quot;C&quot; &quot;B&quot; &quot;C&quot;
+##  [55] &quot;B&quot; &quot;R&quot; &quot;C&quot; &quot;D&quot; &quot;F&quot; &quot;C&quot; &quot;D&quot; &quot;D&quot; &quot;D&quot; &quot;T&quot; &quot;C&quot; &quot;M&quot; &quot;K&quot; &quot;C&quot; &quot;B&quot; &quot;C&quot; &quot;C&quot; &quot;B&quot;
+##  [73] &quot;B&quot; &quot;A&quot; &quot;A&quot; &quot;D&quot; &quot;F&quot; &quot;F&quot; &quot;A&quot; &quot;Q&quot; &quot;L&quot; &quot;A&quot; &quot;D&quot; &quot;F&quot; &quot;B&quot; &quot;D&quot; &quot;F&quot; &quot;R&quot; &quot;A&quot; &quot;A&quot;
+##  [91] &quot;B&quot; &quot;D&quot; &quot;T&quot; &quot;F&quot; &quot;F&quot; &quot;V&quot; &quot;A&quot; &quot;D&quot; &quot;B&quot; &quot;C&quot;
+</code></pre>
+<p>Hmm, that&rsquo;s the general idea, but it&rsquo;s clearly just extracting the first capital letter in the text string, which isn&rsquo;t always a grade.</p>
+<p>Instead, look for <code>&quot;grade&quot;</code> followed by a single capital letter.</p>
+<pre><code class="language-r">str_extract(string = grade_data$grades,
+            pattern = &quot;grade[A-Z]{1}&quot;)
+</code></pre>
+<pre><code>##   [1] &quot;gradeB&quot; &quot;gradeD&quot; &quot;gradeC&quot; &quot;gradeD&quot; &quot;gradeD&quot; &quot;gradeC&quot; &quot;gradeB&quot; &quot;gradeD&quot;
+##   [9] &quot;gradeB&quot; &quot;gradeF&quot; &quot;gradeD&quot; &quot;gradeB&quot; &quot;gradeD&quot; &quot;gradeF&quot; &quot;gradeD&quot; &quot;gradeA&quot;
+##  [17] &quot;gradeF&quot; &quot;gradeB&quot; &quot;gradeD&quot; &quot;gradeA&quot; &quot;gradeC&quot; &quot;gradeC&quot; &quot;gradeA&quot; &quot;gradeA&quot;
+##  [25] &quot;gradeB&quot; &quot;gradeF&quot; &quot;gradeC&quot; &quot;gradeF&quot; &quot;gradeF&quot; &quot;gradeB&quot; &quot;gradeB&quot; &quot;gradeB&quot;
+##  [33] &quot;gradeA&quot; &quot;gradeD&quot; &quot;gradeA&quot; &quot;gradeD&quot; &quot;gradeF&quot; &quot;gradeD&quot; &quot;gradeF&quot; &quot;gradeB&quot;
+##  [41] &quot;gradeB&quot; &quot;gradeF&quot; &quot;gradeB&quot; &quot;gradeC&quot; &quot;gradeD&quot; &quot;gradeC&quot; &quot;gradeD&quot; &quot;gradeA&quot;
+##  [49] &quot;gradeA&quot; &quot;gradeA&quot; &quot;gradeD&quot; &quot;gradeC&quot; &quot;gradeA&quot; &quot;gradeC&quot; &quot;gradeB&quot; &quot;gradeA&quot;
+##  [57] &quot;gradeC&quot; &quot;gradeD&quot; &quot;gradeF&quot; &quot;gradeC&quot; &quot;gradeD&quot; &quot;gradeD&quot; &quot;gradeD&quot; &quot;gradeC&quot;
+##  [65] &quot;gradeC&quot; &quot;gradeD&quot; &quot;gradeC&quot; &quot;gradeC&quot; &quot;gradeB&quot; &quot;gradeC&quot; &quot;gradeD&quot; &quot;gradeB&quot;
+##  [73] &quot;gradeB&quot; &quot;gradeA&quot; &quot;gradeA&quot; &quot;gradeB&quot; &quot;gradeF&quot; &quot;gradeF&quot; &quot;gradeA&quot; &quot;gradeC&quot;
+##  [81] &quot;gradeC&quot; &quot;gradeA&quot; &quot;gradeD&quot; &quot;gradeF&quot; &quot;gradeB&quot; &quot;gradeD&quot; &quot;gradeF&quot; &quot;gradeF&quot;
+##  [89] &quot;gradeC&quot; &quot;gradeB&quot; &quot;gradeB&quot; &quot;gradeD&quot; &quot;gradeB&quot; &quot;gradeF&quot; &quot;gradeF&quot; &quot;gradeA&quot;
+##  [97] &quot;gradeA&quot; &quot;gradeD&quot; &quot;gradeA&quot; &quot;gradeC&quot;
+</code></pre>
+<p>That works pretty much exactly as we intended&hellip;Save it for later:</p>
+<pre><code class="language-r">grades &lt;- str_extract(string = grade_data$grades,
+                      pattern = &quot;grade[A-Z]{1}&quot;)
+
+# And remove &quot;grade&quot; from it
+grades &lt;- gsub(pattern = &quot;grade&quot;, replacement = &quot;&quot;, x = grades)
+</code></pre>
+<br>
+<p>What about last names? Well, there are probably many ways to do this one. A &ldquo;easy&rdquo; way could be to first remove the grade info, then keep the rest:</p>
+<pre><code class="language-r">grade_remove &lt;- gsub(pattern = &quot;grade[A-Z]{1}&quot;, replacement = &quot;&quot;, x = grade_data$grades)
+
+head(grade_remove)
+</code></pre>
+<pre><code>## [1] &quot;COSTA.&quot;   &quot;.LOWE&quot;    &quot;.SEXTON&quot;  &quot;ELLIOTT.&quot; &quot;MARIN.&quot;   &quot;GUERRA.&quot;
+</code></pre>
+<p>Ok, so far so good. There&rsquo;s also a pesky period in there&hellip;</p>
+<pre><code class="language-r">gsub(pattern = &quot;.&quot;, replacement = &quot;&quot;, x = grade_remove)
+</code></pre>
+<pre><code>##   [1] &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot;
+##  [26] &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot;
+##  [51] &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot;
+##  [76] &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot;
+</code></pre>
+<p>That doesn&rsquo;t look right! The period <code>.</code> is a pattern that is used in regex as a wildcard, standing in for any character. We have to &ldquo;escape&rdquo; it in order to use it to signify a literal period.</p>
+<p>We use the double backslash in R to &ldquo;escape&rdquo; these special characters. We use two instead of one because of the way that R uses strings. We&rsquo;re not going to get into the detail here</p>
+<pre><code class="language-r">head(gsub(pattern = &quot;\\.&quot;, replacement = &quot;&quot;, x = grade_remove))
+</code></pre>
+<pre><code>## [1] &quot;COSTA&quot;   &quot;LOWE&quot;    &quot;SEXTON&quot;  &quot;ELLIOTT&quot; &quot;MARIN&quot;   &quot;GUERRA&quot;
+</code></pre>
+<br>
+<p>Save it for later:</p>
+<pre><code class="language-r">student_names &lt;- gsub(pattern = &quot;\\.&quot;, replacement = &quot;&quot;, x = grade_remove)
+</code></pre>
+<p>We can now combine these tricks to make a new data frame!</p>
+<pre><code class="language-r">grade_records &lt;- tibble(
+  student_names,
+  grades
+)
+</code></pre>
+<br>
+<h2 id="3-kick-it-up-a-notch">3. Kick it up a notch</h2>
+<p>In this section I want to share some regex routines I&rsquo;ve used in my real-world work to speed up or simplify data cleaning.</p>
+<p>They&rsquo;re going to be a little higher level, but hopefully useful to show how these things can be applied day-to-day.</p>
+<h3 id="3a-lookaheadlookbehind">3a. Lookahead/Lookbehind</h3>
+<p>We have a file with a column of coordinates that needs to be reformatted. I&rsquo;ll show how lookahead/lookbehind methods can help here.</p>
+<pre><code class="language-r">coordinates &lt;- read.csv(file = &quot;coordinates.csv&quot;)
+
+head(coordinates)
+</code></pre>
+<pre><code>##                   coordinates count       date
+## 1 N 46° 43.9214 W 117° 9.6333    28 10/10/2020
+## 2    N 21° 20.04 W 158° 50.05    13 10/10/2020
+## 3 N 53° 31.0101 E 108° 6.0512    47  10/5/2020
+## 4 N 46° 43.9214 W 117° 9.6333    96 10/10/2020
+## 5    N 21° 20.04 W 158° 50.05    95  10/5/2020
+## 6    N 21° 20.04 W 158° 50.05    66 10/10/2020
+</code></pre>
+<br>
+<p>We want to identify pieces of text in the coordinates column that are latitudes or longitudes. Latitudes = pieces of text followed by &quot; W&rdquo; or &quot; E&quot;. Longitudes = pieces of text preceded by &quot; W&quot; or &quot; E&quot;.</p>
+<p><strong>Extract Latitude</strong>:
+We want to use a <em>positive lookahead</em>. i.e., our piece of targeted text (latitude) exists BEFORE a specific textual pattern (&ldquo;W&rdquo; or &ldquo;E&rdquo;). The text pattern in the lookahead is NOT included in the matched text, so we won&rsquo;t end up storing the W or E!</p>
+<br>
+<p>The regex syntax for this is: <code>&quot;(?=...)&quot;</code>. We&rsquo;ll include the leading space before the W/E as well. Note that the <code>&quot;|&quot;</code> stands for &ldquo;OR&rdquo; and <code>&quot;.*&quot;</code> signifies &ldquo;any character zero or more times&rdquo;. <a href="https://www.keycdn.com/support/regex-cheatsheet" target="_blank" rel="noopener">Here&rsquo;s</a> a good reference for the syntax.</p>
+<pre><code class="language-r">coordinates %&gt;%
+  mutate(latitude = str_extract(string = coordinates,
+                                pattern = &quot;.*(?= E| W)&quot;))
+</code></pre>
+<pre><code>##                    coordinates count       date      latitude
+## 1  N 46° 43.9214 W 117° 9.6333    28 10/10/2020 N 46° 43.9214
+## 2     N 21° 20.04 W 158° 50.05    13 10/10/2020   N 21° 20.04
+## 3  N 53° 31.0101 E 108° 6.0512    47  10/5/2020 N 53° 31.0101
+## 4  N 46° 43.9214 W 117° 9.6333    96 10/10/2020 N 46° 43.9214
+## 5     N 21° 20.04 W 158° 50.05    95  10/5/2020   N 21° 20.04
+## 6     N 21° 20.04 W 158° 50.05    66 10/10/2020   N 21° 20.04
+## 7  N 53° 31.0101 E 108° 6.0512    74  10/5/2020 N 53° 31.0101
+## 8  N 53° 31.0101 E 108° 6.0512    62 10/10/2020 N 53° 31.0101
+## 9  N 53° 31.0101 E 108° 6.0512    66 10/20/2020 N 53° 31.0101
+## 10 N 46° 43.9214 W 117° 9.6333    58 10/20/2020 N 46° 43.9214
+## 11 N 53° 31.0101 E 108° 6.0512    36 10/20/2020 N 53° 31.0101
+## 12 N 46° 43.9214 W 117° 9.6333    49 10/20/2020 N 46° 43.9214
+## 13 N 53° 31.0101 E 108° 6.0512    39  9/25/2020 N 53° 31.0101
+## 14 N 53° 31.0101 E 108° 6.0512    15 10/20/2020 N 53° 31.0101
+## 15 N 46° 43.9214 W 117° 9.6333    75  9/25/2020 N 46° 43.9214
+</code></pre>
+<p>Here&rsquo;s a quick summary of the other lookahead/behind options:</p>
+<p><em><strong>Negative lookahead</strong></em>: Our piece of targeted text is NOT followed by a specific
+textual pattern. Lookahead not included in match.
+Syntax: <code>&quot;(?!...)&quot;</code></p>
+<p><em><strong>Positive lookbehind</strong></em>: Our piece of targeted text exists AFTER a specific textual pattern. That pattern is NOT included in the matched text.
+Syntax: <code>&quot;(?&lt;=...)&quot;</code></p>
+<p><em><strong>Negative Lookbehind</strong></em>: Our piece of targeted text does NOT exist AFTER a specific textual pattern. That pattern is NOT included in the matched text.
+Negative Lookbehind: <code>&quot;(?&lt;!...)&quot;</code></p>
+<br>
+<p><strong>Extract Longitude</strong>:
+To get the longitude from our coordinate column we can find the pieces of text that begin with either an E or W. It&rsquo;s a little simpler than what we did for latitude:</p>
+<pre><code class="language-r">coordinates %&gt;%
+  mutate(longitude = str_extract(string = coordinates,
+                                 pattern = &quot;E.*|W.*&quot;))
+</code></pre>
+<pre><code>##                    coordinates count       date     longitude
+## 1  N 46° 43.9214 W 117° 9.6333    28 10/10/2020 W 117° 9.6333
+## 2     N 21° 20.04 W 158° 50.05    13 10/10/2020  W 158° 50.05
+## 3  N 53° 31.0101 E 108° 6.0512    47  10/5/2020 E 108° 6.0512
+## 4  N 46° 43.9214 W 117° 9.6333    96 10/10/2020 W 117° 9.6333
+## 5     N 21° 20.04 W 158° 50.05    95  10/5/2020  W 158° 50.05
+## 6     N 21° 20.04 W 158° 50.05    66 10/10/2020  W 158° 50.05
+## 7  N 53° 31.0101 E 108° 6.0512    74  10/5/2020 E 108° 6.0512
+## 8  N 53° 31.0101 E 108° 6.0512    62 10/10/2020 E 108° 6.0512
+## 9  N 53° 31.0101 E 108° 6.0512    66 10/20/2020 E 108° 6.0512
+## 10 N 46° 43.9214 W 117° 9.6333    58 10/20/2020 W 117° 9.6333
+## 11 N 53° 31.0101 E 108° 6.0512    36 10/20/2020 E 108° 6.0512
+## 12 N 46° 43.9214 W 117° 9.6333    49 10/20/2020 W 117° 9.6333
+## 13 N 53° 31.0101 E 108° 6.0512    39  9/25/2020 E 108° 6.0512
+## 14 N 53° 31.0101 E 108° 6.0512    15 10/20/2020 E 108° 6.0512
+## 15 N 46° 43.9214 W 117° 9.6333    75  9/25/2020 W 117° 9.6333
+</code></pre>
+<br>
+<p>Now let&rsquo;s combine these two approaches:</p>
+<pre><code class="language-r">coordinates %&gt;%
+  mutate(latitude = str_extract(string = coordinates,
+                                pattern = &quot;.*(?= E| W)&quot;),
+         longitude = str_extract(string = coordinates,
+                                 pattern = &quot;E.*|W.*&quot;))
+</code></pre>
+<pre><code>##                    coordinates count       date      latitude     longitude
+## 1  N 46° 43.9214 W 117° 9.6333    28 10/10/2020 N 46° 43.9214 W 117° 9.6333
+## 2     N 21° 20.04 W 158° 50.05    13 10/10/2020   N 21° 20.04  W 158° 50.05
+## 3  N 53° 31.0101 E 108° 6.0512    47  10/5/2020 N 53° 31.0101 E 108° 6.0512
+## 4  N 46° 43.9214 W 117° 9.6333    96 10/10/2020 N 46° 43.9214 W 117° 9.6333
+## 5     N 21° 20.04 W 158° 50.05    95  10/5/2020   N 21° 20.04  W 158° 50.05
+## 6     N 21° 20.04 W 158° 50.05    66 10/10/2020   N 21° 20.04  W 158° 50.05
+## 7  N 53° 31.0101 E 108° 6.0512    74  10/5/2020 N 53° 31.0101 E 108° 6.0512
+## 8  N 53° 31.0101 E 108° 6.0512    62 10/10/2020 N 53° 31.0101 E 108° 6.0512
+## 9  N 53° 31.0101 E 108° 6.0512    66 10/20/2020 N 53° 31.0101 E 108° 6.0512
+## 10 N 46° 43.9214 W 117° 9.6333    58 10/20/2020 N 46° 43.9214 W 117° 9.6333
+## 11 N 53° 31.0101 E 108° 6.0512    36 10/20/2020 N 53° 31.0101 E 108° 6.0512
+## 12 N 46° 43.9214 W 117° 9.6333    49 10/20/2020 N 46° 43.9214 W 117° 9.6333
+## 13 N 53° 31.0101 E 108° 6.0512    39  9/25/2020 N 53° 31.0101 E 108° 6.0512
+## 14 N 53° 31.0101 E 108° 6.0512    15 10/20/2020 N 53° 31.0101 E 108° 6.0512
+## 15 N 46° 43.9214 W 117° 9.6333    75  9/25/2020 N 46° 43.9214 W 117° 9.6333
+</code></pre>
+<br>
+<p>Alternatively, we could use the <code>separate()</code> function along with regex for the column separator. Here I tell R to separate the two columns where there is a number followed by a space and then either W or E. The two parentheses enclose lookahead and lookbehind phrases that shouldn&rsquo;t be included in the extracted text but which we <em><strong>do</strong></em> want to check for.</p>
+<pre><code class="language-r">coordinates %&gt;%
+  separate(col = coordinates,
+           into = c(&quot;latitude&quot;, &quot;longitude&quot;),
+           sep = &quot;(?&lt;=[0-9]) (?=W|E)&quot;)
+</code></pre>
+<pre><code>##         latitude     longitude count       date
+## 1  N 46° 43.9214 W 117° 9.6333    28 10/10/2020
+## 2    N 21° 20.04  W 158° 50.05    13 10/10/2020
+## 3  N 53° 31.0101 E 108° 6.0512    47  10/5/2020
+## 4  N 46° 43.9214 W 117° 9.6333    96 10/10/2020
+## 5    N 21° 20.04  W 158° 50.05    95  10/5/2020
+## 6    N 21° 20.04  W 158° 50.05    66 10/10/2020
+## 7  N 53° 31.0101 E 108° 6.0512    74  10/5/2020
+## 8  N 53° 31.0101 E 108° 6.0512    62 10/10/2020
+## 9  N 53° 31.0101 E 108° 6.0512    66 10/20/2020
+## 10 N 46° 43.9214 W 117° 9.6333    58 10/20/2020
+## 11 N 53° 31.0101 E 108° 6.0512    36 10/20/2020
+## 12 N 46° 43.9214 W 117° 9.6333    49 10/20/2020
+## 13 N 53° 31.0101 E 108° 6.0512    39  9/25/2020
+## 14 N 53° 31.0101 E 108° 6.0512    15 10/20/2020
+## 15 N 46° 43.9214 W 117° 9.6333    75  9/25/2020
+</code></pre>
+<br>
+<h3 id="3b-group-capture">3b. Group capture</h3>
+<p>Looking at the date column in this dataset we might also want to reformat it for one reason or another. I actually wouldn&rsquo;t typically do this with data, as there are functions to format date in the lubridate package. But where I have used this to reformat dates that are hard-coded into R scripts. In that situation I used the Find &amp; Replace tool in RStudio along with the regex option.</p>
+<pre><code class="language-r">head(coordinates)
+</code></pre>
+<pre><code>##                   coordinates count       date
+## 1 N 46° 43.9214 W 117° 9.6333    28 10/10/2020
+## 2    N 21° 20.04 W 158° 50.05    13 10/10/2020
+## 3 N 53° 31.0101 E 108° 6.0512    47  10/5/2020
+## 4 N 46° 43.9214 W 117° 9.6333    96 10/10/2020
+## 5    N 21° 20.04 W 158° 50.05    95  10/5/2020
+## 6    N 21° 20.04 W 158° 50.05    66 10/10/2020
+</code></pre>
+<p>We have dates in this format:  <code>MM/DD/YYYY</code></p>
+<pre><code class="language-r">coordinates$date
+</code></pre>
+<pre><code>##  [1] &quot;10/10/2020&quot; &quot;10/10/2020&quot; &quot;10/5/2020&quot;  &quot;10/10/2020&quot; &quot;10/5/2020&quot; 
+##  [6] &quot;10/10/2020&quot; &quot;10/5/2020&quot;  &quot;10/10/2020&quot; &quot;10/20/2020&quot; &quot;10/20/2020&quot;
+## [11] &quot;10/20/2020&quot; &quot;10/20/2020&quot; &quot;9/25/2020&quot;  &quot;10/20/2020&quot; &quot;9/25/2020&quot;
+</code></pre>
+<br>
+<p>Let&rsquo;s manually convert the forward slashes to underscores, but do so using group captures. This syntax allows us to group parts of a text string, for example as a means of ensuring that the data we&rsquo;re editing meets certain conditions (e.g., for quality control).</p>
+<p>To do this we denote groups with parentheses: <code>( )</code>. So, for example, we could use the following lines of code to &ldquo;capture&rdquo; the pieces of our dates:
+<code>&quot;([0-9]{1,2})/([0-9]{1,2})/([0-9]{4})&quot;</code></p>
+<p>Then we can refer to the date pieces by numbers, in the order they are written. 
+Depending on the function we&rsquo;re using, we refer to each group number with a dollar sign OR two backslashes ahead of its label:
+<code>&quot;$1_$2_$3&quot;</code> 
+or
+<code>&quot;\\1_\\2_\\3&quot;</code></p>
+<p>So, if we put these two pieces together we can create a new date column like this:</p>
+<p>With the <code>stringr</code> package:</p>
+<pre><code class="language-r">coordinates %&gt;%
+  mutate(new_date = str_replace(string = date,
+                                pattern = &quot;([0-9]{1,2})/([0-9]{1,2})/([0-9]{4})&quot;,
+                                replacement = &quot;\\1_\\2_\\3&quot;))
+</code></pre>
+<pre><code>##                    coordinates count       date   new_date
+## 1  N 46° 43.9214 W 117° 9.6333    28 10/10/2020 10_10_2020
+## 2     N 21° 20.04 W 158° 50.05    13 10/10/2020 10_10_2020
+## 3  N 53° 31.0101 E 108° 6.0512    47  10/5/2020  10_5_2020
+## 4  N 46° 43.9214 W 117° 9.6333    96 10/10/2020 10_10_2020
+## 5     N 21° 20.04 W 158° 50.05    95  10/5/2020  10_5_2020
+## 6     N 21° 20.04 W 158° 50.05    66 10/10/2020 10_10_2020
+## 7  N 53° 31.0101 E 108° 6.0512    74  10/5/2020  10_5_2020
+## 8  N 53° 31.0101 E 108° 6.0512    62 10/10/2020 10_10_2020
+## 9  N 53° 31.0101 E 108° 6.0512    66 10/20/2020 10_20_2020
+## 10 N 46° 43.9214 W 117° 9.6333    58 10/20/2020 10_20_2020
+## 11 N 53° 31.0101 E 108° 6.0512    36 10/20/2020 10_20_2020
+## 12 N 46° 43.9214 W 117° 9.6333    49 10/20/2020 10_20_2020
+## 13 N 53° 31.0101 E 108° 6.0512    39  9/25/2020  9_25_2020
+## 14 N 53° 31.0101 E 108° 6.0512    15 10/20/2020 10_20_2020
+## 15 N 46° 43.9214 W 117° 9.6333    75  9/25/2020  9_25_2020
+</code></pre>
+<br>
+<p>Or with the <code>stringi</code> package:</p>
+<pre><code class="language-r">coordinates %&gt;%
+  mutate(new_date = stri_replace(str = date,
+                                 regex = &quot;([0-9]{1,2})/([0-9]{1,2})/([0-9]{4})&quot;,
+                                 replacement = &quot;$1_$2_$3&quot;))
+</code></pre>
+<pre><code>##                    coordinates count       date   new_date
+## 1  N 46° 43.9214 W 117° 9.6333    28 10/10/2020 10_10_2020
+## 2     N 21° 20.04 W 158° 50.05    13 10/10/2020 10_10_2020
+## 3  N 53° 31.0101 E 108° 6.0512    47  10/5/2020  10_5_2020
+## 4  N 46° 43.9214 W 117° 9.6333    96 10/10/2020 10_10_2020
+## 5     N 21° 20.04 W 158° 50.05    95  10/5/2020  10_5_2020
+## 6     N 21° 20.04 W 158° 50.05    66 10/10/2020 10_10_2020
+## 7  N 53° 31.0101 E 108° 6.0512    74  10/5/2020  10_5_2020
+## 8  N 53° 31.0101 E 108° 6.0512    62 10/10/2020 10_10_2020
+## 9  N 53° 31.0101 E 108° 6.0512    66 10/20/2020 10_20_2020
+## 10 N 46° 43.9214 W 117° 9.6333    58 10/20/2020 10_20_2020
+## 11 N 53° 31.0101 E 108° 6.0512    36 10/20/2020 10_20_2020
+## 12 N 46° 43.9214 W 117° 9.6333    49 10/20/2020 10_20_2020
+## 13 N 53° 31.0101 E 108° 6.0512    39  9/25/2020  9_25_2020
+## 14 N 53° 31.0101 E 108° 6.0512    15 10/20/2020 10_20_2020
+## 15 N 46° 43.9214 W 117° 9.6333    75  9/25/2020  9_25_2020
+</code></pre>
+<br>
+<h2 id="references">References:</h2>
+<ul>
+<li>Grolemund, G., &amp; Wickham, H. (2017). R for Data Science. O’Reilly Media.</li>
+</ul>
+
+    </div>
+
+    
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="brousil.science/tag/teaching/">Teaching</a>
+  
+  <a class="badge badge-light" href="brousil.science/tag/live-coding/">Live coding</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=brousil.science/post/regex-examples/&amp;text=Examples%20of%20using%20regular%20expressions%20in%20R" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=brousil.science/post/regex-examples/&amp;t=Examples%20of%20using%20regular%20expressions%20in%20R" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Examples%20of%20using%20regular%20expressions%20in%20R&amp;body=brousil.science/post/regex-examples/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=brousil.science/post/regex-examples/&amp;title=Examples%20of%20using%20regular%20expressions%20in%20R" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Examples%20of%20using%20regular%20expressions%20in%20R%20brousil.science/post/regex-examples/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=brousil.science/post/regex-examples/&amp;title=Examples%20of%20using%20regular%20expressions%20in%20R" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="brousil.science/author/matthew-brousil/"><img class="avatar mr-3 avatar-circle" src="/brousil.science/author/matthew-brousil/avatar_hu9993c805f913af1d925dffb8cac26cae_140863_270x270_fill_lanczos_center_2.png" alt="Matthew Brousil"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="brousil.science/author/matthew-brousil/">Matthew Brousil</a></h5>
+      <h6 class="card-subtitle">Research Coordinator</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:matthew.brousil@gmail.com" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/mrbrousil" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/mbrousil" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/0000-0001-8229-9445" target="_blank" rel="noopener">
+        <i class="fab fa-orcid"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="brousil.science/post/quick-caret/">A quick-start guide to the `caret` R package</a></li>
+      
+      <li><a href="brousil.science/project/blog/">Blog posts</a></li>
+      
+      <li><a href="brousil.science/project/drake/">Workflow management with drake</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    <script src="/brousil.science/js/bootstrap.bundle.min.8b7df62fd2da18ce73e29c13cc0a6198.js"></script>
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/brousil.science/en/js/wowchemy.min.98ee437c2d410f62ed9d1fd7c4b43af8.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>

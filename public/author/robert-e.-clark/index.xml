@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Robert E. Clark | Matthew Brousil</title>
+    <link>brousil.science/author/robert-e.-clark/</link>
+      <atom:link href="brousil.science/author/robert-e.-clark/index.xml" rel="self" type="application/rss+xml" />
+    <description>Robert E. Clark</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/brousil.science/media/icon_hu3f944acd3d6616c2d13f4cde577e2e67_445931_512x512_fill_lanczos_center_2.png</url>
+      <title>Robert E. Clark</title>
+      <link>brousil.science/author/robert-e.-clark/</link>
+    </image>
+    
+    <item>
+      <title>Interactions between plants and pollinators across urban and rural farming landscapes</title>
+      <link>brousil.science/publication/olsson-2021-e-00194/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/olsson-2021-e-00194/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

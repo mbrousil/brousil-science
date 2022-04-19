@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Stephanie G. Labou | Matthew Brousil</title>
+    <link>brousil.science/author/stephanie-g.-labou/</link>
+      <atom:link href="brousil.science/author/stephanie-g.-labou/index.xml" rel="self" type="application/rss+xml" />
+    <description>Stephanie G. Labou</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/brousil.science/media/icon_hu3f944acd3d6616c2d13f4cde577e2e67_445931_512x512_fill_lanczos_center_2.png</url>
+      <title>Stephanie G. Labou</title>
+      <link>brousil.science/author/stephanie-g.-labou/</link>
+    </image>
+    
+    <item>
+      <title>The global lake area, climate, and population dataset</title>
+      <link>brousil.science/publication/matthew-brousil-75490938/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/matthew-brousil-75490938/</guid>
+      <description>&lt;p&gt;This is a paper describing a dataset we compiled of lake surface area for &amp;gt; 1.42 million lakes and reservoirs &amp;gt;= 10 hectares in area, matched with basin-level temperature, precipitation, and population data. Data are a time series covering 1995 to 2015 (although resolution differs by variable). The dataset is intended to be fully reproducible: all scripts and a standardized file structure are available with the full dataset at &lt;a href=&#34;https://doi.org/10.6073/pasta/834e2d4e8ee7eb2fa9a5a5b32d759683&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;EDI&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The global lake area, climate, and population (GLCP) dataset</title>
+      <link>brousil.science/publication/meyer-2019/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/meyer-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Global lake area, climate, and population dataset</title>
+      <link>brousil.science/publication/matthew-brousil-69097655/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/matthew-brousil-69097655/</guid>
+      <description>&lt;p&gt;This is a dataset containing lake surface area for &amp;gt; 1.42 million lakes and reservoirs &amp;gt;= 10 hectares in area, matched with basin-level temperature, precipitation, and population data. Data are a time series covering 1995 to 2015 (although resolution differs by variable). The dataset is intended to be fully reproducible: all scripts and a standardized file structure are available with the full dataset.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

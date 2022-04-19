@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Joshua Culpepper | Matthew Brousil</title>
+    <link>brousil.science/author/joshua-culpepper/</link>
+      <atom:link href="brousil.science/author/joshua-culpepper/index.xml" rel="self" type="application/rss+xml" />
+    <description>Joshua Culpepper</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/brousil.science/media/icon_hu3f944acd3d6616c2d13f4cde577e2e67_445931_512x512_fill_lanczos_center_2.png</url>
+      <title>Joshua Culpepper</title>
+      <link>brousil.science/author/joshua-culpepper/</link>
+    </image>
+    
+    <item>
+      <title>Integrating Perspectives to Understand Lake Ice Dynamics in a Changing World</title>
+      <link>brousil.science/publication/sharma-2020/</link>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/sharma-2020/</guid>
+      <description>&lt;p&gt;This study describes drivers of freshwater lake ice, methods for the study of lake ice, and avenues for multidisciplinary research to fill existing gaps in this body of research.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Michael F. Meyer | Matthew Brousil</title>
+    <link>brousil.science/author/michael-f.-meyer/</link>
+      <atom:link href="brousil.science/author/michael-f.-meyer/index.xml" rel="self" type="application/rss+xml" />
+    <description>Michael F. Meyer</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 30 Sep 2021 20:57:07 +0000</lastBuildDate>
+    <image>
+      <url>/brousil.science/media/icon_hu3f944acd3d6616c2d13f4cde577e2e67_445931_512x512_fill_lanczos_center_2.png</url>
+      <title>Michael F. Meyer</title>
+      <link>brousil.science/author/michael-f.-meyer/</link>
+    </image>
+    
+    <item>
+      <title>A unified dataset of co-located sewage pollution, periphyton, and benthic macroinvertebrate community and food web structure from Lake Baikal (Siberia)</title>
+      <link>brousil.science/publication/a-unified-dataset-of-co-located-sewage-pollution-periphyton-and-benthic-macroinvertebrate-community-and-food-web-structure-from-lake-baikal-siberia/</link>
+      <pubDate>Thu, 30 Sep 2021 20:57:07 +0000</pubDate>
+      <guid>brousil.science/publication/a-unified-dataset-of-co-located-sewage-pollution-periphyton-and-benthic-macroinvertebrate-community-and-food-web-structure-from-lake-baikal-siberia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Global Lake Area, Climate, and Population Dataset: A New Tool for Addressing Critical Limnological Questions</title>
+      <link>brousil.science/publication/meyer-2020/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/meyer-2020/</guid>
+      <description>&lt;p&gt;This bulletin piece describes potential applications for the Global Lake area, Climate, and Population (GLCP) dataset. We use three case studies to show different uses for the GLCP at local, regional, and national scales.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Integrating Perspectives to Understand Lake Ice Dynamics in a Changing World</title>
+      <link>brousil.science/publication/sharma-2020/</link>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/sharma-2020/</guid>
+      <description>&lt;p&gt;This study describes drivers of freshwater lake ice, methods for the study of lake ice, and avenues for multidisciplinary research to fill existing gaps in this body of research.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The global lake area, climate, and population dataset</title>
+      <link>brousil.science/publication/matthew-brousil-75490938/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/matthew-brousil-75490938/</guid>
+      <description>&lt;p&gt;This is a paper describing a dataset we compiled of lake surface area for &amp;gt; 1.42 million lakes and reservoirs &amp;gt;= 10 hectares in area, matched with basin-level temperature, precipitation, and population data. Data are a time series covering 1995 to 2015 (although resolution differs by variable). The dataset is intended to be fully reproducible: all scripts and a standardized file structure are available with the full dataset at &lt;a href=&#34;https://doi.org/10.6073/pasta/834e2d4e8ee7eb2fa9a5a5b32d759683&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;EDI&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The global lake area, climate, and population (GLCP) dataset</title>
+      <link>brousil.science/publication/meyer-2019/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/meyer-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Global lake area, climate, and population dataset</title>
+      <link>brousil.science/publication/matthew-brousil-69097655/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/matthew-brousil-69097655/</guid>
+      <description>&lt;p&gt;This is a dataset containing lake surface area for &amp;gt; 1.42 million lakes and reservoirs &amp;gt;= 10 hectares in area, matched with basin-level temperature, precipitation, and population data. Data are a time series covering 1995 to 2015 (although resolution differs by variable). The dataset is intended to be fully reproducible: all scripts and a standardized file structure are available with the full dataset.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

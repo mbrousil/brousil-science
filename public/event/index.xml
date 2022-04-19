@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Workshops Organized | Matthew Brousil</title>
+    <link>brousil.science/event/</link>
+      <atom:link href="brousil.science/event/index.xml" rel="self" type="application/rss+xml" />
+    <description>Workshops Organized</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 07 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/brousil.science/media/icon_hu3f944acd3d6616c2d13f4cde577e2e67_445931_512x512_fill_lanczos_center_2.png</url>
+      <title>Workshops Organized</title>
+      <link>brousil.science/event/</link>
+    </image>
+    
+    <item>
+      <title>REU Workshop: Data Wrangling</title>
+      <link>brousil.science/workshop/reu-workshop-data-wrangling/</link>
+      <pubDate>Mon, 07 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>brousil.science/workshop/reu-workshop-data-wrangling/</guid>
+      <description>&lt;p&gt;Organizer, moderator, and co-instructor of a three-day workshop covering data management techniques and an introduction to R. Audience was undergraduate students in the &lt;a href=&#34;https://cereo.wsu.edu/reu-stakeholder-few-innovations/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CEREO FEW REU&lt;/a&gt;. Sessions took place over Zoom from June 07-09, 2021. The syllabus was based on &lt;a href=&#34;https://datacarpentry.org/ecology-workshop/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Data Carpentry for Ecology&lt;/a&gt;, with modifications specific to the context of the REU.&lt;/p&gt;
+&lt;h5 id=&#34;topics-covered&#34;&gt;Topics covered:&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Introduction to Data-Intensive Research and Public Data Resources&lt;/li&gt;
+&lt;li&gt;Introduction to Spreadsheets&lt;/li&gt;
+&lt;li&gt;Managing and Cleaning Data Reproducibly&lt;/li&gt;
+&lt;li&gt;Introduction to R&lt;/li&gt;
+&lt;li&gt;Data Organization with R&lt;/li&gt;
+&lt;li&gt;Basic Data Analysis in R&lt;/li&gt;
+&lt;li&gt;Data Visualization in R&lt;/li&gt;
+&lt;li&gt;Documenting Research with R&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Reproducible Research Techniques with R</title>
+      <link>brousil.science/workshop/reproducible-research-techniques-with-r/</link>
+      <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>brousil.science/workshop/reproducible-research-techniques-with-r/</guid>
+      <description>&lt;p&gt;Organizer, moderator, and co-instructor of weeklong workshop series on techniques for reproducible research using R, targeted at graduate students. Sessions took place over Zoom for 3.5-4 hours per day from March 15-19, 2021.&lt;/p&gt;
+&lt;h5 id=&#34;topics-covered&#34;&gt;Topics covered:&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Intro to Git/GitHub and tidyverse&lt;/li&gt;
+&lt;li&gt;Intro to R Markdown&lt;/li&gt;
+&lt;li&gt;Intro to modeling with R&lt;/li&gt;
+&lt;li&gt;Intro to workflow management with drake&lt;/li&gt;
+&lt;li&gt;Intro to making websites with GitHub Pages&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Link to workshop website &lt;a href=&#34;https://cereo.wsu.edu/reproducible-r-workshop/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Reproducible Research Techniques with R</title>
+      <link>brousil.science/workshop/reproducible-research-techniques-with-r/</link>
+      <pubDate>Mon, 16 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>brousil.science/workshop/reproducible-research-techniques-with-r/</guid>
+      <description>&lt;p&gt;Organizer, moderator, and co-instructor of weeklong workshop series on techniques for reproducible research using R, targeted at graduate students. Sessions took place over Zoom for 2.5-4 hours per day from November 16-20, 2020.&lt;/p&gt;
+&lt;h5 id=&#34;topics-covered&#34;&gt;Topics covered:&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Intro to Git/GitHub and tidyverse&lt;/li&gt;
+&lt;li&gt;Intro to R Markdown&lt;/li&gt;
+&lt;li&gt;Intro to modeling with R&lt;/li&gt;
+&lt;li&gt;Intro to workflow management with drake&lt;/li&gt;
+&lt;li&gt;Intro to making websites with GitHub Pages&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Link to workshop website &lt;a href=&#34;https://cereo.wsu.edu/reproducible-r-workshop/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Intro to Manipulating and Visualizing Data in R [Cancelled due to COVID-19]</title>
+      <link>brousil.science/workshop/intro-to-manipulating-and-visualizing-data-in-r-cancelled-due-to-covid-19/</link>
+      <pubDate>Wed, 25 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>brousil.science/workshop/intro-to-manipulating-and-visualizing-data-in-r-cancelled-due-to-covid-19/</guid>
+      <description>&lt;p&gt;Organizer and planned co-instructor of a workshop on introductory data manipulation and visualization for the 2020 NWSA Annual Meeting. The workshop was cancelled due to COVID-19. Adapted from &lt;a href=&#34;https://datacarpentry.org/R-ecology-lesson/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Data Carpentry&lt;/a&gt; materials. Link to meeting proceedings &lt;a href=&#34;https://www.northwestscience.org/resources/Documents/2020%20NWSA%2091st%20AnnualMeetingProgramAbstracts.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Software Carpentry in R [Cancelled due to COVID-19]</title>
+      <link>brousil.science/workshop/software-carpentry-in-r-cancelled-due-to-covid-19/</link>
+      <pubDate>Fri, 13 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>brousil.science/workshop/software-carpentry-in-r-cancelled-due-to-covid-19/</guid>
+      <description>&lt;p&gt;Organizer and planned co-instructor of a Software Carpentry workshop covering R, Unix automation, and version control. The workshop was cancelled due to COVID-19. Link to workshop website &lt;a href=&#34;https://mbrousil.github.io/2020-04-13-wsu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Data Carpentry for Ecology in R</title>
+      <link>brousil.science/workshop/data-carpentry-for-ecology-in-r/</link>
+      <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>brousil.science/workshop/data-carpentry-for-ecology-in-r/</guid>
+      <description>&lt;p&gt;Organizer and moderator of a Data Carpentry for Ecologists workshop in R. Link to workshop website &lt;a href=&#34;https://mbrousil.github.io/2019-10-10-wsu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Software Carpentry in R and Python</title>
+      <link>brousil.science/workshop/software-carpentry-in-r-and-python/</link>
+      <pubDate>Mon, 08 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>brousil.science/workshop/software-carpentry-in-r-and-python/</guid>
+      <description>&lt;p&gt;Organizer and co-instructor of a Software Carpentry workshop offering both R and Python lessons. Link to workshop website &lt;a href=&#34;https://mbrousil.github.io/2019-04-08-wsu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Intro to Manipulating and Visualizing Data in R</title>
+      <link>brousil.science/workshop/intro-to-manipulating-and-visualizing-data-in-r/</link>
+      <pubDate>Thu, 28 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>brousil.science/workshop/intro-to-manipulating-and-visualizing-data-in-r/</guid>
+      <description>&lt;p&gt;Organizer and co-instructor of a workshop on introductory data manipulation and visualization for the 2019 NWSA Annual Meeting. Workshop adapted from &lt;a href=&#34;https://datacarpentry.org/R-ecology-lesson/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Data Carpentry&lt;/a&gt; materials. Link to meeting proceedings &lt;a href=&#34;https://www.northwestscience.org/resources/Documents-Membership-Journal/2019-NWSA-90th-AnnualMeetingProceedings_FINAL_032019_V3.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Data Carpentry for Ecology in R and Python</title>
+      <link>brousil.science/workshop/data-carpentry-for-ecology-in-r-and-python/</link>
+      <pubDate>Thu, 25 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>brousil.science/workshop/data-carpentry-for-ecology-in-r-and-python/</guid>
+      <description>&lt;p&gt;Organizer and moderator of a Data Carpentry for Ecologists workshop offering both R and Python lessons. Link to workshop website &lt;a href=&#34;https://mbrousil.github.io/2018-10-25-wsu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Applications in R programming for Ecology and Natural Resources</title>
+      <link>brousil.science/workshop/applications-in-r-programming-for-ecology-and-natural-resources/</link>
+      <pubDate>Thu, 29 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>brousil.science/workshop/applications-in-r-programming-for-ecology-and-natural-resources/</guid>
+      <description>&lt;p&gt;Organizer of a workshop on applications of R in ecology and natural resources applications for the 2018 NWSA Annual Meeting. Link to meeting proceedings &lt;a href=&#34;https://www.northwestscience.org/resources/Documents/2018%20Conference/Proceedings_2018-NWSA_Olympia-WA_032618.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

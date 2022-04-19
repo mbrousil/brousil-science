@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shiny | Matthew Brousil</title>
+    <link>brousil.science/tag/shiny/</link>
+      <atom:link href="brousil.science/tag/shiny/index.xml" rel="self" type="application/rss+xml" />
+    <description>Shiny</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 02 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/brousil.science/media/icon_hu3f944acd3d6616c2d13f4cde577e2e67_445931_512x512_fill_lanczos_center_2.png</url>
+      <title>Shiny</title>
+      <link>brousil.science/tag/shiny/</link>
+    </image>
+    
+    <item>
+      <title>Dungeons and Dragons Simulation with Shiny</title>
+      <link>brousil.science/project/5e_sim/</link>
+      <pubDate>Thu, 02 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>brousil.science/project/5e_sim/</guid>
+      <description>&lt;p&gt;During grad school I was playing in a &lt;a href=&#34;https://en.wikipedia.org/wiki/Pathfinder_Roleplaying_Game&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Pathfinder&lt;/a&gt; game with some friends and found myself wondering whether a new item my character had received was something I should use or &lt;em&gt;sell&lt;/em&gt;. The new sword&amp;rsquo;s stats were similar enough to the one my character was currently using that it wasn&amp;rsquo;t clear to me which one was better. I was still fairly new to R at the time, so I used this as an opportunity to test out &lt;code&gt;for&lt;/code&gt; loops, &lt;code&gt;if&lt;/code&gt; statements, and functions in more depth.&lt;/p&gt;
+&lt;p&gt;I ended up writing a script that accepted inputs that a typical Pathfinder or Dungeons and Dragons (D&amp;amp;D) player would be actively using: Statistics about their character, the opposing character (or monster!), the number of dice they roll when they attack, and so on.&lt;/p&gt;
+&lt;p&gt;In the short term I found out that the new weapon was better, but this example has served as an ongoing learning experience for me outside of gameplay. I eventually updated the script when I started playing with the new rules of Dungeons and Dragons 5th edition (5e), and then again when I wanted to dig into building Shiny apps with R.&lt;/p&gt;
+&lt;p&gt;I now have two versions of this as a Shiny app on shinyapps.io:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;My standard version built for a character of the barbarian class in D&amp;amp;D 5th Edition. Test it &lt;a href=&#34;http://cactusoxbird.shinyapps.io/dd-shiny-sim&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;A rewrite of the standard version using the &lt;code&gt;purrr&lt;/code&gt; package to change how simulation runs are handled. This is slower than the original version of the app, but I found it to be a useful case for understanding how the &lt;code&gt;map()&lt;/code&gt; family can be put to use for simulation. Test it &lt;a href=&#34;https://cactusoxbird.shinyapps.io/dd-shiny-sim-purrr/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Both versions of the app provide a couple of pieces of output for the inquisitive D&amp;amp;D player:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A histogram of the total damage done by the character for each of the simulation runs&lt;/li&gt;
+&lt;li&gt;Lines on the histogram and printed text showing the mean and median damage done over the course of the simulated runs&lt;/li&gt;
+&lt;li&gt;A tab containing a table of hit statistics: All of the amounts of damage their character did over the simulation runs, the raw number of times each amount of damage was done, and the percentage of the time that amount of damage was done&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These outputs were helpful as a Pathfinder/D&amp;amp;D player, and as I reviewed them I ended up learning more than that my character&amp;rsquo;s new sword was an improvement. For example, what I had not realized while throwing dice down on the table was &lt;em&gt;just how frequently&lt;/em&gt; a character misses. Using the current base settings for the D&amp;amp;D 5e barbarian simulation shows that a character should expect to miss ~30% of the time they take a swing. This might be dismaying, but also could be a bit of a confidence boost for anyone who feels like they have bad luck a lot.&lt;/p&gt;
+&lt;p&gt;You can find the scripts for this app on GitHub &lt;a href=&#34;https://github.com/mbrousil/5e-shiny-sim&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

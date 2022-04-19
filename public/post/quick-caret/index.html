@@ -1,0 +1,1386 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.2.0 for Hugo" />
+  
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Matthew Brousil" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Background The caret R package has been a staple of machine learning (ML) methods in R for a long time. The name caret stands for &ldquo;Classification and Regression Training&rdquo; according to the authors." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="brousil.science/post/quick-caret/" />
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+
+    
+    
+
+    
+    
+    
+      
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/brousil.science/css/wowchemy.9f8da5b22512cb7f1a8507beefc69112.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/brousil.science/index.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/brousil.science/media/icon_hu3f944acd3d6616c2d13f4cde577e2e67_445931_32x32_fill_lanczos_center_2.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/brousil.science/media/icon_hu3f944acd3d6616c2d13f4cde577e2e67_445931_180x180_fill_lanczos_center_2.png" />
+
+  <link rel="canonical" href="brousil.science/post/quick-caret/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="Matthew Brousil" />
+  <meta property="og:url" content="brousil.science/post/quick-caret/" />
+  <meta property="og:title" content="A quick-start guide to the `caret` R package | Matthew Brousil" />
+  <meta property="og:description" content="Background The caret R package has been a staple of machine learning (ML) methods in R for a long time. The name caret stands for &ldquo;Classification and Regression Training&rdquo; according to the authors." /><meta property="og:image" content="/brousil.science/media/icon_hu3f944acd3d6616c2d13f4cde577e2e67_445931_512x512_fill_lanczos_center_2.png" />
+    <meta property="twitter:image" content="/brousil.science/media/icon_hu3f944acd3d6616c2d13f4cde577e2e67_445931_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2022-04-13T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2022-04-19T12:01:05-07:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "brousil.science/post/quick-caret/"
+  },
+  "headline": "A quick-start guide to the `caret` R package",
+  
+  "datePublished": "2022-04-13T00:00:00Z",
+  "dateModified": "2022-04-19T12:01:05-07:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Matthew Brousil"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Matthew Brousil",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/brousil.science/media/icon_hu3f944acd3d6616c2d13f4cde577e2e67_445931_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "Background The caret R package has been a staple of machine learning (ML) methods in R for a long time. The name caret stands for \u0026ldquo;Classification and Regression Training\u0026rdquo; according to the authors."
+}
+</script>
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>A quick-start guide to the `caret` R package | Matthew Brousil</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="b4a98ee388a76137118ea28b34c7eb97" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/brousil.science/js/wowchemy-init.min.c2ae95842e5b33a787c7b8c567e989a4.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/brousil.science/">Matthew Brousil</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/brousil.science/">Matthew Brousil</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/brousil.science/publication"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/brousil.science/workshop"><span>Workshops</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/brousil.science/talk"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/brousil.science/portfolio"><span>Portfolio</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/brousil.science/cv"><span>CV</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>A quick-start guide to the `caret` R package</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Apr 19, 2022
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <script src="brousil.science/post/quick-caret/index_files/kePrint/kePrint.js"></script>
+<link href="brousil.science/post/quick-caret/index_files/lightable/lightable.css" rel="stylesheet" />
+<h2 id="background">Background</h2>
+<p>The <a href="https://cran.r-project.org/web/packages/caret/index.html" target="_blank" rel="noopener"><code>caret</code></a> R package has been a staple of machine learning (ML) methods in R for a long time. The name <code>caret</code> stands for &ldquo;Classification and Regression Training&rdquo; according to <a href="https://cran.r-project.org/web/packages/caret/vignettes/caret.html" target="_blank" rel="noopener">the authors</a>. It provides methods for common ML steps, such as pre-processing, training, tuning, and evaluating predictive models.</p>
+<p>In addition to <code>caret</code>, there is also a group of packages referred to as <code>tidymodels</code> that is currently in development and which is also available for use. Both <code>caret</code> and <code>tidymodels</code> have <a href="https://github.com/topepo" target="_blank" rel="noopener">Max Kuhn</a> as a main author, but <code>tidymodels</code> aims to streamline ML for use with <a href="tidyverse.org"><code>tidyverse</code></a> packages.</p>
+<p>I&rsquo;ll be focusing on <code>caret</code> in this intro. We&rsquo;ll be working with data from the <code>palmerpenguins</code> package, and using the <code>caret</code>, and <code>tidyverse</code> packages.</p>
+<br>
+<h2 id="working-with-data">Working with data</h2>
+<p>Start by loading the necessary packages:</p>
+<pre><code class="language-r">library(tidyverse)
+library(palmerpenguins)
+library(caret)
+</code></pre>
+<br>
+<p>We&rsquo;ll use the <code>penguins</code> dataset from <code>palmerpenguins</code>. It will be loaded automatically when you load the <code>palmerpenguins</code> package:</p>
+<pre><code class="language-r">head(penguins)
+</code></pre>
+<table class=" lightable-paper" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto;'>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> species </th>
+   <th style="text-align:left;"> island </th>
+   <th style="text-align:right;"> bill_length_mm </th>
+   <th style="text-align:right;"> bill_depth_mm </th>
+   <th style="text-align:right;"> flipper_length_mm </th>
+   <th style="text-align:right;"> body_mass_g </th>
+   <th style="text-align:left;"> sex </th>
+   <th style="text-align:right;"> year </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Adelie </td>
+   <td style="text-align:left;"> Torgersen </td>
+   <td style="text-align:right;"> 39.1 </td>
+   <td style="text-align:right;"> 18.7 </td>
+   <td style="text-align:right;"> 181 </td>
+   <td style="text-align:right;"> 3750 </td>
+   <td style="text-align:left;"> male </td>
+   <td style="text-align:right;"> 2007 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Adelie </td>
+   <td style="text-align:left;"> Torgersen </td>
+   <td style="text-align:right;"> 39.5 </td>
+   <td style="text-align:right;"> 17.4 </td>
+   <td style="text-align:right;"> 186 </td>
+   <td style="text-align:right;"> 3800 </td>
+   <td style="text-align:left;"> female </td>
+   <td style="text-align:right;"> 2007 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Adelie </td>
+   <td style="text-align:left;"> Torgersen </td>
+   <td style="text-align:right;"> 40.3 </td>
+   <td style="text-align:right;"> 18.0 </td>
+   <td style="text-align:right;"> 195 </td>
+   <td style="text-align:right;"> 3250 </td>
+   <td style="text-align:left;"> female </td>
+   <td style="text-align:right;"> 2007 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Adelie </td>
+   <td style="text-align:left;"> Torgersen </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:right;"> 2007 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Adelie </td>
+   <td style="text-align:left;"> Torgersen </td>
+   <td style="text-align:right;"> 36.7 </td>
+   <td style="text-align:right;"> 19.3 </td>
+   <td style="text-align:right;"> 193 </td>
+   <td style="text-align:right;"> 3450 </td>
+   <td style="text-align:left;"> female </td>
+   <td style="text-align:right;"> 2007 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Adelie </td>
+   <td style="text-align:left;"> Torgersen </td>
+   <td style="text-align:right;"> 39.3 </td>
+   <td style="text-align:right;"> 20.6 </td>
+   <td style="text-align:right;"> 190 </td>
+   <td style="text-align:right;"> 3650 </td>
+   <td style="text-align:left;"> male </td>
+   <td style="text-align:right;"> 2007 </td>
+  </tr>
+</tbody>
+</table>
+<br>
+<p>This package contains <a href="https://pallter.marine.rutgers.edu/catalog/" target="_blank" rel="noopener">LTER data</a> for three penguin species on islands in Antarctica.</p>
+<br>
+<h3 id="reviewing-the-data">Reviewing the data</h3>
+<p><code>caret</code> provides a function called <code>featurePlot()</code>, which is used to visualize datasets. It runs off of the <code>lattice</code> package, so if you are familiar with this method of plotting you might find it familiar. As someone who primarily uses <code>ggplot2</code> I found this function a bit difficult to use, but you may find it helpful still. Max Kuhn&rsquo;s <a href="https://topepo.github.io/caret/visualizations.html" target="_blank" rel="noopener"><code>The </code>caret` Package</a> Bookdown document provides some interesting examples of its functionality. Here&rsquo;s a basic plot with a couple of our variables:</p>
+<pre><code class="language-r">featurePlot(x = penguins[, c(&quot;bill_length_mm&quot;, &quot;bill_depth_mm&quot;, &quot;flipper_length_mm&quot;)], 
+            y = penguins$body_mass_g, 
+            plot = &quot;scatter&quot;, 
+            layout = c(3, 1))
+</code></pre>
+<p><img src="brousil.science/post/quick-caret/index_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p>In the plot above, the x-axis corresponds to each predictor (by panel) and the y-axis is <code>body_mass_g</code>.</p>
+<br>
+<h3 id="pre-processing">Pre-processing</h3>
+<p><code>caret</code> has built-in functionality to help with pre-processing your data as well. There are some more sophisticated options, but here we&rsquo;ll just take a look at one. For example, in some modeling situations you&rsquo;ll want to check for correlated predictors (multicollinearity). The <code>caret</code> function for this is <code>findCorrelation()</code>.</p>
+<p>First we&rsquo;ll want to make a correlation matrix, which will be fed into <code>findCorrelation()</code>.</p>
+<pre><code class="language-r">penguin_cor &lt;- penguins %&gt;%
+  filter(!if_any(everything(), is.na)) %&gt;%
+  # Numeric columns only
+  select(where(is.numeric)) %&gt;%
+  cor()
+</code></pre>
+<p>Then <code>findCorrelation()</code> will check for correlations above a cutoff value that we provide:</p>
+<pre><code class="language-r">findCorrelation(x = penguin_cor,
+                # Use 0.7 correlation cutoff
+                cutoff = 0.7,
+                # Provide more details
+                verbose = TRUE,
+                # Return column names instead of indices
+                names = TRUE)
+</code></pre>
+<pre><code>## Compare row 3  and column  4 with corr  0.873 
+##   Means:  0.564 vs 0.334 so flagging column 3 
+## All correlations &lt;= 0.7
+</code></pre>
+<pre><code>## [1] &quot;flipper_length_mm&quot;
+</code></pre>
+<p>It notes that row 3 and column 4 of our correlation object have a correlation of 0.87:</p>
+<pre><code>##                   bill_length_mm bill_depth_mm flipper_length_mm body_mass_g
+## bill_length_mm         1.0000000    -0.2286256         0.6530956  0.58945111
+## bill_depth_mm         -0.2286256     1.0000000        -0.5777917 -0.47201566
+## flipper_length_mm      0.6530956    -0.5777917         1.0000000  0.87297890
+## body_mass_g            0.5894511    -0.4720157         0.8729789  1.00000000
+## year                   0.0326569    -0.0481816         0.1510679  0.02186213
+##                          year
+## bill_length_mm     0.03265690
+## bill_depth_mm     -0.04818160
+## flipper_length_mm  0.15106792
+## body_mass_g        0.02186213
+## year               1.00000000
+</code></pre>
+<p>This means <code>flipper_length_mm</code> (row 3) and <code>body_mass_g</code> (column 4) are correlated. That&rsquo;s fine since body mass is our response variable.</p>
+<br>
+<h3 id="splitting-the-data">Splitting the data</h3>
+<p>We&rsquo;ll want to make a training dataset with which to build our model. <code>caret</code> provides some methods for doing this, including some for balanced splits for classification datasets, splitting using maximum dissimilarity, splitting for time series, and more.</p>
+<p>We&rsquo;ll proceed by modeling <code>body_mass_g</code>. First we&rsquo;ll remove NAs, then do a basic split into a training dataset.</p>
+<pre><code class="language-r">model_data &lt;- penguins %&gt;%
+  filter(!if_any(everything(), is.na))
+
+# 80% of the data for training - these are row indices
+set.seed(500)
+
+training_indices &lt;- createDataPartition(y = model_data$body_mass_g, 
+                                        p = .8,
+                                        # Do not return a list
+                                        list = FALSE)
+
+# Subset the rows selected above
+training_sample &lt;- model_data[training_indices, ]
+</code></pre>
+<br>
+<h2 id="modeling">Modeling</h2>
+<p>With our data in hand we now can progress to training a model. We&rsquo;ll use a random forest for this example. Note that there is a lot to explore in <code>caret</code> that I won&rsquo;t go over here. I highly recommend reading <a href="https://topepo.github.io/caret/visualizations.html" target="_blank" rel="noopener"><code>The </code>caret` Package</a>.</p>
+<br> 
+<p>First we can use the <code>trainControl()</code> function to customize the model training process:</p>
+<pre><code class="language-r">train_params &lt;- trainControl(
+  # Repeated K-fold cross-validation
+  method = &quot;repeatedcv&quot;,
+  # 10 folds
+  number = 10,
+  # 3 repeats
+  repeats = 3
+)
+</code></pre>
+<br>
+<p>Now we can train the random forest with the parameters above:</p>
+<pre><code class="language-r">set.seed(500)
+
+rf_model &lt;- train(
+  # Modeling formula indicating to model body_mass_g using all other vars
+  form = body_mass_g ~ .,
+  # Our custom parameters
+  trControl = train_params,
+  # The dataset
+  data = training_sample,
+  # Use a random forest
+  method = &quot;rf&quot;
+)
+</code></pre>
+<br>
+<p>Here are our results:</p>
+<pre><code class="language-r"># Note that mtry = the number of randomly selected predictors caret uses at each split
+rf_model
+</code></pre>
+<pre><code>## Random Forest 
+## 
+## 268 samples
+##   7 predictor
+## 
+## No pre-processing
+## Resampling: Cross-Validated (10 fold, repeated 3 times) 
+## Summary of sample sizes: 242, 241, 242, 241, 241, 242, ... 
+## Resampling results across tuning parameters:
+## 
+##   mtry  RMSE      Rsquared   MAE     
+##   2     291.4107  0.8760304  233.9042
+##   5     291.0023  0.8739321  234.9932
+##   9     295.2779  0.8700284  240.0389
+## 
+## RMSE was used to select the optimal model using the smallest value.
+## The final value used for the model was mtry = 5.
+</code></pre>
+<br>
+<p>The final model can be accessed from the trained object. But note that you probably <a href="http://zevross.com/blog/2017/09/19/predictive-modeling-and-machine-learning-in-r-with-the-caret-package/#an-r-squared-from-a-model-based-on-the-full-dataset-is-unrealistic" target="_blank" rel="noopener">shouldn&rsquo;t rely on this R^2^</a> as your output.</p>
+<pre><code class="language-r">rf_model$finalModel
+</code></pre>
+<pre><code>## 
+## Call:
+##  randomForest(x = x, y = y, mtry = min(param$mtry, ncol(x))) 
+##                Type of random forest: regression
+##                      Number of trees: 500
+## No. of variables tried at each split: 5
+## 
+##           Mean of squared residuals: 86096.17
+##                     % Var explained: 86.69
+</code></pre>
+<p>Its <code>mtry</code> value was 5 based on RMSE, which we can view using <code>ggplot()</code>:</p>
+<pre><code class="language-r">ggplot(rf_model)
+</code></pre>
+<p><img src="brousil.science/post/quick-caret/index_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+<br>
+<p>Now we want to know how the model performs on our testing data subset:</p>
+<pre><code class="language-r"># Pull out the rows for testing and add predictions from the RF
+test_sample &lt;- model_data[-training_indices, ] %&gt;%
+  mutate(predicted = predict(object = rf_model, newdata = .))
+
+# Get a new R2
+postResample(pred = test_sample$predicted,
+             obs = test_sample$body_mass_g)
+</code></pre>
+<pre><code>##       RMSE   Rsquared        MAE 
+## 310.377285   0.864062 241.696781
+</code></pre>
+<br>
+<p>Plot the relationship</p>
+<pre><code class="language-r">ggplot(data = test_sample) +
+  # A 1:1 line
+  geom_abline(slope = 1, intercept = 0, linetype = &quot;dashed&quot;, color = &quot;gray65&quot;) +
+  geom_point(aes(x = body_mass_g, y = predicted, color = species)) +
+  xlim(c(2500, 6500)) +
+  ylim(c(2500, 6500)) +
+  theme_bw()
+</code></pre>
+<p><img src="brousil.science/post/quick-caret/index_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
+<br>
+<p>We can look at a scaled metric for variable importance using the <code>varImp()</code> function:</p>
+<pre><code class="language-r">plot(varImp(rf_model))
+</code></pre>
+<p><img src="brousil.science/post/quick-caret/index_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
+<br>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://topepo.github.io/caret/" target="_blank" rel="noopener"><code>caret</code> manual</a></li>
+<li><a href="https://cran.r-project.org/web/packages/caret/vignettes/caret.html" target="_blank" rel="noopener">A short introduction to <code>caret</code></a></li>
+<li><a href="https://cran.r-project.org/package=caret" target="_blank" rel="noopener"><code>caret</code> CRAN page</a></li>
+<li><a href="http://zevross.com/blog/2017/09/19/predictive-modeling-and-machine-learning-in-r-with-the-caret-package/" target="_blank" rel="noopener">Predictive modeling and machine learning in R with the caret package</a></li>
+</ul>
+
+    </div>
+
+    
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="brousil.science/tag/teaching/">Teaching</a>
+  
+  <a class="badge badge-light" href="brousil.science/tag/live-coding/">Live coding</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=brousil.science/post/quick-caret/&amp;text=A%20quick-start%20guide%20to%20the%20%60caret%60%20R%20package" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=brousil.science/post/quick-caret/&amp;t=A%20quick-start%20guide%20to%20the%20%60caret%60%20R%20package" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=A%20quick-start%20guide%20to%20the%20%60caret%60%20R%20package&amp;body=brousil.science/post/quick-caret/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=brousil.science/post/quick-caret/&amp;title=A%20quick-start%20guide%20to%20the%20%60caret%60%20R%20package" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=A%20quick-start%20guide%20to%20the%20%60caret%60%20R%20package%20brousil.science/post/quick-caret/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=brousil.science/post/quick-caret/&amp;title=A%20quick-start%20guide%20to%20the%20%60caret%60%20R%20package" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="brousil.science/author/matthew-brousil/"><img class="avatar mr-3 avatar-circle" src="/brousil.science/author/matthew-brousil/avatar_hu9993c805f913af1d925dffb8cac26cae_140863_270x270_fill_lanczos_center_2.png" alt="Matthew Brousil"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="brousil.science/author/matthew-brousil/">Matthew Brousil</a></h5>
+      <h6 class="card-subtitle">Research Coordinator</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:matthew.brousil@gmail.com" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/mrbrousil" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/mbrousil" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/0000-0001-8229-9445" target="_blank" rel="noopener">
+        <i class="fab fa-orcid"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="brousil.science/post/regex-examples/">Examples of using regular expressions in R</a></li>
+      
+      <li><a href="brousil.science/project/blog/">Blog posts</a></li>
+      
+      <li><a href="brousil.science/project/drake/">Workflow management with drake</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    <script src="/brousil.science/js/bootstrap.bundle.min.8b7df62fd2da18ce73e29c13cc0a6198.js"></script>
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/brousil.science/en/js/wowchemy.min.98ee437c2d410f62ed9d1fd7c4b43af8.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>
