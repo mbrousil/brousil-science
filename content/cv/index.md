@@ -14,7 +14,7 @@ Education
 
 Recent work experience
 ======
-* **2021 - Present**: Research and Outreach Coordinator
+* **2021 - Present**: Data Scientist
   * Decision Aid Systems, Washington State University
 
 * **2018 - 2021**: Data Manager and Research Assistant
