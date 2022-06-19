@@ -20,7 +20,7 @@ highlight_name: false
 organizations:
 - name: Washington State University
   url: ""
-role: Research Coordinator
+role: Data Scientist
 social:
 - icon: envelope
   icon_pack: fas
@@ -43,8 +43,8 @@ user_groups:
 - Researchers
 ---
 
-I'm a research coordinator for the [WSU Decision Aid System](https://decisionaid.systems/). I organize and synthesize pest and climate data and use R to translate Integrated Pest Management (IPM) research into useful tools for decision makers in Washington State agriculture. I also develop new decision aid models and expand our IPM programs through research.
+I'm a data scientist for the [WSU Decision Aid System](https://decisionaid.systems/). I organize and synthesize pest and climate data and use R to translate Integrated Pest Management (IPM) research into useful tools for decision makers in Washington State agriculture. I also develop new decision aid models and expand our IPM programs through research.
 
-In addition to this work I also enjoy [running workshops]({{< relref "/event/" >}}) and giving [instructional talks]({{< relref "/talk/" >}}) about reproducible research and R. 
+In addition to this work I also enjoy [running workshops]({{< relref "/event/" >}}) and giving [instructional talks]({{< relref "/talk/" >}}) about reproducible research and R.
 
 Previously I was a data manager for the [Center for Environmental Research, Education and Outreach (CEREO)](cereo.wsu.edu/) and research assistant for the Hampton Lab at WSU. In those roles I worked on projects spanning the fields of limnology, ecology, entomology, and agriculture. I have a BA/BS in ecology and agriculture from The Evergreen State College and a MS in forestry sciences from California Polytechnic State University.
