@@ -106,6 +106,7 @@ marketing:
   google_site_verification: ''
   baidu_site_verification: ''
   baidu_tongji: ''
+  mastodon: <a rel="me" href="https://fosstodon.org/@mbrousil">Mastodon</a>
 cms:
   branch: main
   local_backend: false
