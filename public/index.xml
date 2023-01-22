@@ -5,7 +5,7 @@
     <link>brousil.science/</link>
       <atom:link href="brousil.science/index.xml" rel="self" type="application/rss+xml" />
     <description>Matthew Brousil</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 13 Apr 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 30 Jul 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/brousil.science/media/icon_hu3f944acd3d6616c2d13f4cde577e2e67_445931_512x512_fill_lanczos_center_2.png</url>
       <title>Matthew Brousil</title>
@@ -80,6 +80,28 @@
 &lt;/ul&gt;
 &lt;p&gt;These outputs were helpful as a Pathfinder/D&amp;amp;D player, and as I reviewed them I ended up learning more than that my character&amp;rsquo;s new sword was an improvement. For example, what I had not realized while throwing dice down on the table was &lt;em&gt;just how frequently&lt;/em&gt; a character misses. Using the current base settings for the D&amp;amp;D 5e barbarian simulation shows that a character should expect to miss ~30% of the time they take a swing. This might be dismaying, but also could be a bit of a confidence boost for anyone who feels like they have bad luck a lot.&lt;/p&gt;
 &lt;p&gt;You can find the scripts for this app on GitHub &lt;a href=&#34;https://github.com/mbrousil/5e-shiny-sim&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Summer ecosystem structure in mountain lakes linked to interannual variability of lake ice, snowpack, and landscape attributes</title>
+      <link>brousil.science/publication/2022-09-23-summer-ecosystem-structure-in-mountain-lakes-linked-to-interannual-variability-of-lake-ice-snowpack-and-landscape-attributes/</link>
+      <pubDate>Sat, 30 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/2022-09-23-summer-ecosystem-structure-in-mountain-lakes-linked-to-interannual-variability-of-lake-ice-snowpack-and-landscape-attributes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Introduction to workflow management software in ecology</title>
+      <link>brousil.science/workshop/introduction-to-workflow-management-software-in-ecology/</link>
+      <pubDate>Tue, 26 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>brousil.science/workshop/introduction-to-workflow-management-software-in-ecology/</guid>
+      <description>&lt;p&gt;Led a two-hour, live workshop covering the basics of building reproducible workflows with the &lt;code&gt;targets&lt;/code&gt; workflow management package for R. This workshop was part of Day 2: Data Science in the &lt;a href=&#34;https://aquaticdatasciopensci.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DSOS/AEMON-J Hacking Limnology 2022 Virtual Summit &amp;amp; Workshops&lt;/a&gt; event. Materials are archived on &lt;a href=&#34;https://osf.io/682v5/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OSF&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;More links:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://aquaticdatasciopensci.github.io/day2-bigdata/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Workshop webpage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/NEONScience/WORKSHOP-AEMON-J-DSOS-2022&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Associated GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
@@ -666,9 +688,9 @@ To get the longitude from our coordinate column we can find the pieces of text t
 &lt;p&gt;Let&amp;rsquo;s manually convert the forward slashes to underscores, but do so using group captures. This syntax allows us to group parts of a text string, for example as a means of ensuring that the data we&amp;rsquo;re editing meets certain conditions (e.g., for quality control).&lt;/p&gt;
 &lt;p&gt;To do this we denote groups with parentheses: &lt;code&gt;( )&lt;/code&gt;. So, for example, we could use the following lines of code to &amp;ldquo;capture&amp;rdquo; the pieces of our dates:
 &lt;code&gt;&amp;quot;([0-9]{1,2})/([0-9]{1,2})/([0-9]{4})&amp;quot;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Then we can refer to the date pieces by numbers, in the order they are written. 
+&lt;p&gt;Then we can refer to the date pieces by numbers, in the order they are written.
 Depending on the function we&amp;rsquo;re using, we refer to each group number with a dollar sign OR two backslashes ahead of its label:
-&lt;code&gt;&amp;quot;$1_$2_$3&amp;quot;&lt;/code&gt; 
+&lt;code&gt;&amp;quot;$1_$2_$3&amp;quot;&lt;/code&gt;
 or
 &lt;code&gt;&amp;quot;\\1_\\2_\\3&amp;quot;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;So, if we put these two pieces together we can create a new date column like this:&lt;/p&gt;

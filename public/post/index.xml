@@ -578,9 +578,9 @@ To get the longitude from our coordinate column we can find the pieces of text t
 &lt;p&gt;Let&amp;rsquo;s manually convert the forward slashes to underscores, but do so using group captures. This syntax allows us to group parts of a text string, for example as a means of ensuring that the data we&amp;rsquo;re editing meets certain conditions (e.g., for quality control).&lt;/p&gt;
 &lt;p&gt;To do this we denote groups with parentheses: &lt;code&gt;( )&lt;/code&gt;. So, for example, we could use the following lines of code to &amp;ldquo;capture&amp;rdquo; the pieces of our dates:
 &lt;code&gt;&amp;quot;([0-9]{1,2})/([0-9]{1,2})/([0-9]{4})&amp;quot;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Then we can refer to the date pieces by numbers, in the order they are written. 
+&lt;p&gt;Then we can refer to the date pieces by numbers, in the order they are written.
 Depending on the function we&amp;rsquo;re using, we refer to each group number with a dollar sign OR two backslashes ahead of its label:
-&lt;code&gt;&amp;quot;$1_$2_$3&amp;quot;&lt;/code&gt; 
+&lt;code&gt;&amp;quot;$1_$2_$3&amp;quot;&lt;/code&gt;
 or
 &lt;code&gt;&amp;quot;\\1_\\2_\\3&amp;quot;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;So, if we put these two pieces together we can create a new date column like this:&lt;/p&gt;

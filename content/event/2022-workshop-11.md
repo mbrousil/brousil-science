@@ -1,5 +1,5 @@
 ---
-title: "Introduction to workflow management software in ecology"
+title: "Introduction to Workflow Management Software in Ecology"
 collection: workshops
 type: "R workshop - Instructor"
 permalink: /workshops/2022-workshop-11

@@ -5,12 +5,26 @@
     <link>brousil.science/event/</link>
       <atom:link href="brousil.science/event/index.xml" rel="self" type="application/rss+xml" />
     <description>Workshops Organized</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 07 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 26 Jul 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/brousil.science/media/icon_hu3f944acd3d6616c2d13f4cde577e2e67_445931_512x512_fill_lanczos_center_2.png</url>
       <title>Workshops Organized</title>
       <link>brousil.science/event/</link>
     </image>
+    
+    <item>
+      <title>Introduction to workflow management software in ecology</title>
+      <link>brousil.science/workshop/introduction-to-workflow-management-software-in-ecology/</link>
+      <pubDate>Tue, 26 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>brousil.science/workshop/introduction-to-workflow-management-software-in-ecology/</guid>
+      <description>&lt;p&gt;Led a two-hour, live workshop covering the basics of building reproducible workflows with the &lt;code&gt;targets&lt;/code&gt; workflow management package for R. This workshop was part of Day 2: Data Science in the &lt;a href=&#34;https://aquaticdatasciopensci.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DSOS/AEMON-J Hacking Limnology 2022 Virtual Summit &amp;amp; Workshops&lt;/a&gt; event. Materials are archived on &lt;a href=&#34;https://osf.io/682v5/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OSF&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;More links:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://aquaticdatasciopensci.github.io/day2-bigdata/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Workshop webpage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/NEONScience/WORKSHOP-AEMON-J-DSOS-2022&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Associated GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>REU Workshop: Data Wrangling</title>

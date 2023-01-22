@@ -14,7 +14,10 @@ Education
 
 Recent work experience
 ======
-* **2021 - Present**: Data Scientist
+* **2022 - Present**: Lead Data Scientist
+  * Radical Open Science Syndicate, Colorado State University
+
+* **2021 - 2022**: Data Scientist
   * Decision Aid Systems, Washington State University
 
 * **2018 - 2021**: Data Manager and Research Assistant
