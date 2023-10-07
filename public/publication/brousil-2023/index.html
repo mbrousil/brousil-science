@@ -1,0 +1,1138 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.2.0 for Hugo" />
+  
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Matthew Brousil" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Pressing environmental research questions demand the integration of increasingly diverse and large-scale ecological datasets as well as complex analytical methods, which require specialized tools and resources. Computational training for ecological and evolutionary sciences has become more abundant and accessible over the past decade, but tool development has outpaced the availability of specialized training. Most training for scripted analyses focuses on individual analysis steps in one script rather than creating a scripted pipeline, where modular functions comprise an ecosystem of interdependent steps. Although current computational training creates an excellent starting place, linear styles of scripting can risk becoming labor- and time-intensive and less reproducible by often requiring manual execution. Pipelines, however, can be easily automated or tracked by software to increase efficiency and reduce potential errors. Ecology and evolution would benefit from techniques that reduce these risks by managing analytical pipelines in a modular, readily parallelizable format with clear documentation of dependencies. Workflow management software (WMS) can aid in the reproducibility, intelligibility and computational efficiency of complex pipelines. To date, WMS adoption in ecology and evolutionary research has been slow. We discuss the benefits and challenges of implementing WMS and illustrate its use through a case study with the targets r package to further highlight WMS benefits through workflow automation, dependency tracking and improved clarity for reviewers. Although WMS requires familiarity with function-oriented programming and careful planning for more advanced applications and pipeline sharing, investment in training will enable access to the benefits of WMS and impart transferable computing skills that can facilitate ecological and evolutionary data science at large scales." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="brousil.science/publication/brousil-2023/" />
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+
+    
+    
+
+    
+    
+    
+      
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/brousil.science/css/wowchemy.9f8da5b22512cb7f1a8507beefc69112.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/brousil.science/index.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/brousil.science/media/icon_hu3f944acd3d6616c2d13f4cde577e2e67_445931_32x32_fill_lanczos_center_2.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/brousil.science/media/icon_hu3f944acd3d6616c2d13f4cde577e2e67_445931_180x180_fill_lanczos_center_2.png" />
+
+  <link rel="canonical" href="brousil.science/publication/brousil-2023/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="Matthew Brousil" />
+  <meta property="og:url" content="brousil.science/publication/brousil-2023/" />
+  <meta property="og:title" content="Improving ecological data science with workflow management software | Matthew Brousil" />
+  <meta property="og:description" content="Pressing environmental research questions demand the integration of increasingly diverse and large-scale ecological datasets as well as complex analytical methods, which require specialized tools and resources. Computational training for ecological and evolutionary sciences has become more abundant and accessible over the past decade, but tool development has outpaced the availability of specialized training. Most training for scripted analyses focuses on individual analysis steps in one script rather than creating a scripted pipeline, where modular functions comprise an ecosystem of interdependent steps. Although current computational training creates an excellent starting place, linear styles of scripting can risk becoming labor- and time-intensive and less reproducible by often requiring manual execution. Pipelines, however, can be easily automated or tracked by software to increase efficiency and reduce potential errors. Ecology and evolution would benefit from techniques that reduce these risks by managing analytical pipelines in a modular, readily parallelizable format with clear documentation of dependencies. Workflow management software (WMS) can aid in the reproducibility, intelligibility and computational efficiency of complex pipelines. To date, WMS adoption in ecology and evolutionary research has been slow. We discuss the benefits and challenges of implementing WMS and illustrate its use through a case study with the targets r package to further highlight WMS benefits through workflow automation, dependency tracking and improved clarity for reviewers. Although WMS requires familiarity with function-oriented programming and careful planning for more advanced applications and pipeline sharing, investment in training will enable access to the benefits of WMS and impart transferable computing skills that can facilitate ecological and evolutionary data science at large scales." /><meta property="og:image" content="/brousil.science/media/icon_hu3f944acd3d6616c2d13f4cde577e2e67_445931_512x512_fill_lanczos_center_2.png" />
+    <meta property="twitter:image" content="/brousil.science/media/icon_hu3f944acd3d6616c2d13f4cde577e2e67_445931_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2023-04-23T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2023-04-23T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "brousil.science/publication/brousil-2023/"
+  },
+  "headline": "Improving ecological data science with workflow management software",
+  
+  "datePublished": "2023-04-23T00:00:00Z",
+  "dateModified": "2023-04-23T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Matthew R. Brousil"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Matthew Brousil",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/brousil.science/media/icon_hu3f944acd3d6616c2d13f4cde577e2e67_445931_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "Pressing environmental research questions demand the integration of increasingly diverse and large-scale ecological datasets as well as complex analytical methods, which require specialized tools and resources. Computational training for ecological and evolutionary sciences has become more abundant and accessible over the past decade, but tool development has outpaced the availability of specialized training. Most training for scripted analyses focuses on individual analysis steps in one script rather than creating a scripted pipeline, where modular functions comprise an ecosystem of interdependent steps. Although current computational training creates an excellent starting place, linear styles of scripting can risk becoming labor- and time-intensive and less reproducible by often requiring manual execution. Pipelines, however, can be easily automated or tracked by software to increase efficiency and reduce potential errors. Ecology and evolution would benefit from techniques that reduce these risks by managing analytical pipelines in a modular, readily parallelizable format with clear documentation of dependencies. Workflow management software (WMS) can aid in the reproducibility, intelligibility and computational efficiency of complex pipelines. To date, WMS adoption in ecology and evolutionary research has been slow. We discuss the benefits and challenges of implementing WMS and illustrate its use through a case study with the targets r package to further highlight WMS benefits through workflow automation, dependency tracking and improved clarity for reviewers. Although WMS requires familiarity with function-oriented programming and careful planning for more advanced applications and pipeline sharing, investment in training will enable access to the benefits of WMS and impart transferable computing skills that can facilitate ecological and evolutionary data science at large scales."
+}
+</script>
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>Improving ecological data science with workflow management software | Matthew Brousil</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="9967a9aa78a7d99b9c3c9502ae088e4f" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/brousil.science/js/wowchemy-init.min.c2ae95842e5b33a787c7b8c567e989a4.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/brousil.science/">Matthew Brousil</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/brousil.science/">Matthew Brousil</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/brousil.science/publication"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/brousil.science/workshop"><span>Workshops</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/brousil.science/talk"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/brousil.science/portfolio"><span>Portfolio</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/brousil.science/cv"><span>CV</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    
+
+
+
+
+
+
+
+
+<div class="pub">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Improving ecological data science with workflow management software</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="brousil.science/author/matthew-r.-brousil/">Matthew R. Brousil</a></span>, <span >
+      <a href="brousil.science/author/alessandro-filazzola/">Alessandro Filazzola</a></span>, <span >
+      <a href="brousil.science/author/michael-f.-meyer/">Michael F. Meyer</a></span>, <span >
+      <a href="brousil.science/author/sapna-sharma/">Sapna Sharma</a></span>, <span >
+      <a href="brousil.science/author/stephanie-e.-hampton/">Stephanie E. Hampton</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    April 2023
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header" href="https://besjournals.onlinelibrary.wiley.com/doi/epdf/10.1111/2041-210X.14113" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header js-cite-modal"
+        data-filename="/brousil.science/publication/brousil-2023/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header" href="https://doi.org/10.1111/2041-210X.14113%20" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+</div>
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    
+    <h3>Abstract</h3>
+    <p class="pub-abstract">Pressing environmental research questions demand the integration of increasingly diverse and large-scale ecological datasets as well as complex analytical methods, which require specialized tools and resources. Computational training for ecological and evolutionary sciences has become more abundant and accessible over the past decade, but tool development has outpaced the availability of specialized training. Most training for scripted analyses focuses on individual analysis steps in one script rather than creating a scripted pipeline, where modular functions comprise an ecosystem of interdependent steps. Although current computational training creates an excellent starting place, linear styles of scripting can risk becoming labor- and time-intensive and less reproducible by often requiring manual execution. Pipelines, however, can be easily automated or tracked by software to increase efficiency and reduce potential errors. Ecology and evolution would benefit from techniques that reduce these risks by managing analytical pipelines in a modular, readily parallelizable format with clear documentation of dependencies. Workflow management software (WMS) can aid in the reproducibility, intelligibility and computational efficiency of complex pipelines. To date, WMS adoption in ecology and evolutionary research has been slow. We discuss the benefits and challenges of implementing WMS and illustrate its use through a case study with the targets r package to further highlight WMS benefits through workflow automation, dependency tracking and improved clarity for reviewers. Although WMS requires familiarity with function-oriented programming and careful planning for more advanced applications and pipeline sharing, investment in training will enable access to the benefits of WMS and impart transferable computing skills that can facilitate ecological and evolutionary data science at large scales.</p>
+    
+
+    
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Type</div>
+          <div class="col-12 col-md-9">
+            <a href="brousil.science/publication/#2">
+              Journal article
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
+          <div class="col-12 col-md-9">Methods in Ecology and Evolution</div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    <div class="space-below"></div>
+
+    <div class="article-style"></div>
+
+    
+
+
+
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=brousil.science/publication/brousil-2023/&amp;text=Improving%20ecological%20data%20science%20with%20workflow%20management%20software" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=brousil.science/publication/brousil-2023/&amp;t=Improving%20ecological%20data%20science%20with%20workflow%20management%20software" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Improving%20ecological%20data%20science%20with%20workflow%20management%20software&amp;body=brousil.science/publication/brousil-2023/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=brousil.science/publication/brousil-2023/&amp;title=Improving%20ecological%20data%20science%20with%20workflow%20management%20software" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Improving%20ecological%20data%20science%20with%20workflow%20management%20software%20brousil.science/publication/brousil-2023/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=brousil.science/publication/brousil-2023/&amp;title=Improving%20ecological%20data%20science%20with%20workflow%20management%20software" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  </div>
+</div>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    <script src="/brousil.science/js/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js"></script>
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/brousil.science/en/js/wowchemy.min.98ee437c2d410f62ed9d1fd7c4b43af8.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>

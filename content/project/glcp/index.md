@@ -3,7 +3,7 @@ title: Global lake area, climate, and population dataset
 summary: A global dataset containing lake and reservoir surface area, basin-level temperature, precipitation, and population data.
 tags:
 date: "2020-06-11"
-weight: 1
+weight: 2
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""

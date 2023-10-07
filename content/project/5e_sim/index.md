@@ -4,7 +4,7 @@ summary: I wrote a short Shiny app to simulate some game mechanics in Dungeons a
 tags:
 - Shiny
 date: "2020-07-02"
-weight: 4
+weight: 5
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""

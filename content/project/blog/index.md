@@ -5,7 +5,7 @@ tags:
 - Teaching
 - Live coding
 date: "2018-09-12"
-weight: 3
+weight: 4
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""

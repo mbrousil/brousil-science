@@ -5,12 +5,36 @@
     <link>brousil.science/author/michael-f.-meyer/</link>
       <atom:link href="brousil.science/author/michael-f.-meyer/index.xml" rel="self" type="application/rss+xml" />
     <description>Michael F. Meyer</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 30 Sep 2021 20:57:07 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 23 Apr 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/brousil.science/media/icon_hu3f944acd3d6616c2d13f4cde577e2e67_445931_512x512_fill_lanczos_center_2.png</url>
       <title>Michael F. Meyer</title>
       <link>brousil.science/author/michael-f.-meyer/</link>
     </image>
+    
+    <item>
+      <title>Improving ecological data science with workflow management software</title>
+      <link>brousil.science/publication/brousil-2023/</link>
+      <pubDate>Sun, 23 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/brousil-2023/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>National-scale, remotely sensed lake trophic state (LTS-US) 1984-2020</title>
+      <link>brousil.science/publication/meyer-2023-lts/</link>
+      <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/meyer-2023-lts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Identifying Drivers of Sewage-associated Pollutants in Pollinators Across Urban Landscapes</title>
+      <link>brousil.science/publication/meyer-2023/</link>
+      <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/meyer-2023/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>A unified dataset of co-located sewage pollution, periphyton, and benthic macroinvertebrate community and food web structure from Lake Baikal (Siberia)</title>

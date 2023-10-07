@@ -5,12 +5,26 @@
     <link>brousil.science/</link>
       <atom:link href="brousil.science/index.xml" rel="self" type="application/rss+xml" />
     <description>Matthew Brousil</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 30 Jul 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 04 Oct 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/brousil.science/media/icon_hu3f944acd3d6616c2d13f4cde577e2e67_445931_512x512_fill_lanczos_center_2.png</url>
       <title>Matthew Brousil</title>
       <link>brousil.science/</link>
     </image>
+    
+    <item>
+      <title>targets for ecologists</title>
+      <link>brousil.science/project/targets/</link>
+      <pubDate>Thu, 30 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>brousil.science/project/targets/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Targets for ecologists&lt;/em&gt; is a &lt;code&gt;{bookdown}&lt;/code&gt; resource showing how to use the &lt;code&gt;{targets}&lt;/code&gt; workflow management package to build research pipelines with R. It was adapted from two, three-hour workshops on the &lt;code&gt;{drake}&lt;/code&gt; package run in 2020 and 2021 through Washington State University’s CEREO.  &lt;code&gt;{drake}&lt;/code&gt; is the predecessor to the current &lt;code&gt;{targets}&lt;/code&gt; package. The original workshop materials were roughly formatted for workshops styled after the Carpentries. The goal is to present these materials in a &lt;code&gt;{bookdown}&lt;/code&gt; format to enable ecologists to learn the basics of creating workflows with targets through a hands-on approach. This is a living document that may receive edits in the future.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Related links:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://targets-ecology.netlify.app/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;{bookdown} website&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://osf.io/gd8hf/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OSF page&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Global lake area, climate, and population dataset</title>
@@ -84,6 +98,46 @@
     </item>
     
     <item>
+      <title>Long-term organic farming and floral diversity promotes stability of bee communities in agroecosystems</title>
+      <link>brousil.science/publication/bloom-2023/</link>
+      <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/bloom-2023/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Improving ecological data science with workflow management software</title>
+      <link>brousil.science/publication/brousil-2023/</link>
+      <pubDate>Sun, 23 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/brousil-2023/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>National-scale, remotely sensed lake trophic state (LTS-US) 1984-2020</title>
+      <link>brousil.science/publication/meyer-2023-lts/</link>
+      <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/meyer-2023-lts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Identifying Drivers of Sewage-associated Pollutants in Pollinators Across Urban Landscapes</title>
+      <link>brousil.science/publication/meyer-2023/</link>
+      <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/meyer-2023/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Winter and Summer Storms Modify Chlorophyll Relationships with Nutrients in Seasonally Ice-covered Lakes</title>
+      <link>brousil.science/publication/hampton-2022/</link>
+      <pubDate>Thu, 10 Nov 2022 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/hampton-2022/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Summer ecosystem structure in mountain lakes linked to interannual variability of lake ice, snowpack, and landscape attributes</title>
       <link>brousil.science/publication/2022-09-23-summer-ecosystem-structure-in-mountain-lakes-linked-to-interannual-variability-of-lake-ice-snowpack-and-landscape-attributes/</link>
       <pubDate>Sat, 30 Jul 2022 00:00:00 +0000</pubDate>
@@ -92,7 +146,7 @@
     </item>
     
     <item>
-      <title>Introduction to workflow management software in ecology</title>
+      <title>Introduction to Workflow Management Software in Ecology</title>
       <link>brousil.science/workshop/introduction-to-workflow-management-software-in-ecology/</link>
       <pubDate>Tue, 26 Jul 2022 00:00:00 +0000</pubDate>
       <guid>brousil.science/workshop/introduction-to-workflow-management-software-in-ecology/</guid>
@@ -384,7 +438,7 @@ postResample(pred = test_sample$predicted,
     </item>
     
     <item>
-      <title>A quick-start guide to the caret R package</title>
+      <title>A Quick-start Guide to the caret R Package</title>
       <link>brousil.science/talk/2022-04-13-talk-17/</link>
       <pubDate>Wed, 13 Apr 2022 00:00:00 +0000</pubDate>
       <guid>brousil.science/talk/2022-04-13-talk-17/</guid>
@@ -1161,7 +1215,13 @@ or
 &lt;h1 id=&#34;recent-work-experience&#34;&gt;Recent work experience&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;2021 - Present&lt;/strong&gt;: Data Scientist&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2022 - Present&lt;/strong&gt;: Lead Data Scientist&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Radical Open Science Syndicate, Colorado State University&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;2021 - 2022&lt;/strong&gt;: Data Scientist&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Decision Aid Systems, Washington State University&lt;/li&gt;
 &lt;/ul&gt;

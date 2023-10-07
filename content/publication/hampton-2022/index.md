@@ -7,8 +7,9 @@ abstract: "At broad spatial scales, primary productivity in lakes is known to in
 authors: ["Stephanie E. Hampton", "Sapna Sharma", "Matthew R. Brousil", "Alessandro Filazzola"]
 publishDate: '2023-01-22T10:21:38-08:00'
 featured: false
-url_pdf: "https://agupubs.onlinelibrary.wiley.com/doi/epdf/10.1029/2020JG005799"
+url_pdf: "https://esajournals.onlinelibrary.wiley.com/doi/epdf/10.1002/ecs2.4272"
 doi: "10.1002/ecs2.4272"
+publication: Ecosphere
 ---
 
 

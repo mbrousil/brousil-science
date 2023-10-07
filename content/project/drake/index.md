@@ -5,7 +5,7 @@ tags:
 - Teaching
 - Workshops
 date: "2020-11-20"
-weight: 2
+weight: 3
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""

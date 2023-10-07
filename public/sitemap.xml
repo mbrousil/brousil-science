@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>brousil.science/project/targets/</loc>
+    <lastmod>2023-03-30T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>brousil.science/project/glcp/</loc>
     <lastmod>2020-06-11T00:00:00+00:00</lastmod>
   </url><url>
@@ -15,12 +18,141 @@
     <lastmod>2020-07-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>brousil.science/publication-type/2/</loc>
-    <lastmod>2022-07-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>brousil.science/author/ashley-rawhouser/</loc>
-    <lastmod>2022-07-30T00:00:00+00:00</lastmod>
+    <lastmod>2023-10-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>brousil.science/authors/</loc>
+    <lastmod>2023-10-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/author/david-w.-crowder/</loc>
+    <lastmod>2023-10-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/author/elias-h.-bloom/</loc>
+    <lastmod>2023-10-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/author/javier-gutierrez-illan/</loc>
+    <lastmod>2023-10-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/author/john-p.-reganold/</loc>
+    <lastmod>2023-10-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/publication/bloom-2023/</loc>
+    <lastmod>2023-10-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/</loc>
+    <lastmod>2023-10-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/author/matthew-r.-brousil/</loc>
+    <lastmod>2023-10-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/publication_types/</loc>
+    <lastmod>2023-10-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/publication/</loc>
+    <lastmod>2023-10-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/author/tobin-d.-northfield/</loc>
+    <lastmod>2023-10-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/author/alessandro-filazzola/</loc>
+    <lastmod>2023-04-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/publication/brousil-2023/</loc>
+    <lastmod>2023-04-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/author/michael-f.-meyer/</loc>
+    <lastmod>2023-04-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/author/sapna-sharma/</loc>
+    <lastmod>2023-04-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/author/stephanie-e.-hampton/</loc>
+    <lastmod>2023-04-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/publication-type/10/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/author/amina-i.-pollard/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/author/dina-m.-leech/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/author/hillary-a.-dugan/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/author/isabella-a.-oleksy/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/author/jack-r.-eggleston/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/author/jacob-a.-zwart/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/author/jesse-c-ross/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/author/jianning-ren/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/author/julie-c.-padowski/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/author/kate-c.-fickas/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/author/matthew-r.v.-ross/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/publication/meyer-2023-lts/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/author/r.-iestyn-woolway/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/author/rachel-m.-pilla/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/author/robert-ladwig/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/author/simon-n.-topp/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/author/tyler-v.-king/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/author/xiao-yang/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/project/</loc>
+    <lastmod>2023-03-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/tags/</loc>
+    <lastmod>2023-03-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/tag/teaching/</loc>
+    <lastmod>2023-03-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/tag/workshops/</loc>
+    <lastmod>2023-03-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/publication-type/3/</loc>
+    <lastmod>2023-01-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/author/benjamin-w.-lee/</loc>
+    <lastmod>2023-01-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/publication/meyer-2023/</loc>
+    <lastmod>2023-01-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/author/madison-l.-armstrong/</loc>
+    <lastmod>2023-01-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/publication/hampton-2022/</loc>
+    <lastmod>2022-11-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>brousil.science/author/ashley-rawhouser/</loc>
     <lastmod>2022-07-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>brousil.science/author/carmen-archambault/</loc>
@@ -29,22 +161,7 @@
     <loc>brousil.science/author/john-r.-boetsch/</loc>
     <lastmod>2022-07-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>brousil.science/</loc>
-    <lastmod>2022-07-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>brousil.science/author/matthew-r.-brousil/</loc>
-    <lastmod>2022-07-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>brousil.science/publication_types/</loc>
-    <lastmod>2022-07-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>brousil.science/publication/</loc>
-    <lastmod>2022-07-30T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>brousil.science/author/rebecca-lofgren/</loc>
-    <lastmod>2022-07-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>brousil.science/author/stephanie-e.-hampton/</loc>
     <lastmod>2022-07-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>brousil.science/author/stephen-m.-powers/</loc>
@@ -77,25 +194,13 @@
     <loc>brousil.science/post/</loc>
     <lastmod>2022-04-19T12:01:05-07:00</lastmod>
   </url><url>
-    <loc>brousil.science/tags/</loc>
-    <lastmod>2022-04-19T12:01:05-07:00</lastmod>
-  </url><url>
     <loc>brousil.science/talk/</loc>
     <lastmod>2022-04-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>brousil.science/tag/teaching/</loc>
-    <lastmod>2022-04-19T12:01:05-07:00</lastmod>
   </url><url>
     <loc>brousil.science/publication-type/9/</loc>
     <lastmod>2021-12-20T16:48:25+00:00</lastmod>
   </url><url>
-    <loc>brousil.science/author/david-w.-crowder/</loc>
-    <lastmod>2021-12-20T16:48:25+00:00</lastmod>
-  </url><url>
     <loc>brousil.science/publication/documenting-pollinators-floral-hosts-and-plantpollinator-interactions-in-u-s-pacific-northwest-agroecosystems/</loc>
-    <lastmod>2021-12-20T16:48:25+00:00</lastmod>
-  </url><url>
-    <loc>brousil.science/author/elias-h.-bloom/</loc>
     <lastmod>2021-12-20T16:48:25+00:00</lastmod>
   </url><url>
     <loc>brousil.science/author/elisabeth-c.-oeller/</loc>
@@ -141,9 +246,6 @@
     <lastmod>2021-09-30T20:57:07+00:00</lastmod>
   </url><url>
     <loc>brousil.science/author/maxim-a.-timofeyev/</loc>
-    <lastmod>2021-09-30T20:57:07+00:00</lastmod>
-  </url><url>
-    <loc>brousil.science/author/michael-f.-meyer/</loc>
     <lastmod>2021-09-30T20:57:07+00:00</lastmod>
   </url><url>
     <loc>brousil.science/author/ted-ozersky/</loc>
@@ -206,17 +308,8 @@
     <loc>brousil.science/author/robert-e.-clark/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>brousil.science/publication-type/3/</loc>
-    <lastmod>2020-12-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>brousil.science/publication/schaeffer-2020/</loc>
     <lastmod>2020-12-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>brousil.science/project/</loc>
-    <lastmod>2020-11-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>brousil.science/tag/workshops/</loc>
-    <lastmod>2020-11-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>brousil.science/talk/2020-11-19-talk-13/</loc>
     <lastmod>2020-11-19T00:00:00+00:00</lastmod>
@@ -228,9 +321,6 @@
     <lastmod>2020-11-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>brousil.science/author/brian-p.-lanouette/</loc>
-    <lastmod>2020-11-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>brousil.science/author/julie-c.-padowski/</loc>
     <lastmod>2020-11-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>brousil.science/publication/meyer-2020/</loc>
@@ -263,9 +353,6 @@
     <loc>brousil.science/author/kathi-jo-jankowski/</loc>
     <lastmod>2020-08-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>brousil.science/author/sapna-sharma/</loc>
-    <lastmod>2020-08-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>brousil.science/author/scott-n.-higgins/</loc>
     <lastmod>2020-08-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -276,9 +363,6 @@
     <lastmod>2020-08-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>brousil.science/author/stephanie-hampton/</loc>
-    <lastmod>2020-08-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>brousil.science/author/xiao-yang/</loc>
     <lastmod>2020-08-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>brousil.science/tag/shiny/</loc>
@@ -325,9 +409,6 @@
   </url><url>
     <loc>brousil.science/workshop/intro-to-manipulating-and-visualizing-data-in-r/</loc>
     <lastmod>2019-03-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>brousil.science/publication-type/10/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>brousil.science/publication/matthew-brousil-69097655/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>

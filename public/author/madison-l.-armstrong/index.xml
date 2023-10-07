@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Madison L. Armstrong | Matthew Brousil</title>
+    <link>brousil.science/author/madison-l.-armstrong/</link>
+      <atom:link href="brousil.science/author/madison-l.-armstrong/index.xml" rel="self" type="application/rss+xml" />
+    <description>Madison L. Armstrong</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 22 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/brousil.science/media/icon_hu3f944acd3d6616c2d13f4cde577e2e67_445931_512x512_fill_lanczos_center_2.png</url>
+      <title>Madison L. Armstrong</title>
+      <link>brousil.science/author/madison-l.-armstrong/</link>
+    </image>
+    
+    <item>
+      <title>Identifying Drivers of Sewage-associated Pollutants in Pollinators Across Urban Landscapes</title>
+      <link>brousil.science/publication/meyer-2023/</link>
+      <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>brousil.science/publication/meyer-2023/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -5,12 +5,26 @@
     <link>brousil.science/tag/teaching/</link>
       <atom:link href="brousil.science/tag/teaching/index.xml" rel="self" type="application/rss+xml" />
     <description>Teaching</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 13 Apr 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 30 Mar 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/brousil.science/media/icon_hu3f944acd3d6616c2d13f4cde577e2e67_445931_512x512_fill_lanczos_center_2.png</url>
       <title>Teaching</title>
       <link>brousil.science/tag/teaching/</link>
     </image>
+    
+    <item>
+      <title>targets for ecologists</title>
+      <link>brousil.science/project/targets/</link>
+      <pubDate>Thu, 30 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>brousil.science/project/targets/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Targets for ecologists&lt;/em&gt; is a &lt;code&gt;{bookdown}&lt;/code&gt; resource showing how to use the &lt;code&gt;{targets}&lt;/code&gt; workflow management package to build research pipelines with R. It was adapted from two, three-hour workshops on the &lt;code&gt;{drake}&lt;/code&gt; package run in 2020 and 2021 through Washington State University’s CEREO.  &lt;code&gt;{drake}&lt;/code&gt; is the predecessor to the current &lt;code&gt;{targets}&lt;/code&gt; package. The original workshop materials were roughly formatted for workshops styled after the Carpentries. The goal is to present these materials in a &lt;code&gt;{bookdown}&lt;/code&gt; format to enable ecologists to learn the basics of creating workflows with targets through a hands-on approach. This is a living document that may receive edits in the future.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Related links:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://targets-ecology.netlify.app/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;{bookdown} website&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://osf.io/gd8hf/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OSF page&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Workflow management with drake</title>
