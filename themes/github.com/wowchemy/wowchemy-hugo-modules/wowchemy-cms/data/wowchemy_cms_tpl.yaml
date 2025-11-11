@@ -388,7 +388,7 @@ collections:
           - { label: "Book", value: "5" }
           - { label: "Book section", value: "6" }
           - { label: "Thesis", value: "7" }
-          - { label: "Patent", value: "8" }
+          - { label: "Dataset", value: "8" }
       - label: "Authors"
         name: "authors"
         required: true
