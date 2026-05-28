@@ -1,5 +1,7 @@
 ---
-title: CV
+title: Resume
+aliases:
+  - /cv/
 ---
 
 
