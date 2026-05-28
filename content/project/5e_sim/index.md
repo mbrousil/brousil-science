@@ -3,6 +3,8 @@ title: Dungeons and Dragons Simulation with Shiny
 summary: I wrote a short Shiny app to simulate some game mechanics in Dungeons and Dragons in order to visualize and quantify how probability affects game outcomes.
 tags:
 - Shiny
+- Programming in R
+- Data Science
 date: "2020-07-02"
 weight: 5
 
@@ -13,7 +15,7 @@ image:
   caption: Example distribution of damage in a simulated 5e encounter.
   focal_point: Smart
 
-links:
+links: []
 icon: ""
 url_code: ""
 url_pdf: ""

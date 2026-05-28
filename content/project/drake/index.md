@@ -4,6 +4,8 @@ summary: A workshop lesson covering workflow management with `drake` and a brief
 tags:
 - Teaching
 - Workshops
+- Technical Training
+- Scientific Workflows
 date: "2020-11-20"
 weight: 3
 

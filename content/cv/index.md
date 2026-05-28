@@ -5,6 +5,12 @@ title: CV
 
 Please contact me at **matthew.brousil@gmail.com** to request a full copy of my cv or resume.
 
+Core Skills & Portfolio
+======
+* **[Data Science](/tag/data-science/)**
+* **[Programming in R](/tag/programming-in-r/)**
+* **[Scientific Workflows](/tag/scientific-workflows/)**
+* **[Technical Training](/tag/technical-training/)**
 
 Education
 ======

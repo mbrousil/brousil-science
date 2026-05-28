@@ -1,5 +1,0 @@
-# Netlify redirects
-# Automatically generated
-# Documentation: http://bit.ly/netlify-deployment
-/brousil.science/workshop/ brousil.science/event/
-/brousil.science/talk/ brousil.science/talk/

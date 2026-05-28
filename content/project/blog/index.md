@@ -4,6 +4,8 @@ summary: A collection of links to blog posts I've written for Washington State U
 tags:
 - Teaching
 - Live coding
+- Programming in R
+- Technical Training
 date: "2018-09-12"
 weight: 4
 

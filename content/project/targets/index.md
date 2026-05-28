@@ -4,6 +4,10 @@ summary: A hands-on example of using the `{targets}` R package, written for ecol
 tags:
 - Teaching
 - Workshops
+- Programming in R
+- Data Science
+- Scientific Workflows
+- Technical Training
 date: "2023-03-30"
 weight: 1
 
