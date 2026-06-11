@@ -2,7 +2,7 @@
 title: "Orchard Management and Landscape Context Mediate the Floral Microbiome of Pear"
 date: 2020-12-01
 publishDate: 2021-06-12T18:06:14.843056Z
-authors: ["Robert N. Schaeffer", "Vera W. Pfeiffer", "Saumik Basu", "Matthew Brousil", "Christopher Strohm", "S. Tianna DuPont", "Rachel L. Vannette", "David W. Crowder"]
+authors: ["Robert N. Schaeffer", "Vera W. Pfeiffer", "Saumik Basu", "Matthew R Brousil", "Christopher Strohm", "S. Tianna DuPont", "Rachel L. Vannette", "David W. Crowder"]
 publication_types: ["3"]
 abstract: ""
 featured: false

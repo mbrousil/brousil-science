@@ -12,7 +12,7 @@ bio: ""
 #     institution: Massachusetts Institute of Technology
 #     year: 2008
 email: ""
-highlight_name: false
+highlight_name: true
 # interests:
 # - Artificial Intelligence
 # - Computational Linguistics
@@ -25,12 +25,12 @@ social:
 - icon: envelope
   icon_pack: fas
   link: mailto:matthew.brousil@gmail.com
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/mrbrousil
-- icon: mastodon
-  icon_pack: fab
-  link: https://fosstodon.org/@mbrousil
+# - icon: twitter
+#   icon_pack: fab
+#   link: 
+# - icon: mastodon
+#   icon_pack: fab
+#   link: 
 - icon: github
   icon_pack: fab
   link: https://github.com/mbrousil
@@ -38,7 +38,7 @@ social:
   icon_pack: fab
   link: https://orcid.org/0000-0001-8229-9445
 superuser: true
-title: Matthew Brousil
+title: Matthew R. Brousil
 user_groups:
 - Researchers
 ---

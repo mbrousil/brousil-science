@@ -2,7 +2,7 @@
 title: "The Global Lake Area, Climate, and Population Dataset: A New Tool for Addressing Critical Limnological Questions"
 date: 2020-11-01
 publishDate: 2021-06-12T18:06:14.843849Z
-authors: ["Michael F. Meyer", "Matthew R. Brousil", "Alli N. Cramer", "Brian P. Lanouette", "Julie C. Padowski", "Stephanie E. Hampton"]
+authors: ["Michael F. Meyer", "Matthew R Brousil", "Alli N. Cramer", "Brian P. Lanouette", "Julie C. Padowski", "Stephanie E. Hampton"]
 publication_types: ["2"]
 abstract: ""
 featured: false

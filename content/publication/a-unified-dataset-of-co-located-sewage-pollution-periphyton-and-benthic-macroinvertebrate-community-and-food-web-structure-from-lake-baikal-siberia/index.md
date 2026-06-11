@@ -13,7 +13,7 @@ authors:
   - Daniel D. Snow
   - Maxim A. Timofeyev
   - Dmitry Yu. Karnaukhov
-  - Matthew R. Brousil
+  - Matthew R Brousil
   - Stephanie E. Hampton
 doi: https://doi.org/10.1002/lol2.10219
 publication: Limnology and Oceanography Letters

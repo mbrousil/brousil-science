@@ -4,7 +4,7 @@
 # Add more sections by duplicating this file and customizing to your requirements.
 
 widget: about  # See https://wowchemy.com/docs/page-builder/
-author: admin
+author: matthew-r-brousil
 headless: true  # This file represents a page section.
 weight: 10  # Order that this section will appear.
 title: "Matthew Brousil"

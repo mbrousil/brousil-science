@@ -7,7 +7,7 @@ authors:
   - Elias H. Bloom
   - Elisabeth C. Oeller
   - Rachel L. Olsson
-  - Matthew R. Brousil
+  - Matthew R Brousil
   - Robert N. Schaeffer
   - Saumik Basu
   - Zhen Fu

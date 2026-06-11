@@ -2,7 +2,7 @@
 title: "The global lake area, climate, and population (GLCP) dataset"
 date: 2019-11-01
 publishDate: 2021-06-12T18:06:14.846534Z
-authors: ["Michael F. Meyer", "Stephanie G. Labou", "Alli N. Cramer", "Matthew R. Brousil", "Bradley T. Luff"]
+authors: ["Michael F. Meyer", "Stephanie G. Labou", "Alli N. Cramer", "Matthew R Brousil", "Bradley T. Luff"]
 publication_types: ["3"]
 abstract: ""
 featured: false

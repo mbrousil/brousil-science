@@ -2,7 +2,7 @@
 title: "Global lake area, climate, and population dataset"
 date: 2019-01-01
 publishDate: 2021-06-12T18:06:14.847425Z
-authors: ["Stephanie G. Labou","Michael F. Meyer",  "Matthew R. Brousil", "Alli N. Cramer", "Bradley T. Luff"]
+authors: ["Stephanie G. Labou","Michael F. Meyer",  "Matthew R Brousil", "Alli N. Cramer", "Bradley T. Luff"]
 publication_types: ["10"]
 abstract: ""
 featured: false

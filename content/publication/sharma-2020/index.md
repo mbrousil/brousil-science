@@ -2,7 +2,7 @@
 title: "Integrating Perspectives to Understand Lake Ice Dynamics in a Changing World"
 date: 2020-08-01
 publishDate: 2021-06-12T18:06:14.844519Z
-authors: ["Sapna Sharma", "Michael F. Meyer", "Joshua Culpepper", "Xiao Yang", "Stephanie Hampton", "Stella A. Berger", "Matthew R. Brousil", "Steven C. Fradkin", "Scott N. Higgins", "Kathi Jo Jankowski", "Georgiy Kirillin", "Adrianne P. Smits", "Emily C. Whitaker", "Foad Yousef", "Shuai Zhang"]
+authors: ["Sapna Sharma", "Michael F. Meyer", "Joshua Culpepper", "Xiao Yang", "Stephanie Hampton", "Stella A. Berger", "Matthew R Brousil", "Steven C. Fradkin", "Scott N. Higgins", "Kathi Jo Jankowski", "Georgiy Kirillin", "Adrianne P. Smits", "Emily C. Whitaker", "Foad Yousef", "Shuai Zhang"]
 publication_types: ["2"]
 abstract: ""
 featured: false
