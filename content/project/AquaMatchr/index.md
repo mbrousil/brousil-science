@@ -32,7 +32,7 @@ slides: example
 
 **AquaMatchr** is an open-source R package that I am developing in my capacity as a Lead Data Scientist for the [Radical Open Science Syndicate](https://www.rossyndicate.com/) (ROSS) at Colorado State University.
 
-The goal of the package is to streamline the ability for researchers, resource managers, and stakeholders to access and easily make use of data products from the ROSS lab's [AquaSat 2.0](https://www.rossyndicate.com/projects/aquasat) project. Through AquaSat, the lab has produced both *in-situ* and remotely sensed data products related to inland water quality. Version 1.0 was the largest inland water quality matchup dataset assembled to date, and 2.0 builds upon that baseline further.
+The goal of the package is to streamline the ability for researchers, resource managers, and stakeholders to access and easily make use of data products from the ROSS lab's [AquaSat 2.0](https://www.rossyndicate.com/projects/aquasat) project. Through AquaSat, the lab has produced both *in-situ* and remotely sensed data products related to inland water quality, which are intended to be matched spatiotemporally. Version 1.0 was the largest inland water quality matchup dataset assembled to date, and 2.0 builds upon that baseline further.
 
 AquaSat 2.0 data products are large and we've made a concerted effort to make every step of their production scientifically and programmatically reproducible (e.g., [GitHub](https://github.com/AquaSat/AquaMatch_harmonize_WQP), [EDI](https://portal.edirepository.org/nis/mapbrowse?packageid=edi.2380.1)).
 
