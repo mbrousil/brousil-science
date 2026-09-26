@@ -1,0 +1,13 @@
+---
+title: "Nutritional content of phytoplankton communities under ice"
+date: 2026-09-18
+publishDate: 2026-09-18
+authors: ["Michael F. Meyer", "Stephanie E. Hampton", "Matthew R. Brousil", "Joshua A. Culpepper", "Hilary A. Dugan", "Aaron W. E. Galloway", "Noah R. Lottig", "Stephen M. Powers", "Sapna Sharma", "Kirill Shchapov"]
+publication_types: ["2"]
+abstract: "The effects of winter environmental conditions on lake ecology can be highly variable. Ice and overlying snow isolate the water below, impeding exchange of materials among water, atmosphere, and the watershed. Even with these limitations, biological communities under the ice can persist, where cold-tolerant taxa can be especially abundant. Because many under-ice taxa tend to have a suite of unsaturated lipids that enable them to maintain metabolic function during cold conditions, under-ice biological communities may contain highly nutritious resources for higher level consumers relative to warmer, open-water conditions. To examine the effects of ice presence on under-ice biological productivity and nutritional quality, we aggregated data on under-ice physical, chemical, and biological variables from several existing databases. These data are among the most comprehensive, publicly available environmental and phytoplankton data that can be used to compare under-ice and open-water conditions at the community level. To understand how phytoplankton compositional shifts under ice can precipitate shifts in total algal nutritional content available to consumers relative to open-water conditions, we merged characteristic phytoplankton fatty acid profiles with phytoplankton community composition data. Our results suggest that even though photosynthetically active radiation under ice is dramatically reduced by snow cover and opaque ice conditions, algal communities can be highly productive. Furthermore, these under-ice communities tend to be dominated by cold-water taxa, which are associated with elevated essential polyunsaturated fatty acids and reduced saturated fatty acids. Saturated fatty acids tend to be most associated with phytoplankton communities in the summer when cyanobacteria are prevalent, while winter communities tend to be most associated with high polyunsaturated fatty acids. As ice duration and quality continue to shift with increasing temperatures worldwide, phytoplankton assemblages are likely to exhibit altered nutritional profiles that have direct and indirect effects on food webs."
+featured: false
+publication: "*Ecosphere*"
+url_pdf: "https://esajournals.onlinelibrary.wiley.com/doi/epdf/10.1002/ecs2.70774"
+doi: "10.1002/ecs2.70774"
+---
+
