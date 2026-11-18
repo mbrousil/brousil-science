@@ -2,10 +2,11 @@
 title: "Reproducible Research Techniques with R"
 collection: workshops
 type: "R workshop - Organizer, Moderator, Instructor"
-permalink: /workshops/2020-workshop-1
+permalink: /workshops/2020-workshop-8
 venue: "Washington State University"
 date: 2020-11-16
 location: "Pullman, Washington"
+slug: "reproducible-research-r-2020"
 ---
 
 Organizer, moderator, and co-instructor of weeklong workshop series on techniques for reproducible research using R, targeted at graduate students. Sessions took place over Zoom for 2.5-4 hours per day from November 16-20, 2020.

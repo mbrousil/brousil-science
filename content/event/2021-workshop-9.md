@@ -2,10 +2,11 @@
 title: "Reproducible Research Techniques with R"
 collection: workshops
 type: "R workshop - Organizer, Moderator, Instructor"
-permalink: /workshops/2021-workshop-1
+permalink: /workshops/2021-workshop-9
 venue: "Washington State University"
 date: 2021-03-15
 location: "Pullman, Washington"
+slug: "reproducible-research-r-2021"
 ---
 
 Organizer, moderator, and co-instructor of weeklong workshop series on techniques for reproducible research using R, targeted at graduate students. Sessions took place over Zoom for 3.5-4 hours per day from March 15-19, 2021.
@@ -17,4 +18,5 @@ Organizer, moderator, and co-instructor of weeklong workshop series on technique
 + Intro to workflow management with drake
 + Intro to making websites with GitHub Pages
 
-Link to workshop website [here](https://cereo.wsu.edu/reproducible-r-workshop/).
+Link to workshop website [here](https://cereo.wsu.edu/reproducible-r-workshop-2021s/).  
+Link to Drake talk [here](https://www.youtube.com/watch?v=PubRPcWXWRk).
